@@ -152,7 +152,7 @@ export default function CtaSection() {
             {/* The Visual Envelope & Polaroids Container with true prominence */}
             <div className="relative w-full max-w-[680px] xl:max-w-[760px] transition-transform duration-300 hover:scale-[1.01]">
               <img
-                src="/assets/cta-envelope-clean.png"
+                src="/assets/cta-envelope-hd.png"
                 alt="7Delights Event Memories in Blush Pink Envelope - Invitation and Polaroid Gallery"
                 className="w-full h-auto object-contain drop-shadow-[0_16px_36px_rgba(238,55,117,0.12)] select-none pointer-events-none"
               />
