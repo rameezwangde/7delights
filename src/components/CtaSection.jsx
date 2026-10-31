@@ -150,7 +150,7 @@ export default function CtaSection() {
           <div className="w-full lg:w-[50%] xl:w-[52%] flex justify-center lg:justify-end relative">
             
             {/* The Visual Envelope & Polaroids Container with true prominence */}
-            <div className="relative w-full max-w-[680px] xl:max-w-[760px] transition-transform duration-300 hover:scale-[1.01]">
+            <div className="relative w-full max-w-[680px] xl:max-w-[760px]">
               <img
                 src="/assets/cta-envelope-hd.png"
                 alt="7Delights Event Memories in Blush Pink Envelope - Invitation and Polaroid Gallery"
