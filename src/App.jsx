@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
+import WhyChooseUsSection from './components/WhyChooseUsSection';
 import CtaSection from './components/CtaSection';
 import Footer from './components/Footer';
 
@@ -14,6 +15,7 @@ export default function App() {
         <Hero />
         <AboutSection />
         <ServicesSection />
+        <WhyChooseUsSection />
         <CtaSection />
       </main>
       <Footer />
