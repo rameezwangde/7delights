@@ -9,6 +9,7 @@ import HowWeWorkSection from './components/HowWeWorkSection';
 import CtaSection from './components/CtaSection';
 import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -18,6 +19,9 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (hash === '#contact' || hash === '#/contact') {
+        setCurrentPage('contact');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         setCurrentPage('home');
@@ -37,6 +41,10 @@ export default function App() {
           <>
             <AboutPage />
             <CtaSection />
+          </>
+        ) : currentPage === 'contact' ? (
+          <>
+            <ContactPage />
           </>
         ) : (
           <>

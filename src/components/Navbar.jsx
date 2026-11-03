@@ -14,13 +14,13 @@ export default function Navbar({ currentPage = 'home' }) {
   }, []);
 
   const navLinks = [
-    { name: 'HOME', href: '#home', active: currentPage === 'home' },
-    { name: 'ABOUT', href: '#about', active: currentPage === 'about' },
-    { name: 'SERVICES', href: '#services', hasDropdown: true },
-    { name: 'BLOG', href: '#blog' },
-    { name: 'GALLERY', href: '#gallery' },
-    { name: 'VIDEOS', href: '#videos' },
-    { name: 'CONTACT', href: '#contact' },
+    { name: 'HOME', href: '#home', id: 'home' },
+    { name: 'ABOUT', href: '#about', id: 'about' },
+    { name: 'SERVICES', href: '#services', id: 'services', hasDropdown: true },
+    { name: 'BLOG', href: '#blog', id: 'blog' },
+    { name: 'GALLERY', href: '#gallery', id: 'gallery' },
+    { name: 'VIDEOS', href: '#videos', id: 'videos' },
+    { name: 'CONTACT', href: '#contact', id: 'contact' },
   ];
 
   return (
@@ -35,7 +35,7 @@ export default function Navbar({ currentPage = 'home' }) {
         
         {/* Left: 7Delights.in Logo */}
         <div className="flex items-center shrink-0">
-          <a href="#" className="flex items-center focus:outline-none">
+          <a href="#home" className="flex items-center focus:outline-none">
             <img
               src="/assets/logo.png"
               alt="7Delights.in - Delighting Every Moment"
@@ -46,27 +46,36 @@ export default function Navbar({ currentPage = 'home' }) {
 
         {/* Center: Desktop Navigation Links */}
         <nav className="hidden xl:flex items-center space-x-7 2xl:space-x-9">
-          {navLinks.map((link) => (
-            <div key={link.name} className="relative flex flex-col items-center group py-2">
-              <a
-                href={`#${link.name.toLowerCase()}`}
-                className={`flex items-center text-[13px] font-semibold tracking-[0.12em] uppercase transition-colors duration-200 ${
-                  link.active
-                    ? 'text-[#121E36]'
-                    : 'text-[#1B253D] hover:text-[#EE3775]'
-                }`}
-              >
-                <span>{link.name}</span>
-                {link.hasDropdown && (
-                  <ChevronDown className="w-3.5 h-3.5 ml-1 text-[#1B253D] stroke-[2.5] transition-transform duration-200 group-hover:rotate-180 group-hover:text-[#EE3775]" />
+          {navLinks.map((link) => {
+            const isActive = currentPage === link.id;
+
+            return (
+              <div key={link.name} className="relative flex flex-col items-center group py-2">
+                <a
+                  href={link.href}
+                  className={`flex items-center text-[13px] font-semibold tracking-[0.12em] uppercase transition-colors duration-200 ${
+                    isActive
+                      ? 'text-[#EE3775] font-bold'
+                      : 'text-[#1B253D] hover:text-[#EE3775]'
+                  }`}
+                >
+                  <span>{link.name}</span>
+                  {link.hasDropdown && (
+                    <ChevronDown
+                      className={`w-3.5 h-3.5 ml-1 stroke-[2.5] transition-transform duration-200 group-hover:rotate-180 ${
+                        isActive ? 'text-[#EE3775]' : 'text-[#1B253D] group-hover:text-[#EE3775]'
+                      }`}
+                    />
+                  )}
+                </a>
+                
+                {/* Active Pink Indicator Bar - positioned consistently right under active item */}
+                {isActive && (
+                  <div className="absolute -bottom-1 h-[2.5px] bg-[#EE3775] rounded-full w-6 shadow-xs animate-in fade-in duration-200" />
                 )}
-              </a>
-              {/* Active Pink Indicator Bar */}
-              {link.active && (
-                <div className="h-[2.5px] bg-[#EE3775] rounded-full w-6 mt-1.5" />
-              )}
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </nav>
 
         {/* Right: Phone Call Section */}
@@ -115,19 +124,26 @@ export default function Navbar({ currentPage = 'home' }) {
       {mobileMenuOpen && (
         <div className="xl:hidden bg-white border-t border-gray-100 px-6 py-6 shadow-xl animate-in slide-in-from-top-2 duration-200">
           <nav className="flex flex-col space-y-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={`#${link.name.toLowerCase()}`}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`flex items-center justify-between text-sm font-semibold tracking-wider uppercase py-2 border-b border-gray-50 ${
-                  link.active ? 'text-[#EE3775]' : 'text-[#121E36]'
-                }`}
-              >
-                <span>{link.name}</span>
-                {link.hasDropdown && <ChevronDown className="w-4 h-4 text-gray-400" />}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = currentPage === link.id;
+
+              return (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`flex items-center justify-between text-sm font-semibold tracking-wider uppercase py-2 border-b border-gray-50 ${
+                    isActive ? 'text-[#EE3775] font-bold' : 'text-[#121E36]'
+                  }`}
+                >
+                  <span className="flex items-center space-x-2">
+                    {isActive && <span className="w-1.5 h-1.5 rounded-full bg-[#EE3775]" />}
+                    <span>{link.name}</span>
+                  </span>
+                  {link.hasDropdown && <ChevronDown className="w-4 h-4 text-gray-400" />}
+                </a>
+              );
+            })}
             <div className="pt-4 flex items-center space-x-3">
               <div className="w-10 h-10 rounded-full bg-[#EE3775] flex items-center justify-center text-white">
                 <Phone className="w-4 h-4 fill-white stroke-none" />
