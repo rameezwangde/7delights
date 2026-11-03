@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import WhyChooseUsSection from './components/WhyChooseUsSection';
+import ActivitiesSection from './components/ActivitiesSection';
 import CtaSection from './components/CtaSection';
 import Footer from './components/Footer';
 
@@ -16,6 +17,7 @@ export default function App() {
         <AboutSection />
         <ServicesSection />
         <WhyChooseUsSection />
+        <ActivitiesSection />
         <CtaSection />
       </main>
       <Footer />
