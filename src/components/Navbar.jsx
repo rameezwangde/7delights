@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Phone, Menu, X } from 'lucide-react';
 
-export default function Navbar() {
+export default function Navbar({ currentPage = 'home' }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -14,13 +14,13 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'HOME', active: true },
-    { name: 'ABOUT' },
-    { name: 'SERVICES', hasDropdown: true },
-    { name: 'BLOG' },
-    { name: 'GALLERY' },
-    { name: 'VIDEOS' },
-    { name: 'CONTACT' },
+    { name: 'HOME', href: '#home', active: currentPage === 'home' },
+    { name: 'ABOUT', href: '#about', active: currentPage === 'about' },
+    { name: 'SERVICES', href: '#services', hasDropdown: true },
+    { name: 'BLOG', href: '#blog' },
+    { name: 'GALLERY', href: '#gallery' },
+    { name: 'VIDEOS', href: '#videos' },
+    { name: 'CONTACT', href: '#contact' },
   ];
 
   return (
