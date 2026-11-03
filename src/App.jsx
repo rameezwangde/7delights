@@ -10,6 +10,7 @@ import CtaSection from './components/CtaSection';
 import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import VideosPage from './pages/VideosPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -22,6 +23,9 @@ export default function App() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (hash === '#contact' || hash === '#/contact') {
         setCurrentPage('contact');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (hash === '#videos' || hash === '#/videos') {
+        setCurrentPage('videos');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         setCurrentPage('home');
@@ -45,6 +49,11 @@ export default function App() {
         ) : currentPage === 'contact' ? (
           <>
             <ContactPage />
+          </>
+        ) : currentPage === 'videos' ? (
+          <>
+            <VideosPage />
+            <CtaSection />
           </>
         ) : (
           <>
