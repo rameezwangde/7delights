@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Heart, ArrowUpRight, Sparkles } from 'lucide-react';
+import { Phone, Mail, MapPin, Heart, ArrowUpRight, Sparkles, CreditCard } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -113,7 +113,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 5: Contact Info */}
+          {/* Column 5: Contact & Payment */}
           <div>
             <h4 className="text-[13.5px] font-bold tracking-wider uppercase text-[#1C2A39] mb-4 sm:mb-5 font-sans">
               Contact
@@ -136,6 +136,20 @@ export default function Footer() {
                   <Mail className="w-3.5 h-3.5" />
                 </div>
                 <a href="mailto:mail@7delights.in" className="hover:text-[#EE3775] transition-colors font-medium text-[#1C2A39]">mail@7delights.in</a>
+              </div>
+
+              {/* Razorpay Online Payment Badge */}
+              <div className="pt-2">
+                <a
+                  href="https://razorpay.me/@7delights"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/pay inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-white border border-[#FCD5DE] hover:border-[#EE3775] text-[#1C2A39] hover:text-[#EE3775] transition-all duration-200 shadow-2xs hover:shadow-sm"
+                >
+                  <CreditCard className="w-4 h-4 text-[#EE3775]" />
+                  <span className="text-[13px] font-semibold">Pay Online</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#EE3775] group-hover/pay:translate-x-0.5 group-hover/pay:-translate-y-0.5 transition-transform" />
+                </a>
               </div>
             </div>
           </div>
