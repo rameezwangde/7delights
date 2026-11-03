@@ -15,12 +15,12 @@ export default function Footer() {
       <div className="w-full max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 relative z-10">
         
         {/* Top Section: Brand + Navigation Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-14 border-b border-[#F5D8DF]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-8 pb-14 border-b border-[#F5D8DF]">
           
           {/* Column 1: Brand & Bio */}
-          <div className="lg:col-span-2 flex flex-col pr-0 lg:pr-8">
+          <div className="lg:col-span-2 flex flex-col pr-0 lg:pr-6">
             <div className="flex items-center mb-5">
-              <a href="#placeholder" className="inline-block transition-transform hover:scale-[1.02]">
+              <a href="#home" className="inline-block transition-transform hover:scale-[1.02]">
                 <img
                   src="/assets/logo.png"
                   alt="7Delights.in Logo"
@@ -29,7 +29,7 @@ export default function Footer() {
               </a>
             </div>
 
-            <p className="text-[#5A6E85] text-[14.5px] leading-relaxed max-w-[420px] mb-6">
+            <p className="text-[#5A6E85] text-[14px] leading-relaxed max-w-[380px] mb-6">
               Making every occasion extra special. From bespoke birthdays and fairy-tale weddings to flawless corporate galas, we design memories that last a lifetime.
             </p>
 
@@ -70,57 +70,72 @@ export default function Footer() {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="text-[14px] font-bold tracking-wider uppercase text-[#1C2A39] mb-5 font-sans flex items-center gap-1.5">
-              <span>Quick Links</span>
+            <h4 className="text-[13.5px] font-bold tracking-wider uppercase text-[#1C2A39] mb-4 sm:mb-5 font-sans">
+              Quick Links
             </h4>
-            <ul className="space-y-3 text-[14.5px] text-[#5A6E85]">
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Home</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">About Us</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Services</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Gallery</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Videos</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Blog</a></li>
+            <ul className="space-y-2.5 text-[14px] text-[#5A6E85]">
+              <li><a href="#home" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Home</a></li>
+              <li><a href="#about" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">About Us</a></li>
+              <li><a href="#services" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Services</a></li>
+              <li><a href="#gallery" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Gallery</a></li>
+              <li><a href="#videos" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Videos</a></li>
+              <li><a href="#blog" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Blog</a></li>
             </ul>
           </div>
 
           {/* Column 3: Event Services */}
           <div>
-            <h4 className="text-[14px] font-bold tracking-wider uppercase text-[#1C2A39] mb-5 font-sans flex items-center gap-1.5">
-              <span>Our Services</span>
+            <h4 className="text-[13.5px] font-bold tracking-wider uppercase text-[#1C2A39] mb-4 sm:mb-5 font-sans">
+              Our Services
             </h4>
-            <ul className="space-y-3 text-[14.5px] text-[#5A6E85]">
+            <ul className="space-y-2.5 text-[14px] text-[#5A6E85]">
               <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Birthday Decoration</a></li>
               <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Wedding Planning</a></li>
               <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Corporate Events</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Kids Party Activities</a></li>
+              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Kids Activities</a></li>
               <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Party Catering</a></li>
               <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">DJ & Stage Setup</a></li>
             </ul>
           </div>
 
-          {/* Column 4: Contact Info */}
+          {/* Column 4: Customer & Legal (User Requested Items) */}
           <div>
-            <h4 className="text-[14px] font-bold tracking-wider uppercase text-[#1C2A39] mb-5 font-sans flex items-center gap-1.5">
-              <span>Get In Touch</span>
+            <h4 className="text-[13.5px] font-bold tracking-wider uppercase text-[#1C2A39] mb-4 sm:mb-5 font-sans">
+              Support & Legal
             </h4>
-            <div className="space-y-4 text-[14.5px] text-[#5A6E85]">
-              <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 rounded-full bg-white border border-[#FCD5DE] flex items-center justify-center shrink-0 text-[#EE3775] mt-0.5 shadow-xs">
-                  <MapPin className="w-4 h-4" />
+            <ul className="space-y-2.5 text-[14px] text-[#5A6E85]">
+              <li><a href="#about" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">FAQ</a></li>
+              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Customer Support</a></li>
+              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Cancel & Refund</a></li>
+              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Privacy Policy</a></li>
+              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Terms & Conditions</a></li>
+              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Site Map</a></li>
+            </ul>
+          </div>
+
+          {/* Column 5: Contact Info */}
+          <div>
+            <h4 className="text-[13.5px] font-bold tracking-wider uppercase text-[#1C2A39] mb-4 sm:mb-5 font-sans">
+              Contact
+            </h4>
+            <div className="space-y-3.5 text-[14px] text-[#5A6E85]">
+              <div className="flex items-start space-x-2.5">
+                <div className="w-7 h-7 rounded-full bg-white border border-[#FCD5DE] flex items-center justify-center shrink-0 text-[#EE3775] mt-0.5 shadow-xs">
+                  <MapPin className="w-3.5 h-3.5" />
                 </div>
-                <span className="leading-snug pt-1">Bangalore, Karnataka, India</span>
+                <span className="leading-snug pt-0.5">Bangalore, Karnataka, India</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 rounded-full bg-white border border-[#FCD5DE] flex items-center justify-center shrink-0 text-[#EE3775] shadow-xs">
-                  <Phone className="w-4 h-4" />
+              <div className="flex items-center space-x-2.5">
+                <div className="w-7 h-7 rounded-full bg-white border border-[#FCD5DE] flex items-center justify-center shrink-0 text-[#EE3775] shadow-xs">
+                  <Phone className="w-3.5 h-3.5" />
                 </div>
                 <a href="#placeholder" className="hover:text-[#EE3775] transition-colors font-medium text-[#1C2A39]">+91 99800 29977</a>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 rounded-full bg-white border border-[#FCD5DE] flex items-center justify-center shrink-0 text-[#EE3775] shadow-xs">
-                  <Mail className="w-4 h-4" />
+              <div className="flex items-center space-x-2.5">
+                <div className="w-7 h-7 rounded-full bg-white border border-[#FCD5DE] flex items-center justify-center shrink-0 text-[#EE3775] shadow-xs">
+                  <Mail className="w-3.5 h-3.5" />
                 </div>
-                <a href="#placeholder" className="hover:text-[#EE3775] transition-colors font-medium text-[#1C2A39]">info@7delights.in</a>
+                <a href="mailto:mail@7delights.in" className="hover:text-[#EE3775] transition-colors font-medium text-[#1C2A39]">mail@7delights.in</a>
               </div>
             </div>
           </div>
