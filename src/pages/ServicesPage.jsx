@@ -213,6 +213,7 @@ export default function ServicesPage() {
     {
       id: 20,
       title: 'Block Printing Bag',
+      slug: '#services/block-printing',
       category: 'crafts',
       image: '/assets/artist-20.webp',
       tag: 'Textile Workshop',
