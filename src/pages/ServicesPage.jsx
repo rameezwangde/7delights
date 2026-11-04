@@ -173,6 +173,7 @@ export default function ServicesPage() {
     {
       id: 16,
       title: 'Pot Painting',
+      slug: '#services/pot-painting',
       category: 'crafts',
       image: '/assets/artist-16.webp',
       tag: 'Terracotta Art',
