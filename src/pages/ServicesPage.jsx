@@ -193,6 +193,7 @@ export default function ServicesPage() {
     {
       id: 18,
       title: 'Turban / Pagri Tying',
+      slug: '#services/turban-pagri-tying',
       category: 'traditional',
       image: '/assets/artist-18.webp',
       tag: 'Royal Welcome',
