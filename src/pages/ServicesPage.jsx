@@ -83,6 +83,7 @@ export default function ServicesPage() {
     {
       id: 7,
       title: 'Hair Braiding',
+      slug: '#services/hair-braidings',
       category: 'crafts',
       image: '/assets/artist-7.webp',
       tag: 'Styling Counter',

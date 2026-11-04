@@ -20,6 +20,7 @@ import NailArtistryPage from './pages/NailArtistryPage';
 import PotteryArtistsPage from './pages/PotteryArtistsPage';
 import KidsJewelryMakingPage from './pages/KidsJewelryMakingPage';
 import OrigamiCraftsPage from './pages/OrigamiCraftsPage';
+import HairBraidingPage from './pages/HairBraidingPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -29,6 +30,14 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/hair-braidings' ||
+        hash === '#/services/hair-braidings' ||
+        hash === '#hair-braiding' ||
+        hash === '#/hair-braiding'
+      ) {
+        setCurrentPage('hair-braiding');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/origami-craft' ||
@@ -110,6 +119,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'hair-braiding' ? (
+          <>
+            <HairBraidingPage />
             <CtaSection />
           </>
         ) : currentPage === 'origami-crafts' ? (
