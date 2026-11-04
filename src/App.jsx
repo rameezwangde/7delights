@@ -38,6 +38,8 @@ import SandArtBottlePage from './pages/SandArtBottlePage';
 import AmusementsPage from './pages/AmusementsPage';
 import BouncyCastlePage from './pages/BouncyCastlePage';
 import HorseRidingPage from './pages/HorseRidingPage';
+import MerryGoRoundPage from './pages/MerryGoRoundPage';
+import ZorbingBallsPage from './pages/ZorbingBallsPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -47,6 +49,28 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements/zorbing-balls' ||
+        hash === '#/amusements/zorbing-balls' ||
+        hash === '#zorbing-balls' ||
+        hash === '#/zorbing-balls' ||
+        hash === '#zorbing' ||
+        hash === '#/zorbing' ||
+        hash === '#water-zorbing' ||
+        hash === '#/water-zorbing'
+      ) {
+        setCurrentPage('zorbing-balls');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements/merry-go-round' ||
+        hash === '#/amusements/merry-go-round' ||
+        hash === '#merry-go-round' ||
+        hash === '#/merry-go-round' ||
+        hash === '#carousel' ||
+        hash === '#/carousel'
+      ) {
+        setCurrentPage('merry-go-round');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#amusements/horse-riding' ||
@@ -298,6 +322,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'zorbing-balls' ? (
+          <>
+            <ZorbingBallsPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'merry-go-round' ? (
+          <>
+            <MerryGoRoundPage />
             <CtaSection />
           </>
         ) : currentPage === 'horse-riding' ? (
