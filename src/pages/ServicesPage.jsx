@@ -286,7 +286,7 @@ export default function ServicesPage() {
       {/* ======================================================== */}
       {/* 1. HERO BREADCRUMB / BANNER                              */}
       {/* ======================================================== */}
-      <section className="relative w-full bg-gradient-to-b from-[#FFF5F6] via-[#FFFDF9] to-[#FFFDF9] pt-14 pb-16 sm:py-20 overflow-hidden border-b border-[#FCD5DE]/60">
+      <section className="relative w-full bg-gradient-to-b from-[#FFF5F6] via-[#FFFDF9] to-[#FFFDF9] pt-8 sm:pt-10 pb-8 sm:pb-10 overflow-hidden border-b border-[#FCD5DE]/60">
         
         {/* Ambient Glows */}
         <div className="absolute top-0 right-1/4 w-[450px] h-[450px] bg-[#FFE8ED]/60 rounded-full blur-3xl pointer-events-none -z-0" />
@@ -294,7 +294,7 @@ export default function ServicesPage() {
 
         <div className="w-full max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 text-center relative z-10">
           
-          <div className="inline-flex items-center space-x-2.5 mb-3.5">
+          <div className="inline-flex items-center space-x-2.5 mb-2.5">
             <span className="w-6 h-[1.5px] bg-[#EE3775]" />
             <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.2em] text-[#EE3775] uppercase font-sans">
               ACTIVITIES & ARTISTS • BANGALORE
@@ -302,9 +302,9 @@ export default function ServicesPage() {
             <span className="w-6 h-[1.5px] bg-[#EE3775]" />
           </div>
 
-          <h1 className="text-[36px] sm:text-[48px] lg:text-[58px] font-bold text-[#111A2E] font-serif leading-[1.12] mb-4">
+          <h1 className="text-[32px] sm:text-[42px] lg:text-[48px] font-bold text-[#111A2E] font-serif leading-[1.12] mb-3">
             7delights Activities & Artists Organisers for{' '}
-            <span className="text-[#EE3775] relative inline-block font-dancing font-normal text-[44px] sm:text-[60px] lg:text-[70px]">
+            <span className="text-[#EE3775] relative inline-block font-dancing font-normal text-[38px] sm:text-[52px] lg:text-[60px]">
               Events Bangalore
               <div className="absolute -bottom-2 left-0 w-full overflow-visible">
                 <GoldUnderline className="w-full h-3.5 text-[#F5A623]" />
@@ -312,12 +312,12 @@ export default function ServicesPage() {
             </span>
           </h1>
 
-          <p className="text-[15.5px] sm:text-[17px] text-[#5A6E85] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[14.5px] sm:text-[16px] text-[#5A6E85] max-w-2xl mx-auto leading-relaxed">
             Welcome to the home of exemplary party entertainment. Discover 21+ live activities, artisanal stalls, and interactive masterclasses to make your guests feel happy and amazed.
           </p>
 
           {/* Search Bar */}
-          <div className="mt-8 max-w-lg mx-auto flex items-center bg-white border border-[#F3E8E2] rounded-full p-1.5 shadow-2xs">
+          <div className="mt-5 max-w-lg mx-auto flex items-center bg-white border border-[#F3E8E2] rounded-full p-1.5 shadow-2xs">
             <div className="pl-4 text-[#94A3B8]">
               <Search className="w-4 h-4" />
             </div>
@@ -344,12 +344,12 @@ export default function ServicesPage() {
       {/* ======================================================== */}
       {/* 2. 21 ACTIVITIES & ARTISTS STALLS GRID                   */}
       {/* ======================================================== */}
-      <section className="relative w-full py-14 sm:py-18 lg:py-22 overflow-hidden">
+      <section className="relative w-full py-8 sm:py-10 lg:py-12 overflow-hidden">
         
         <div className="w-full max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 relative z-10">
           
           {/* Category Filter Pills */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-12 sm:mb-14">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-8 sm:mb-9">
             {categories.map((cat) => (
               <button
                 key={cat.id}
@@ -441,11 +441,11 @@ export default function ServicesPage() {
       {/* ======================================================== */}
       {/* 3. CORE STRENGTHS SECTION (Scraped from Services Page)   */}
       {/* ======================================================== */}
-      <section className="relative w-full py-16 sm:py-20 bg-[#FFF5F6]/70 border-t border-[#FCD5DE]/60 overflow-hidden">
+      <section className="relative w-full pt-8 sm:pt-10 pb-6 sm:pb-8 bg-[#FFF5F6]/70 border-t border-[#FCD5DE]/60 overflow-hidden">
         
         <div className="w-full max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 relative z-10">
           
-          <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
             <span className="text-[12px] font-bold tracking-[0.2em] text-[#EE3775] uppercase">
               HOME OF EXEMPLARY ACTIVITIES
             </span>

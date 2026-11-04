@@ -25,7 +25,7 @@ export default function CtaSection() {
   ];
 
   return (
-    <section className="relative w-full bg-[#FEFAF7] overflow-hidden py-14 sm:py-16 lg:py-20 select-none">
+    <section className="relative w-full bg-[#FEFAF7] overflow-hidden pt-6 sm:pt-8 pb-10 sm:pb-12 lg:pb-14 select-none">
       
       {/* Background Soft Blush Shapes */}
       <div className="absolute top-0 right-0 w-[600px] h-[550px] bg-gradient-to-bl from-[#FDECEF]/60 via-[#FFF0F3]/40 to-transparent rounded-full blur-3xl pointer-events-none -z-0" />
