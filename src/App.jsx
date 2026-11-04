@@ -15,6 +15,7 @@ import GalleryPage from './pages/GalleryPage';
 import BlogPage from './pages/BlogPage';
 import ServicesPage from './pages/ServicesPage';
 import BalloonModelingPage from './pages/BalloonModelingPage';
+import TattooFacePaintingPage from './pages/TattooFacePaintingPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -24,6 +25,14 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/tattoo-artists-face-painting' ||
+        hash === '#/services/tattoo-artists-face-painting' ||
+        hash === '#tattoo-artists' ||
+        hash === '#/tattoo-artists'
+      ) {
+        setCurrentPage('tattoo-artists');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/balloon-modelings' ||
@@ -65,6 +74,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'tattoo-artists' ? (
+          <>
+            <TattooFacePaintingPage />
             <CtaSection />
           </>
         ) : currentPage === 'balloon-modeling' ? (

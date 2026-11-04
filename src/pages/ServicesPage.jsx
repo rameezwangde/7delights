@@ -33,6 +33,7 @@ export default function ServicesPage() {
     {
       id: 2,
       title: 'Tattoo Artists & Face Painting',
+      slug: '#services/tattoo-artists-face-painting',
       category: 'kids',
       image: '/assets/artist-2.webp',
       tag: 'Glitter & Art',
