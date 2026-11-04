@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import VideosPage from './pages/VideosPage';
+import GalleryPage from './pages/GalleryPage';
+import BlogPage from './pages/BlogPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -26,6 +28,12 @@ export default function App() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (hash === '#videos' || hash === '#/videos') {
         setCurrentPage('videos');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (hash === '#gallery' || hash === '#/gallery') {
+        setCurrentPage('gallery');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (hash === '#blog' || hash === '#/blog') {
+        setCurrentPage('blog');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         setCurrentPage('home');
@@ -53,6 +61,16 @@ export default function App() {
         ) : currentPage === 'videos' ? (
           <>
             <VideosPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'gallery' ? (
+          <>
+            <GalleryPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'blog' ? (
+          <>
+            <BlogPage />
             <CtaSection />
           </>
         ) : (
