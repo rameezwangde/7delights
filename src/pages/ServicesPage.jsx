@@ -73,6 +73,7 @@ export default function ServicesPage() {
     {
       id: 6,
       title: 'Origami Crafts',
+      slug: '#services/origami-craft',
       category: 'crafts',
       image: '/assets/artist-6.webp',
       tag: 'Paper Folding Art',
