@@ -223,6 +223,7 @@ export default function ServicesPage() {
     {
       id: 21,
       title: 'Sand Art Bottle',
+      slug: '#services/sand-art',
       category: 'crafts',
       image: '/assets/artist-21.webp',
       tag: 'Layered Sand Art',

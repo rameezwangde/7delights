@@ -34,6 +34,7 @@ import WaxHandMakingPage from './pages/WaxHandMakingPage';
 import TurbanPagriTyingPage from './pages/TurbanPagriTyingPage';
 import LacBangleMakingPage from './pages/LacBangleMakingPage';
 import BlockPrintingPage from './pages/BlockPrintingPage';
+import SandArtBottlePage from './pages/SandArtBottlePage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -43,6 +44,18 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/sand-art' ||
+        hash === '#/services/sand-art' ||
+        hash === '#services/sand-art-bottle' ||
+        hash === '#/services/sand-art-bottle' ||
+        hash === '#sand-art' ||
+        hash === '#/sand-art' ||
+        hash === '#sand-art-bottle' ||
+        hash === '#/sand-art-bottle'
+      ) {
+        setCurrentPage('sand-art');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/block-printing' ||
@@ -256,6 +269,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'sand-art' ? (
+          <>
+            <SandArtBottlePage />
             <CtaSection />
           </>
         ) : currentPage === 'block-printing' ? (
