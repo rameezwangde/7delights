@@ -8,13 +8,39 @@ import {
   ArrowRight,
   X,
   Search,
+  Plus,
+  Minus,
+  CheckCircle2,
+  CreditCard,
 } from 'lucide-react';
-import { GoldUnderline } from '../components/Doodles';
+import { GoldUnderline, HandDrawnHeart } from '../components/Doodles';
 
 export default function VideosPage() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [openFaq, setOpenFaq] = useState(0);
+
+  const videoFaqs = [
+    {
+      question: 'How far in advance should I book 7Delights for my event?',
+      answer:
+        'To ensure maximum availability of premium artists, specific themes, & equipment, we recommend booking at least 1 to 6 weeks in advance for social parties & corporate events, and 3 to 6 months in advance for major weddings or large-scale corporate launches. However, if you have a last-minute request, contact us & we will do our best to make it happen!',
+      icon: <Clock className="w-5 h-5 text-[#EE3775]" />,
+    },
+    {
+      question: 'How long does it take for your team to set up?',
+      answer:
+        'Setup times vary by service. Simple balloon decorations or a single interactive stall may take 1 to 2 hours. Complex thematic stage setups, intricate lighting riggings, or heavy SFX installations can take anywhere from 4 to 12 hours. We always coordinate directly with the venue to ensure everything is flawlessly set up well before your first guest arrives.',
+      icon: <CheckCircle2 className="w-5 h-5 text-[#F5A623]" />,
+    },
+    {
+      question: 'What is your payment policy?',
+      answer:
+        'To secure your date, artists, and materials, we require an advance payment upon signing the contract. The remaining balance is structured into milestones leading up to, or on the day of the event.',
+      icon: <CreditCard className="w-5 h-5 text-[#7B61FF]" />,
+    },
+  ];
 
   const categories = [
     { id: 'all', label: 'All 20 Videos' },
@@ -451,6 +477,116 @@ export default function VideosPage() {
               </button>
             </div>
           )}
+
+        </div>
+
+      </section>
+
+      {/* ======================================================== */}
+      {/* 3. EVENT FAQ SECTION                                     */}
+      {/* ======================================================== */}
+      <section className="relative w-full py-16 sm:py-20 lg:py-24 bg-[#FFF9F6] border-t border-[#FCD5DE]/60 overflow-hidden">
+        
+        {/* Subtle Ambient Glow */}
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#FFE8ED]/40 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="w-full max-w-[1300px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 relative z-10">
+          
+          {/* Header */}
+          <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
+            
+            <div className="inline-flex items-center space-x-2.5 mb-3.5">
+              <span className="w-6 h-[1.5px] bg-[#EE3775]" />
+              <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.2em] text-[#EE3775] uppercase font-sans">
+                COMMONLY ASKED QUESTIONS
+              </span>
+              <span className="w-6 h-[1.5px] bg-[#EE3775]" />
+            </div>
+
+            <h2 className="text-[34px] sm:text-[46px] lg:text-[50px] font-bold text-[#111A2E] font-serif leading-[1.15] mb-4">
+              Event{' '}
+              <span className="text-[#EE3775] relative inline-block font-dancing font-normal text-[44px] sm:text-[56px] lg:text-[62px]">
+                FAQ?
+                <div className="absolute -bottom-2 left-0 w-full overflow-visible">
+                  <GoldUnderline className="w-full h-3 text-[#F5A623]" />
+                </div>
+              </span>
+            </h2>
+
+            <p className="text-[15px] sm:text-[17px] text-[#5A6E85]">
+              Everything you need to know about scheduling our event setups, entertainment stalls, and party execution in Bangalore.
+            </p>
+          </div>
+
+          {/* Accordion FAQ List */}
+          <div className="space-y-4">
+            {videoFaqs.map((faq, index) => {
+              const isOpen = openFaq === index;
+
+              return (
+                <div
+                  key={index}
+                  className={`bg-white rounded-2xl border transition-all duration-300 overflow-hidden ${
+                    isOpen
+                      ? 'border-[#EE3775]/50 shadow-md ring-2 ring-[#EE3775]/10'
+                      : 'border-[#F3E8E2] hover:border-[#FCD5DE] shadow-2xs'
+                  }`}
+                >
+                  {/* FAQ Question Bar */}
+                  <button
+                    onClick={() => setOpenFaq(isOpen ? -1 : index)}
+                    className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 cursor-pointer focus:outline-none"
+                  >
+                    <div className="flex items-center space-x-4">
+                      <div className="w-10 h-10 rounded-full bg-[#FFF5F6] border border-[#FCD5DE] flex items-center justify-center shrink-0">
+                        {faq.icon}
+                      </div>
+                      <span className="text-[16px] sm:text-[18px] font-bold text-[#111A2E] font-sans">
+                        {faq.question}
+                      </span>
+                    </div>
+
+                    <div
+                      className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-colors duration-200 ${
+                        isOpen
+                          ? 'bg-[#EE3775] text-white'
+                          : 'bg-[#FFF5F6] text-[#EE3775]'
+                      }`}
+                    >
+                      {isOpen ? (
+                        <Minus className="w-4 h-4" />
+                      ) : (
+                        <Plus className="w-4 h-4" />
+                      )}
+                    </div>
+                  </button>
+
+                  {/* FAQ Answer Content */}
+                  {isOpen && (
+                    <div className="px-5 sm:px-6 pb-6 pt-0 text-[14.5px] sm:text-[15px] text-[#5A6E85] leading-relaxed border-t border-[#F8ECE8] mt-2 pt-4 pl-14 sm:pl-18">
+                      {faq.answer}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Bottom Event FAQ Callout Button (matches the screenshot button) */}
+          <div className="mt-12 text-center">
+            <div className="inline-flex flex-col sm:flex-row items-center justify-center gap-4 p-4 sm:p-5 rounded-2xl bg-white border border-[#FCD5DE] shadow-xs">
+              <span className="text-[14px] text-[#5A6E85] font-medium">
+                Want to know more details or book customized entertainment?
+              </span>
+              <a
+                href="tel:+919980029977"
+                className="inline-flex items-center space-x-2 px-6 py-2.5 rounded-full bg-[#20428B] hover:bg-[#EE3775] text-white text-[13px] font-bold tracking-wider uppercase transition-colors shadow-xs"
+              >
+                <span>EVENT FAQ ?</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </div>
 
         </div>
 
