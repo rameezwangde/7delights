@@ -183,6 +183,7 @@ export default function ServicesPage() {
     {
       id: 17,
       title: 'Wax Hand Making',
+      slug: '#services/wax-hand-making',
       category: 'artists',
       image: '/assets/artist-17.webp',
       tag: '3D Wax Cast',

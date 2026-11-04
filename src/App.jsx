@@ -30,6 +30,7 @@ import TaroFaceReadingPage from './pages/TaroFaceReadingPage';
 import RiceArtKeyChainPage from './pages/RiceArtKeyChainPage';
 import BottlePaintingPage from './pages/BottlePaintingPage';
 import PotPaintingPage from './pages/PotPaintingPage';
+import WaxHandMakingPage from './pages/WaxHandMakingPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -39,6 +40,16 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/wax-hand-making' ||
+        hash === '#/services/wax-hand-making' ||
+        hash === '#wax-hand-making' ||
+        hash === '#/wax-hand-making' ||
+        hash === '#wax-hand' ||
+        hash === '#/wax-hand'
+      ) {
+        setCurrentPage('wax-hand-making');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/pot-painting' ||
@@ -206,6 +217,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'wax-hand-making' ? (
+          <>
+            <WaxHandMakingPage />
             <CtaSection />
           </>
         ) : currentPage === 'pot-painting' ? (
