@@ -40,6 +40,7 @@ import BouncyCastlePage from './pages/BouncyCastlePage';
 import HorseRidingPage from './pages/HorseRidingPage';
 import MerryGoRoundPage from './pages/MerryGoRoundPage';
 import ZorbingBallsPage from './pages/ZorbingBallsPage';
+import TrampolinePage from './pages/TrampolinePage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -49,6 +50,14 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements/trampoline' ||
+        hash === '#/amusements/trampoline' ||
+        hash === '#trampoline' ||
+        hash === '#/trampoline'
+      ) {
+        setCurrentPage('trampoline');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#amusements/zorbing-balls' ||
@@ -322,6 +331,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'trampoline' ? (
+          <>
+            <TrampolinePage />
             <CtaSection />
           </>
         ) : currentPage === 'zorbing-balls' ? (
