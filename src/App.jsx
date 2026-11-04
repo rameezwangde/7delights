@@ -28,6 +28,7 @@ import MehandiArtistryPage from './pages/MehandiArtistryPage';
 import PebbleStoneArtPage from './pages/PebbleStoneArtPage';
 import TaroFaceReadingPage from './pages/TaroFaceReadingPage';
 import RiceArtKeyChainPage from './pages/RiceArtKeyChainPage';
+import BottlePaintingPage from './pages/BottlePaintingPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -37,6 +38,14 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/bottle-painting' ||
+        hash === '#/services/bottle-painting' ||
+        hash === '#bottle-painting' ||
+        hash === '#/bottle-painting'
+      ) {
+        setCurrentPage('bottle-painting');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/rice-arts-key-chain' ||
@@ -188,6 +197,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'bottle-painting' ? (
+          <>
+            <BottlePaintingPage />
             <CtaSection />
           </>
         ) : currentPage === 'rice-art' ? (

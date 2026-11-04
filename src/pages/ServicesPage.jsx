@@ -163,6 +163,7 @@ export default function ServicesPage() {
     {
       id: 15,
       title: 'Bottle Painting',
+      slug: '#services/bottle-painting',
       category: 'crafts',
       image: '/assets/artist-15.webp',
       tag: 'Glass Upcycling',
