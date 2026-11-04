@@ -43,6 +43,7 @@ export default function ServicesPage() {
     {
       id: 3,
       title: 'Nail Artistry',
+      slug: '#services/nails-artistry',
       category: 'crafts',
       image: '/assets/artist-3.webp',
       tag: 'Beauty Stall',
