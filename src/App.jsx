@@ -35,6 +35,8 @@ import TurbanPagriTyingPage from './pages/TurbanPagriTyingPage';
 import LacBangleMakingPage from './pages/LacBangleMakingPage';
 import BlockPrintingPage from './pages/BlockPrintingPage';
 import SandArtBottlePage from './pages/SandArtBottlePage';
+import AmusementsPage from './pages/AmusementsPage';
+import BouncyCastlePage from './pages/BouncyCastlePage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -44,6 +46,16 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements/bouncing-castle' ||
+        hash === '#/amusements/bouncing-castle' ||
+        hash === '#bouncing-castle' ||
+        hash === '#/bouncing-castle' ||
+        hash === '#bouncy-castle' ||
+        hash === '#/bouncy-castle'
+      ) {
+        setCurrentPage('bouncing-castle');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/sand-art' ||
@@ -240,6 +252,14 @@ export default function App() {
       } else if (hash === '#services' || hash === '#/services') {
         setCurrentPage('services');
         window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements-games' ||
+        hash === '#/amusements-games' ||
+        hash === '#amusements' ||
+        hash === '#/amusements'
+      ) {
+        setCurrentPage('amusements');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (hash === '#contact' || hash === '#/contact') {
         setCurrentPage('contact');
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -269,6 +289,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'bouncing-castle' ? (
+          <>
+            <BouncyCastlePage />
             <CtaSection />
           </>
         ) : currentPage === 'sand-art' ? (
@@ -379,6 +404,11 @@ export default function App() {
         ) : currentPage === 'services' ? (
           <>
             <ServicesPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'amusements' ? (
+          <>
+            <AmusementsPage />
             <CtaSection />
           </>
         ) : currentPage === 'contact' ? (

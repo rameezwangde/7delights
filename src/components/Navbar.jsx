@@ -95,16 +95,19 @@ export default function Navbar({ currentPage = 'home' }) {
                 {link.hasDropdown && (
                   <div className="absolute top-full left-0 pt-3 hidden group-hover:block transition-all duration-200 z-50">
                     <div className="w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 py-3 px-2 flex flex-col gap-0.5 animate-in fade-in slide-in-from-top-1 duration-150">
-                      {serviceSubItems.map((item, idx) => (
-                        <a
-                          key={idx}
-                          href="#services"
-                          className="px-3.5 py-2 rounded-xl text-[12px] font-bold tracking-wider text-[#1B253D] hover:text-[#EE3775] hover:bg-[#FFF0F4] transition-all flex items-center justify-between"
-                        >
-                          <span>{item}</span>
-                          <span className="text-[10px] text-gray-300 group-hover/item:text-[#EE3775]">›</span>
-                        </a>
-                      ))}
+                      {serviceSubItems.map((item, idx) => {
+                        const href = item === 'AMUSEMENTS & GAMES' ? '#amusements-games' : '#services';
+                        return (
+                          <a
+                            key={idx}
+                            href={href}
+                            className="px-3.5 py-2 rounded-xl text-[12px] font-bold tracking-wider text-[#1B253D] hover:text-[#EE3775] hover:bg-[#FFF0F4] transition-all flex items-center justify-between"
+                          >
+                            <span>{item}</span>
+                            <span className="text-[10px] text-gray-300 group-hover/item:text-[#EE3775]">›</span>
+                          </a>
+                        );
+                      })}
                     </div>
                   </div>
                 )}
