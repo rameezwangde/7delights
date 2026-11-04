@@ -27,6 +27,7 @@ import ClayModelingPage from './pages/ClayModelingPage';
 import MehandiArtistryPage from './pages/MehandiArtistryPage';
 import PebbleStoneArtPage from './pages/PebbleStoneArtPage';
 import TaroFaceReadingPage from './pages/TaroFaceReadingPage';
+import RiceArtKeyChainPage from './pages/RiceArtKeyChainPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -36,6 +37,14 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/rice-arts-key-chain' ||
+        hash === '#/services/rice-arts-key-chain' ||
+        hash === '#rice-art' ||
+        hash === '#/rice-art'
+      ) {
+        setCurrentPage('rice-art');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/taro-face-reading-palmistry' ||
@@ -179,6 +188,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'rice-art' ? (
+          <>
+            <RiceArtKeyChainPage />
             <CtaSection />
           </>
         ) : currentPage === 'taro-reading' ? (

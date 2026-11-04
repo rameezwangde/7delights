@@ -153,6 +153,7 @@ export default function ServicesPage() {
     {
       id: 14,
       title: 'Rice Art Key Chain',
+      slug: '#services/rice-arts-key-chain',
       category: 'crafts',
       image: '/assets/artist-14.webp',
       tag: 'Micro Engraving',
