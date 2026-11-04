@@ -53,6 +53,7 @@ export default function ServicesPage() {
     {
       id: 4,
       title: 'Pottery Artists',
+      slug: '#services/pottery-artists',
       category: 'crafts',
       image: '/assets/artist-4.webp',
       tag: 'Live Potter Wheel',
@@ -62,6 +63,7 @@ export default function ServicesPage() {
     {
       id: 5,
       title: 'Kids Jeweler Making',
+      slug: '#services/kids-jewelry-making',
       category: 'kids',
       image: '/assets/artist-5.webp',
       tag: 'Bead Crafts',

@@ -17,6 +17,8 @@ import ServicesPage from './pages/ServicesPage';
 import BalloonModelingPage from './pages/BalloonModelingPage';
 import TattooFacePaintingPage from './pages/TattooFacePaintingPage';
 import NailArtistryPage from './pages/NailArtistryPage';
+import PotteryArtistsPage from './pages/PotteryArtistsPage';
+import KidsJewelryMakingPage from './pages/KidsJewelryMakingPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -26,6 +28,22 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/kids-jewelry-making' ||
+        hash === '#/services/kids-jewelry-making' ||
+        hash === '#kids-jewelry' ||
+        hash === '#/kids-jewelry'
+      ) {
+        setCurrentPage('kids-jewelry');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/pottery-artists' ||
+        hash === '#/services/pottery-artists' ||
+        hash === '#pottery-artists' ||
+        hash === '#/pottery-artists'
+      ) {
+        setCurrentPage('pottery-artists');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/nails-artistry' ||
@@ -83,6 +101,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'kids-jewelry' ? (
+          <>
+            <KidsJewelryMakingPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'pottery-artists' ? (
+          <>
+            <PotteryArtistsPage />
             <CtaSection />
           </>
         ) : currentPage === 'nail-artistry' ? (
