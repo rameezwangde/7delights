@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Phone, Menu, X } from 'lucide-react';
+import { ChevronDown, Phone, Menu, X, Sparkles } from 'lucide-react';
 
 export default function Navbar({ currentPage = 'home' }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,6 +22,22 @@ export default function Navbar({ currentPage = 'home' }) {
     { name: 'GALLERY', href: '#gallery', id: 'gallery' },
     { name: 'VIDEOS', href: '#videos', id: 'videos' },
     { name: 'CONTACT', href: '#contact', id: 'contact' },
+  ];
+
+  const serviceSubItems = [
+    'ACTIVITIES & EVENTS',
+    'AMUSEMENTS & GAMES',
+    'BALLOON DECORATIONS',
+    'CORPORATE EVENTS',
+    'DANCE TROUPE & MUSIC',
+    'DJ SOUND STAGE LIGHTS',
+    'EVENT SFX',
+    'FLOWER DECORATIONS',
+    'PARTY FUN EATABLES',
+    'PHOTOGRAPHY & VIDEO',
+    'SHOWS & ENTERTAINMENT',
+    'PARTY CAKES',
+    'GIFTING',
   ];
 
   return (
@@ -73,6 +90,24 @@ export default function Navbar({ currentPage = 'home' }) {
                 {isActive && (
                   <div className="absolute -bottom-1 h-[2.5px] bg-[#EE3775] rounded-full w-6 shadow-xs animate-in fade-in duration-200" />
                 )}
+
+                {/* Dropdown Menu for SERVICES */}
+                {link.hasDropdown && (
+                  <div className="absolute top-full left-0 pt-3 hidden group-hover:block transition-all duration-200 z-50">
+                    <div className="w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 py-3 px-2 flex flex-col gap-0.5 animate-in fade-in slide-in-from-top-1 duration-150">
+                      {serviceSubItems.map((item, idx) => (
+                        <a
+                          key={idx}
+                          href="#services"
+                          className="px-3.5 py-2 rounded-xl text-[12px] font-bold tracking-wider text-[#1B253D] hover:text-[#EE3775] hover:bg-[#FFF0F4] transition-all flex items-center justify-between"
+                        >
+                          <span>{item}</span>
+                          <span className="text-[10px] text-gray-300 group-hover/item:text-[#EE3775]">›</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}
@@ -122,10 +157,52 @@ export default function Navbar({ currentPage = 'home' }) {
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden bg-white border-t border-gray-100 px-6 py-6 shadow-xl animate-in slide-in-from-top-2 duration-200">
-          <nav className="flex flex-col space-y-4">
+        <div className="xl:hidden bg-white border-t border-gray-100 px-6 py-6 shadow-xl animate-in slide-in-from-top-2 duration-200 max-h-[85vh] overflow-y-auto">
+          <nav className="flex flex-col space-y-3">
             {navLinks.map((link) => {
               const isActive = currentPage === link.id;
+
+              if (link.hasDropdown) {
+                return (
+                  <div key={link.name} className="border-b border-gray-50 pb-2">
+                    <button
+                      type="button"
+                      onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                      className={`w-full flex items-center justify-between text-sm font-semibold tracking-wider uppercase py-2 ${
+                        isActive ? 'text-[#EE3775] font-bold' : 'text-[#121E36]'
+                      }`}
+                    >
+                      <span className="flex items-center space-x-2">
+                        {isActive && <span className="w-1.5 h-1.5 rounded-full bg-[#EE3775]" />}
+                        <span>{link.name}</span>
+                      </span>
+                      <ChevronDown
+                        className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${
+                          mobileServicesOpen ? 'rotate-180 text-[#EE3775]' : ''
+                        }`}
+                      />
+                    </button>
+
+                    {mobileServicesOpen && (
+                      <div className="pl-4 pr-2 py-2 flex flex-col space-y-2 bg-[#FFFDF9] rounded-xl my-1 border border-pink-50">
+                        {serviceSubItems.map((item, idx) => (
+                          <a
+                            key={idx}
+                            href="#services"
+                            onClick={() => {
+                              setMobileMenuOpen(false);
+                              setMobileServicesOpen(false);
+                            }}
+                            className="text-[12px] font-bold tracking-wide text-[#1B253D] hover:text-[#EE3775] py-1.5 px-2 rounded-lg hover:bg-white"
+                          >
+                            {item}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
 
               return (
                 <a
@@ -140,7 +217,6 @@ export default function Navbar({ currentPage = 'home' }) {
                     {isActive && <span className="w-1.5 h-1.5 rounded-full bg-[#EE3775]" />}
                     <span>{link.name}</span>
                   </span>
-                  {link.hasDropdown && <ChevronDown className="w-4 h-4 text-gray-400" />}
                 </a>
               );
             })}

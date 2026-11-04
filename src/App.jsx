@@ -13,6 +13,8 @@ import ContactPage from './pages/ContactPage';
 import VideosPage from './pages/VideosPage';
 import GalleryPage from './pages/GalleryPage';
 import BlogPage from './pages/BlogPage';
+import ServicesPage from './pages/ServicesPage';
+import BalloonModelingPage from './pages/BalloonModelingPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -22,6 +24,17 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/balloon-modelings' ||
+        hash === '#/services/balloon-modelings' ||
+        hash === '#balloon-modeling' ||
+        hash === '#/balloon-modeling'
+      ) {
+        setCurrentPage('balloon-modeling');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (hash === '#services' || hash === '#/services') {
+        setCurrentPage('services');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (hash === '#contact' || hash === '#/contact') {
         setCurrentPage('contact');
@@ -52,6 +65,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'balloon-modeling' ? (
+          <>
+            <BalloonModelingPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'services' ? (
+          <>
+            <ServicesPage />
             <CtaSection />
           </>
         ) : currentPage === 'contact' ? (
