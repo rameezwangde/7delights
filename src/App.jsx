@@ -37,6 +37,7 @@ import BlockPrintingPage from './pages/BlockPrintingPage';
 import SandArtBottlePage from './pages/SandArtBottlePage';
 import AmusementsPage from './pages/AmusementsPage';
 import BouncyCastlePage from './pages/BouncyCastlePage';
+import HorseRidingPage from './pages/HorseRidingPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -46,6 +47,14 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements/horse-riding' ||
+        hash === '#/amusements/horse-riding' ||
+        hash === '#horse-riding' ||
+        hash === '#/horse-riding'
+      ) {
+        setCurrentPage('horse-riding');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#amusements/bouncing-castle' ||
@@ -289,6 +298,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'horse-riding' ? (
+          <>
+            <HorseRidingPage />
             <CtaSection />
           </>
         ) : currentPage === 'bouncing-castle' ? (
