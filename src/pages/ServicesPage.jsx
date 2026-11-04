@@ -203,6 +203,7 @@ export default function ServicesPage() {
     {
       id: 19,
       title: 'Lac Bangle Making',
+      slug: '#services/lac-bangle-making',
       category: 'traditional',
       image: '/assets/artist-19.webp',
       tag: 'Live Artisan Craft',

@@ -32,6 +32,7 @@ import BottlePaintingPage from './pages/BottlePaintingPage';
 import PotPaintingPage from './pages/PotPaintingPage';
 import WaxHandMakingPage from './pages/WaxHandMakingPage';
 import TurbanPagriTyingPage from './pages/TurbanPagriTyingPage';
+import LacBangleMakingPage from './pages/LacBangleMakingPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -41,6 +42,18 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/lac-bangle-making' ||
+        hash === '#/services/lac-bangle-making' ||
+        hash === '#services/lac-bangles-making' ||
+        hash === '#/services/lac-bangles-making' ||
+        hash === '#lac-bangle-making' ||
+        hash === '#/lac-bangle-making' ||
+        hash === '#lac-bangles' ||
+        hash === '#/lac-bangles'
+      ) {
+        setCurrentPage('lac-bangles');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/turban-pagri-tying' ||
@@ -230,6 +243,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'lac-bangles' ? (
+          <>
+            <LacBangleMakingPage />
             <CtaSection />
           </>
         ) : currentPage === 'turban-tying' ? (
