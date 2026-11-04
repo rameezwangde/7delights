@@ -23,6 +23,10 @@ import OrigamiCraftsPage from './pages/OrigamiCraftsPage';
 import HairBraidingPage from './pages/HairBraidingPage';
 import CaricatureArtistPage from './pages/CaricatureArtistPage';
 import MugCaricaturePage from './pages/MugCaricaturePage';
+import ClayModelingPage from './pages/ClayModelingPage';
+import MehandiArtistryPage from './pages/MehandiArtistryPage';
+import PebbleStoneArtPage from './pages/PebbleStoneArtPage';
+import TaroFaceReadingPage from './pages/TaroFaceReadingPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -32,6 +36,44 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/taro-face-reading-palmistry' ||
+        hash === '#/services/taro-face-reading-palmistry' ||
+        hash === '#taro-reading' ||
+        hash === '#/taro-reading' ||
+        hash === '#tarot' ||
+        hash === '#/tarot'
+      ) {
+        setCurrentPage('taro-reading');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/pebble-stone-arts' ||
+        hash === '#/services/pebble-stone-arts' ||
+        hash === '#pebble-stone-arts' ||
+        hash === '#/pebble-stone-arts' ||
+        hash === '#pebble-art' ||
+        hash === '#/pebble-art'
+      ) {
+        setCurrentPage('pebble-art');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/mehendi' ||
+        hash === '#/services/mehendi' ||
+        hash === '#mehendi' ||
+        hash === '#/mehendi' ||
+        hash === '#mehandi' ||
+        hash === '#/mehandi'
+      ) {
+        setCurrentPage('mehendi');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/clay-modeling' ||
+        hash === '#/services/clay-modeling' ||
+        hash === '#clay-modeling' ||
+        hash === '#/clay-modeling'
+      ) {
+        setCurrentPage('clay-modeling');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/mug-caricature' ||
@@ -137,6 +179,26 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'taro-reading' ? (
+          <>
+            <TaroFaceReadingPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'pebble-art' ? (
+          <>
+            <PebbleStoneArtPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'mehendi' ? (
+          <>
+            <MehandiArtistryPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'clay-modeling' ? (
+          <>
+            <ClayModelingPage />
             <CtaSection />
           </>
         ) : currentPage === 'mug-caricature' ? (

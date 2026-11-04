@@ -113,6 +113,7 @@ export default function ServicesPage() {
     {
       id: 10,
       title: 'Clay Modeling',
+      slug: '#services/clay-modeling',
       category: 'crafts',
       image: '/assets/artist-10.webp',
       tag: 'Sculpting Fun',
@@ -122,6 +123,7 @@ export default function ServicesPage() {
     {
       id: 11,
       title: 'Mehandi Artistry',
+      slug: '#services/mehendi',
       category: 'traditional',
       image: '/assets/artist-11.webp',
       tag: 'Bridal & Party Henna',
@@ -131,6 +133,7 @@ export default function ServicesPage() {
     {
       id: 12,
       title: 'Pebble Stone Art',
+      slug: '#services/pebble-stone-arts',
       category: 'crafts',
       image: '/assets/artist-12.webp',
       tag: 'Stone Painting',
@@ -140,6 +143,7 @@ export default function ServicesPage() {
     {
       id: 13,
       title: 'Taro / Face Reading / Palmistry',
+      slug: '#services/taro-face-reading-palmistry',
       category: 'artists',
       image: '/assets/artist-13.webp',
       tag: 'Fortune Teller Stall',
