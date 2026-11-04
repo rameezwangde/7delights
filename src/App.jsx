@@ -21,6 +21,8 @@ import PotteryArtistsPage from './pages/PotteryArtistsPage';
 import KidsJewelryMakingPage from './pages/KidsJewelryMakingPage';
 import OrigamiCraftsPage from './pages/OrigamiCraftsPage';
 import HairBraidingPage from './pages/HairBraidingPage';
+import CaricatureArtistPage from './pages/CaricatureArtistPage';
+import MugCaricaturePage from './pages/MugCaricaturePage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -30,6 +32,22 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/mug-caricature' ||
+        hash === '#/services/mug-caricature' ||
+        hash === '#mug-caricature' ||
+        hash === '#/mug-caricature'
+      ) {
+        setCurrentPage('mug-caricature');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#services/caricature-artist' ||
+        hash === '#/services/caricature-artist' ||
+        hash === '#caricature-artist' ||
+        hash === '#/caricature-artist'
+      ) {
+        setCurrentPage('caricature-artist');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#services/hair-braidings' ||
@@ -119,6 +137,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'mug-caricature' ? (
+          <>
+            <MugCaricaturePage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'caricature-artist' ? (
+          <>
+            <CaricatureArtistPage />
             <CtaSection />
           </>
         ) : currentPage === 'hair-braiding' ? (

@@ -93,6 +93,7 @@ export default function ServicesPage() {
     {
       id: 8,
       title: 'Caricature Pencil Face Art',
+      slug: '#services/caricature-artist',
       category: 'artists',
       image: '/assets/artist-8.webp',
       tag: 'Live Sketch Artist',
@@ -102,6 +103,7 @@ export default function ServicesPage() {
     {
       id: 9,
       title: 'Mug Caricature (30 Mugs)',
+      slug: '#services/mug-caricature',
       category: 'artists',
       image: '/assets/artist-9.webp',
       tag: 'Custom Gift Souvenir',
