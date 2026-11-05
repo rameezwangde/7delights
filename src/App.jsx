@@ -47,6 +47,7 @@ import CarnivalGamesPage from './pages/CarnivalGamesPage';
 import VRGamesPage from './pages/VRGamesPage';
 import BalloonShootingPage from './pages/BalloonShootingPage';
 import BalloonDecorationsPage from './pages/BalloonDecorationsPage';
+import ThemeDecorationsPage from './pages/ThemeDecorationsPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -56,6 +57,18 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#balloon-decorations/theme-decorations' ||
+        hash === '#/balloon-decorations/theme-decorations' ||
+        hash === '#birthday-balloon-decorations/theme-decorations' ||
+        hash === '#/birthday-balloon-decorations/theme-decorations' ||
+        hash === '#theme-decorations' ||
+        hash === '#/theme-decorations' ||
+        hash === '#theme-decoration' ||
+        hash === '#/theme-decoration'
+      ) {
+        setCurrentPage('theme-decorations');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#birthday-balloon-decorations' ||
@@ -401,6 +414,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'theme-decorations' ? (
+          <>
+            <ThemeDecorationsPage />
             <CtaSection />
           </>
         ) : currentPage === 'balloon-decorations' ? (
