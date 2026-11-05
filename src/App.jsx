@@ -53,6 +53,8 @@ import CorporateEventsPage from './pages/CorporateEventsPage';
 import DJMusicPage from './pages/DJMusicPage';
 import StageFlexBackgroundPage from './pages/StageFlexBackgroundPage';
 import LEDWallPage from './pages/LEDWallPage';
+import MCTeamBuildingPage from './pages/MCTeamBuildingPage';
+import PrintingServicesPage from './pages/PrintingServicesPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -62,6 +64,32 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#corporate-events/printing-services' ||
+        hash === '#/corporate-events/printing-services' ||
+        hash === '#corporate/printing-services' ||
+        hash === '#/corporate/printing-services' ||
+        hash === '#printing-services' ||
+        hash === '#/printing-services' ||
+        hash === '#printing' ||
+        hash === '#/printing'
+      ) {
+        setCurrentPage('printing-services');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#corporate-events/mc-team-building-activities' ||
+        hash === '#/corporate-events/mc-team-building-activities' ||
+        hash === '#corporate/mc-team-building-activities' ||
+        hash === '#/corporate/mc-team-building-activities' ||
+        hash === '#mc-team-building-activities' ||
+        hash === '#/mc-team-building-activities' ||
+        hash === '#mc-games' ||
+        hash === '#/mc-games' ||
+        hash === '#team-building' ||
+        hash === '#/team-building'
+      ) {
+        setCurrentPage('mc-team-building');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#corporate-events/led-wall' ||
@@ -477,6 +505,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'printing-services' ? (
+          <>
+            <PrintingServicesPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'mc-team-building' ? (
+          <>
+            <MCTeamBuildingPage />
             <CtaSection />
           </>
         ) : currentPage === 'led-wall' ? (
