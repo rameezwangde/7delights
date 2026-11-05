@@ -50,6 +50,7 @@ import BalloonDecorationsPage from './pages/BalloonDecorationsPage';
 import ThemeDecorationsPage from './pages/ThemeDecorationsPage';
 import HeliumGasBalloonsPage from './pages/HeliumGasBalloonsPage';
 import CorporateEventsPage from './pages/CorporateEventsPage';
+import DJMusicPage from './pages/DJMusicPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -59,6 +60,18 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#corporate-events/dj-music' ||
+        hash === '#/corporate-events/dj-music' ||
+        hash === '#corporate/dj-music' ||
+        hash === '#/corporate/dj-music' ||
+        hash === '#dj-music' ||
+        hash === '#/dj-music' ||
+        hash === '#dj' ||
+        hash === '#/dj'
+      ) {
+        setCurrentPage('dj-music');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#corporate-events' ||
@@ -438,6 +451,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'dj-music' ? (
+          <>
+            <DJMusicPage />
             <CtaSection />
           </>
         ) : currentPage === 'corporate-events' ? (
