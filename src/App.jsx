@@ -58,6 +58,8 @@ import PrintingServicesPage from './pages/PrintingServicesPage';
 import DanceTroupePage from './pages/DanceTroupePage';
 import DanceTroupeDetailPage from './pages/DanceTroupeDetailPage';
 import DandiyaDancePage from './pages/DandiyaDancePage';
+import DolluKunithaPage from './pages/DolluKunithaPage';
+import PunjabiDholPage from './pages/PunjabiDholPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -67,6 +69,26 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#dance-troup/punjabi-dhol' ||
+        hash === '#/dance-troup/punjabi-dhol' ||
+        hash === '#punjabi-dhol' ||
+        hash === '#/punjabi-dhol' ||
+        hash === '#dhol' ||
+        hash === '#/dhol'
+      ) {
+        setCurrentPage('punjabi-dhol');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#dance-troup/dollu-kunitha' ||
+        hash === '#/dance-troup/dollu-kunitha' ||
+        hash === '#dollu-kunitha' ||
+        hash === '#/dollu-kunitha' ||
+        hash === '#dollu' ||
+        hash === '#/dollu'
+      ) {
+        setCurrentPage('dollu-kunitha');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#dance-troup/dandiya-dance' ||
@@ -540,6 +562,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'punjabi-dhol' ? (
+          <>
+            <PunjabiDholPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'dollu-kunitha' ? (
+          <>
+            <DolluKunithaPage />
             <CtaSection />
           </>
         ) : currentPage === 'dandiya-dance' ? (
