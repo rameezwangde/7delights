@@ -133,7 +133,7 @@ export default function AmusementsPage() {
       title: 'Balloon Shooting',
       slug: '#amusements/balloon-shooting',
       category: 'carnival',
-      image: '/assets/game-balloon-shooting.webp',
+      image: '/assets/balloon-shooting-main.webp',
       tag: 'Air Gun Carnival',
       badgeBg: 'bg-[#FFF3DF] text-[#D97706] border-[#FFE4B8]',
       desc: 'Balloon shooting with our cork and airguns lets guests test their marksman aim and relive retro carnival fairground memories!',

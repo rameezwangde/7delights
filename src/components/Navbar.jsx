@@ -96,7 +96,12 @@ export default function Navbar({ currentPage = 'home' }) {
                   <div className="absolute top-full left-0 pt-3 hidden group-hover:block transition-all duration-200 z-50">
                     <div className="w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 py-3 px-2 flex flex-col gap-0.5 animate-in fade-in slide-in-from-top-1 duration-150">
                       {serviceSubItems.map((item, idx) => {
-                        const href = item === 'AMUSEMENTS & GAMES' ? '#amusements-games' : '#services';
+                        const href = 
+                          item === 'AMUSEMENTS & GAMES' 
+                            ? '#amusements-games' 
+                            : item === 'BALLOON DECORATIONS'
+                            ? '#birthday-balloon-decorations'
+                            : '#services';
                         return (
                           <a
                             key={idx}

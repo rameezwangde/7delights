@@ -45,6 +45,8 @@ import RingTossGamePage from './pages/RingTossGamePage';
 import CasinoGamesPage from './pages/CasinoGamesPage';
 import CarnivalGamesPage from './pages/CarnivalGamesPage';
 import VRGamesPage from './pages/VRGamesPage';
+import BalloonShootingPage from './pages/BalloonShootingPage';
+import BalloonDecorationsPage from './pages/BalloonDecorationsPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -54,6 +56,26 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#birthday-balloon-decorations' ||
+        hash === '#/birthday-balloon-decorations' ||
+        hash === '#balloon-decorations' ||
+        hash === '#/balloon-decorations' ||
+        hash === '#balloon-decoration' ||
+        hash === '#/balloon-decoration'
+      ) {
+        setCurrentPage('balloon-decorations');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements/balloon-shooting' ||
+        hash === '#/amusements/balloon-shooting' ||
+        hash === '#balloon-shooting' ||
+        hash === '#/balloon-shooting' ||
+        hash === '#balloon-shoot' ||
+        hash === '#/balloon-shoot'
+      ) {
+        setCurrentPage('balloon-shooting');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#amusements/vr-games' ||
@@ -379,6 +401,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'balloon-decorations' ? (
+          <>
+            <BalloonDecorationsPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'balloon-shooting' ? (
+          <>
+            <BalloonShootingPage />
             <CtaSection />
           </>
         ) : currentPage === 'vr-games' ? (
