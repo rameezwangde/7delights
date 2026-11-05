@@ -103,6 +103,8 @@ export default function Navbar({ currentPage = 'home' }) {
                             ? '#birthday-balloon-decorations'
                             : item === 'CORPORATE EVENTS'
                             ? '#corporate-events'
+                            : item === 'DANCE TROUPE & MUSIC'
+                            ? '#dance-troup'
                             : '#services';
                         return (
                           <a
@@ -195,19 +197,33 @@ export default function Navbar({ currentPage = 'home' }) {
 
                     {mobileServicesOpen && (
                       <div className="pl-4 pr-2 py-2 flex flex-col space-y-2 bg-[#FFFDF9] rounded-xl my-1 border border-pink-50">
-                        {serviceSubItems.map((item, idx) => (
-                          <a
-                            key={idx}
-                            href="#services"
-                            onClick={() => {
-                              setMobileMenuOpen(false);
-                              setMobileServicesOpen(false);
-                            }}
-                            className="text-[12px] font-bold tracking-wide text-[#1B253D] hover:text-[#EE3775] py-1.5 px-2 rounded-lg hover:bg-white"
-                          >
-                            {item}
-                          </a>
-                        ))}
+                        {serviceSubItems.map((item, idx) => {
+                          const href = 
+                            item === 'ACTIVITIES & EVENTS' 
+                              ? '#services' 
+                              : item === 'AMUSEMENTS & GAMES' 
+                              ? '#amusements-games' 
+                              : item === 'BALLOON DECORATIONS'
+                              ? '#birthday-balloon-decorations'
+                              : item === 'CORPORATE EVENTS'
+                              ? '#corporate-events'
+                              : item === 'DANCE TROUPE & MUSIC'
+                              ? '#dance-troup'
+                              : '#services';
+                          return (
+                            <a
+                              key={idx}
+                              href={href}
+                              onClick={() => {
+                                setMobileMenuOpen(false);
+                                setMobileServicesOpen(false);
+                              }}
+                              className="text-[12px] font-bold tracking-wide text-[#1B253D] hover:text-[#EE3775] py-1.5 px-2 rounded-lg hover:bg-white"
+                            >
+                              {item}
+                            </a>
+                          );
+                        })}
                       </div>
                     )}
                   </div>

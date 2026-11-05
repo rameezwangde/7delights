@@ -55,6 +55,7 @@ import StageFlexBackgroundPage from './pages/StageFlexBackgroundPage';
 import LEDWallPage from './pages/LEDWallPage';
 import MCTeamBuildingPage from './pages/MCTeamBuildingPage';
 import PrintingServicesPage from './pages/PrintingServicesPage';
+import DanceTroupePage from './pages/DanceTroupePage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -64,6 +65,16 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#dance-troup' ||
+        hash === '#/dance-troup' ||
+        hash === '#dance-troupe' ||
+        hash === '#/dance-troupe' ||
+        hash === '#dance' ||
+        hash === '#/dance'
+      ) {
+        setCurrentPage('dance-troupe');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#corporate-events/printing-services' ||
@@ -505,6 +516,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'dance-troupe' ? (
+          <>
+            <DanceTroupePage />
             <CtaSection />
           </>
         ) : currentPage === 'printing-services' ? (
