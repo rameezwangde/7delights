@@ -60,6 +60,8 @@ import DanceTroupeDetailPage from './pages/DanceTroupeDetailPage';
 import DandiyaDancePage from './pages/DandiyaDancePage';
 import DolluKunithaPage from './pages/DolluKunithaPage';
 import PunjabiDholPage from './pages/PunjabiDholPage';
+import ChendaMelamPage from './pages/ChendaMelamPage';
+import FlashMobPage from './pages/FlashMobPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -69,6 +71,30 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#dance-troup/flash-mob-dance' ||
+        hash === '#/dance-troup/flash-mob-dance' ||
+        hash === '#flash-mob-dance' ||
+        hash === '#/flash-mob-dance' ||
+        hash === '#flash-mob' ||
+        hash === '#/flash-mob' ||
+        hash === '#flashmob' ||
+        hash === '#/flashmob'
+      ) {
+        setCurrentPage('flash-mob');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#dance-troup/kerala-chenda-melam' ||
+        hash === '#/dance-troup/kerala-chenda-melam' ||
+        hash === '#chenda-melam' ||
+        hash === '#/chenda-melam' ||
+        hash === '#chenda' ||
+        hash === '#/chenda' ||
+        hash === '#kerala-chenda-melam' ||
+        hash === '#/kerala-chenda-melam'
+      ) {
+        setCurrentPage('chenda-melam');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#dance-troup/punjabi-dhol' ||
@@ -562,6 +588,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'flash-mob' ? (
+          <>
+            <FlashMobPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'chenda-melam' ? (
+          <>
+            <ChendaMelamPage />
             <CtaSection />
           </>
         ) : currentPage === 'punjabi-dhol' ? (
