@@ -51,6 +51,8 @@ import ThemeDecorationsPage from './pages/ThemeDecorationsPage';
 import HeliumGasBalloonsPage from './pages/HeliumGasBalloonsPage';
 import CorporateEventsPage from './pages/CorporateEventsPage';
 import DJMusicPage from './pages/DJMusicPage';
+import StageFlexBackgroundPage from './pages/StageFlexBackgroundPage';
+import LEDWallPage from './pages/LEDWallPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -60,6 +62,30 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#corporate-events/led-wall' ||
+        hash === '#/corporate-events/led-wall' ||
+        hash === '#corporate/led-wall' ||
+        hash === '#/corporate/led-wall' ||
+        hash === '#led-wall' ||
+        hash === '#/led-wall' ||
+        hash === '#led' ||
+        hash === '#/led'
+      ) {
+        setCurrentPage('led-wall');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#corporate-events/stage-flex-background' ||
+        hash === '#/corporate-events/stage-flex-background' ||
+        hash === '#corporate/stage-flex-background' ||
+        hash === '#/corporate/stage-flex-background' ||
+        hash === '#stage-flex-background' ||
+        hash === '#/stage-flex-background' ||
+        hash === '#stage-background' ||
+        hash === '#/stage-background'
+      ) {
+        setCurrentPage('stage-flex-background');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#corporate-events/dj-music' ||
@@ -451,6 +477,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'led-wall' ? (
+          <>
+            <LEDWallPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'stage-flex-background' ? (
+          <>
+            <StageFlexBackgroundPage />
             <CtaSection />
           </>
         ) : currentPage === 'dj-music' ? (

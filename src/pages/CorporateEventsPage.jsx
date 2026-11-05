@@ -335,6 +335,13 @@ export default function CorporateEventsPage() {
                 <div className="p-5 pt-0 border-t border-[#F5E6EC]/60 space-y-2.5 mt-2">
                   <a
                     href={card.slug}
+                    onClick={(e) => {
+                      if (card.slug.startsWith('#corporate-overview')) {
+                        e.preventDefault();
+                        const el = document.getElementById('corporate-overview');
+                        if (el) el.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
                     className="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-[#FFE8ED] hover:bg-[#EE3775] text-[#EE3775] hover:text-white font-semibold text-xs sm:text-sm transition-all"
                   >
                     <span>View {card.title}</span>
