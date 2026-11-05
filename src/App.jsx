@@ -41,6 +41,10 @@ import HorseRidingPage from './pages/HorseRidingPage';
 import MerryGoRoundPage from './pages/MerryGoRoundPage';
 import ZorbingBallsPage from './pages/ZorbingBallsPage';
 import TrampolinePage from './pages/TrampolinePage';
+import RingTossGamePage from './pages/RingTossGamePage';
+import CasinoGamesPage from './pages/CasinoGamesPage';
+import CarnivalGamesPage from './pages/CarnivalGamesPage';
+import VRGamesPage from './pages/VRGamesPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -50,6 +54,50 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements/vr-games' ||
+        hash === '#/amusements/vr-games' ||
+        hash === '#vr-games' ||
+        hash === '#/vr-games' ||
+        hash === '#vr-gaming' ||
+        hash === '#/vr-gaming' ||
+        hash === '#vr' ||
+        hash === '#/vr'
+      ) {
+        setCurrentPage('vr-games');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements/carnival-games' ||
+        hash === '#/amusements/carnival-games' ||
+        hash === '#carnival-games' ||
+        hash === '#/carnival-games' ||
+        hash === '#carnival' ||
+        hash === '#/carnival'
+      ) {
+        setCurrentPage('carnival-games');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements/casino-games' ||
+        hash === '#/amusements/casino-games' ||
+        hash === '#casino-games' ||
+        hash === '#/casino-games' ||
+        hash === '#casino' ||
+        hash === '#/casino'
+      ) {
+        setCurrentPage('casino-games');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#amusements/ring-toss-game' ||
+        hash === '#/amusements/ring-toss-game' ||
+        hash === '#ring-toss-game' ||
+        hash === '#/ring-toss-game' ||
+        hash === '#ring-toss' ||
+        hash === '#/ring-toss' ||
+        hash === '#ring-game' ||
+        hash === '#/ring-game'
+      ) {
+        setCurrentPage('ring-toss');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#amusements/trampoline' ||
@@ -331,6 +379,26 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'vr-games' ? (
+          <>
+            <VRGamesPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'carnival-games' ? (
+          <>
+            <CarnivalGamesPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'casino-games' ? (
+          <>
+            <CasinoGamesPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'ring-toss' ? (
+          <>
+            <RingTossGamePage />
             <CtaSection />
           </>
         ) : currentPage === 'trampoline' ? (
