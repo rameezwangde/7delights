@@ -48,6 +48,8 @@ import VRGamesPage from './pages/VRGamesPage';
 import BalloonShootingPage from './pages/BalloonShootingPage';
 import BalloonDecorationsPage from './pages/BalloonDecorationsPage';
 import ThemeDecorationsPage from './pages/ThemeDecorationsPage';
+import HeliumGasBalloonsPage from './pages/HeliumGasBalloonsPage';
+import CorporateEventsPage from './pages/CorporateEventsPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -57,6 +59,28 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#corporate-events' ||
+        hash === '#/corporate-events' ||
+        hash === '#corporate' ||
+        hash === '#/corporate' ||
+        hash === '#corporate-event' ||
+        hash === '#/corporate-event'
+      ) {
+        setCurrentPage('corporate-events');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#balloon-decorations/helium-gas-balloons' ||
+        hash === '#/balloon-decorations/helium-gas-balloons' ||
+        hash === '#birthday-balloon-decorations/helium-gas-balloons' ||
+        hash === '#/birthday-balloon-decorations/helium-gas-balloons' ||
+        hash === '#helium-gas-balloons' ||
+        hash === '#/helium-gas-balloons' ||
+        hash === '#helium-balloons' ||
+        hash === '#/helium-balloons'
+      ) {
+        setCurrentPage('helium-balloons');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#balloon-decorations/theme-decorations' ||
@@ -414,6 +438,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'corporate-events' ? (
+          <>
+            <CorporateEventsPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'helium-balloons' ? (
+          <>
+            <HeliumGasBalloonsPage />
             <CtaSection />
           </>
         ) : currentPage === 'theme-decorations' ? (

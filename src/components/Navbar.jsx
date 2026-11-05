@@ -101,6 +101,8 @@ export default function Navbar({ currentPage = 'home' }) {
                             ? '#amusements-games' 
                             : item === 'BALLOON DECORATIONS'
                             ? '#birthday-balloon-decorations'
+                            : item === 'CORPORATE EVENTS'
+                            ? '#corporate-events'
                             : '#services';
                         return (
                           <a

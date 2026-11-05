@@ -43,7 +43,7 @@ export default function BalloonDecorationsPage() {
     {
       id: 1,
       title: 'Balloon Decoration',
-      slug: '#balloon-decorations/general',
+      slug: '#about-balloon-decor',
       category: 'birthday',
       image: '/assets/balloon-decoration-card.webp',
       tag: 'Classic Decor',
@@ -63,7 +63,7 @@ export default function BalloonDecorationsPage() {
     {
       id: 3,
       title: 'Birthday Decorations',
-      slug: '#balloon-decorations/birthday-decorations',
+      slug: '#about-balloon-decor',
       category: 'birthday',
       image: '/assets/birthday-decorations-card.webp',
       tag: 'Birthday Special',
@@ -299,7 +299,7 @@ export default function BalloonDecorationsPage() {
       </section>
 
       {/* 4. ABOUT BALLOON DECORATION & EXPERTISE */}
-      <section className="py-14 md:py-18 bg-white border-y border-[#F5E6EC]">
+      <section id="about-balloon-decor" className="py-14 md:py-18 bg-white border-y border-[#F5E6EC] scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Visual showcase */}
