@@ -18,8 +18,11 @@ import {
   Sliders,
   Radio,
   Flame,
-  PartyPopper
+  PartyPopper,
+  Calendar,
+  CheckCircle2
 } from 'lucide-react';
+import { GoldUnderline } from '../components/Doodles';
 
 export default function DJMusicPage() {
   const [openFaq, setOpenFaq] = useState(null);
@@ -34,28 +37,28 @@ export default function DJMusicPage() {
       desc: 'Sophisticated deep house, commercial lounge, and high-energy party anthems mixed by top corporate DJs with wireless mics for speeches.',
       tag: 'Corporate Bashes',
       color: 'bg-[#FFE8ED] text-[#EE3775] border-[#FFD0DB]',
-      image: '/assets/dj-console.webp'
+      image: '/assets/DJ-console.webp'
     },
     {
       title: 'Intelligent Beam & Truss Lighting',
       desc: 'Computer-controlled sharp moving heads, strobe blasters, LED par cans, and haze machines synchronized seamlessly with musical drops.',
       tag: 'Dynamic Lighting',
       color: 'bg-[#FFF3DF] text-[#D97706] border-[#FFE4B8]',
-      image: '/assets/dj-setup.webp'
+      image: '/assets/DJ-setup.webp'
     },
     {
       title: 'Pioneer Pro DJ Console & Mixers',
-      desc: 'Industry-standard Pioneer CDJ-3000 / DJM-900NXS2 consoles with dual active subwoofers and line-array speakers delivering distortion-free bass.',
+      desc: 'Industry-standard Pioneer CDJ & DJM mixers with dual active subwoofers and line-array speakers delivering distortion-free bass.',
       tag: 'Top-Tier Gear',
       color: 'bg-[#F2EDFF] text-[#7B61FF] border-[#E0D5FF]',
-      image: '/assets/dj-mixer.webp'
+      image: '/assets/DJ-mixer.webp'
     },
     {
       title: 'Custom Curated Playlists',
       desc: 'From Bollywood chartbusters and Punjabi EDM to Retro classics and English Top 40, tailor your song tracklist before event day.',
       tag: 'Tailored Hits',
       color: 'bg-[#E3F8F2] text-[#059669] border-[#C1F1E1]',
-      image: '/assets/dj-sound.webp'
+      image: '/assets/DJ-Sound.webp'
     },
   ];
 
@@ -92,6 +95,21 @@ export default function DJMusicPage() {
     },
   ];
 
+  const specialtiesList = [
+    { title: 'Professionalism', text: 'We are a full-service event company with years of experience in creating successful and memorable events.' },
+    { title: 'Reliability', text: 'We are committed to providing top-notch service and ensuring your event runs smoothly without technical hiccups.' },
+    { title: 'Experience', text: 'Our DJs are highly experienced and skilled at creating the perfect party atmosphere across crowds of all age groups.' },
+    { title: 'Customization', text: 'We tailor our DJ services, audio power, and visual lighting to meet your specific venue dimensions and budget.' },
+    { title: 'Unforgettable Experience', text: 'We will create a high-octane party atmosphere that your guests and colleagues will be talking about long after!' }
+  ];
+
+  const occasionsList = [
+    { title: 'Weddings & Sangeet', text: 'Make your wedding reception or sangeet an unforgettable celebration with the perfect music and lighting sync.' },
+    { title: 'Corporate Events & Summits', text: 'Create a fun, energetic, and engaging atmosphere for your annual days, tech summits, and gala awards.' },
+    { title: 'Private Parties & Birthdays', text: 'Celebrate milestone birthdays, anniversaries, and cocktail nights in style with a personalized DJ booth.' },
+    { title: 'Festivals & College Fests', text: 'Massive open-air line array systems, laser beams, and bass drops for large festival gatherings and youth concerts.' }
+  ];
+
   const faqs = [
     {
       q: 'How far in advance should I book 7Delights dj music for my event?',
@@ -99,7 +117,7 @@ export default function DJMusicPage() {
     },
     {
       q: 'How long does it take for your team to set up?',
-      a: 'Setup times vary by service. Standard DJ music setup takes 1 to 2 hours. Complex thematic stage setups with heavy lighting trusses or LED screens can take anywhere from 3 to 6 hours. We always coordinate directly with the venue to ensure sound checks are finished before the first guest arrives.'
+      a: 'Setup times vary by service. Dj music setup may take 1 to 2 hours. Complex thematic stage setups, intricate lighting riggings, or heavy SFX installations can take anywhere from 4 to 12 hours. We always coordinate directly with the venue to ensure everything is flawlessly set up well before your first guest arrives.'
     },
     {
       q: 'What is your payment policy?',
@@ -107,7 +125,7 @@ export default function DJMusicPage() {
     },
     {
       q: 'Can we share a customized playlist with the DJ?',
-      a: 'Yes, absolutely! You can share your favorite songs, specific entry tracks for executives or VIPs, and "do-not-play" lists well in advance. Our DJs incorporate your preferences while dynamically reading the crowd.'
+      a: 'Yes, absolutely! You can share your favorite songs, specific entry tracks for executives or bride & groom, and "do-not-play" lists well in advance. Our DJs incorporate your preferences while dynamically reading the crowd.'
     },
     {
       q: 'What are the basic organizer requirements on-site?',
@@ -117,29 +135,49 @@ export default function DJMusicPage() {
 
   const galleryImages = [
     {
-      src: '/assets/dj-main.webp',
-      title: 'Live DJ Performance',
-      desc: 'High-energy DJ mixing live electronic and Bollywood chartbusters'
+      src: '/assets/DJ-banner.webp',
+      title: 'DJ Stage & Lighting Truss',
+      desc: 'Complete audio-visual console and lighting setup'
     },
     {
-      src: '/assets/dj-console.webp',
+      src: '/assets/DJ.webp',
+      title: 'Live DJ Performance',
+      desc: 'Resident DJ reading the room and hyping the crowd'
+    },
+    {
+      src: '/assets/DJ-console.webp',
       title: 'Professional DJ Console',
       desc: 'Pioneer mixer decks and dual monitor booth'
     },
     {
-      src: '/assets/dj-setup.webp',
+      src: '/assets/DJ-setup.webp',
       title: 'Lighting & Sound Truss',
       desc: 'Intelligent beam lights, wash pars, and concert speakers'
     },
     {
-      src: '/assets/dj-sound.webp',
-      title: 'Packed Dance Floor',
+      src: '/assets/DJ-Sound.webp',
+      title: 'Concert Line Array & Bass',
+      desc: 'Crystal-clear acoustic coverage across all corners'
+    },
+    {
+      src: '/assets/dj-mix.webp',
+      title: 'DJ Mixing In Action',
+      desc: 'Seamless song transitions and pulse-pounding EDM drops'
+    },
+    {
+      src: '/assets/dj-music.webp',
+      title: 'Packed Dance Arena',
       desc: 'Corporate employees and guests celebrating to the rhythm'
+    },
+    {
+      src: '/assets/DJ-mixer.webp',
+      title: 'Multi-Channel Pro Mixer',
+      desc: 'High-fidelity audio processing and mic feedback suppression'
     }
   ];
 
   return (
-    <div className="bg-[#FFFDF9] min-h-screen">
+    <div className="bg-[#FFFDF9] min-h-screen font-sans text-[#111A2E] selection:bg-[#EE3775] selection:text-white">
       {/* 1. HERO BANNER */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#FFF5F7] via-[#FFFDF9] to-[#FFFDF9] pt-12 pb-16 md:pt-16 md:pb-20 border-b border-[#F5E6EC]">
         {/* Decorative background shapes */}
@@ -153,55 +191,61 @@ export default function DJMusicPage() {
             <span>/</span>
             <a href="#corporate-events" className="hover:text-[#EE3775] transition-colors">Corporate Events</a>
             <span>/</span>
-            <span className="text-[#111A2E] font-semibold">DJ Sound &amp; Lighting</span>
+            <a href="#dj-sound-stage-lighting" className="hover:text-[#EE3775] transition-colors">DJ Sound Stage</a>
+            <span>/</span>
+            <span className="text-[#111A2E] font-semibold">DJ Music</span>
           </nav>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFE8ED] border border-[#FFD0DB] text-[#EE3775] text-xs md:text-sm font-semibold tracking-wide">
-                <Disc3 className="w-4 h-4" />
-                <span>Electrifying Live DJ &amp; Intelligent Lighting Rigs</span>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFE8ED] border border-[#FFD0DB] text-[#EE3775] text-xs sm:text-sm font-bold uppercase tracking-wider">
+                <Sparkles className="w-4 h-4" />
+                <span>Premier DJ Music &amp; Audio Production in Bangalore</span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#111A2E] tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111A2E] tracking-tight leading-tight">
                 DJ Music Planners for <span className="text-[#EE3775]">Events in Bangalore</span>
               </h1>
 
+              <div className="mb-2">
+                <GoldUnderline className="w-44 h-auto text-[#EE3775]" />
+              </div>
+
               <p className="text-base sm:text-lg text-[#5A6E85] leading-relaxed">
-                Unleash the beat with professional DJ setups! 7Delights provides top-of-the-line Pioneer sound rigs, intelligent laser moving heads, and talented corporate DJs to ignite your company annual day, cocktail night, or private bash in Bengaluru.
+                Unleash the beat with professional DJ setups! 7Delights provides top-of-the-line Pioneer sound rigs, intelligent laser moving heads, and talented resident DJs to ignite your company annual day, cocktail night, wedding sangeet, or private bash in Bengaluru.
               </p>
 
               {/* Key Highlights Pill Row */}
-              <div className="flex flex-wrap gap-3 pt-2">
-                <div className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-[#F5E6EC] shadow-sm text-xs sm:text-sm text-[#111A2E] font-medium">
+              <div className="flex flex-wrap gap-3 pt-1">
+                <div className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-[#F5E6EC] shadow-xs text-xs sm:text-sm text-[#111A2E] font-medium">
                   <Clock className="w-4 h-4 text-[#EE3775]" />
                   <span>Duration: <strong>2 to 3 Hours Standard</strong></span>
                 </div>
-                <div className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-[#F5E6EC] shadow-sm text-xs sm:text-sm text-[#111A2E] font-medium">
+                <div className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-[#F5E6EC] shadow-xs text-xs sm:text-sm text-[#111A2E] font-medium">
                   <MapPin className="w-4 h-4 text-[#059669]" />
                   <span>Available Across <strong>All Bangalore</strong></span>
                 </div>
-                <div className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-[#F5E6EC] shadow-sm text-xs sm:text-sm text-[#111A2E] font-medium">
+                <div className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-[#F5E6EC] shadow-xs text-xs sm:text-sm text-[#111A2E] font-medium">
                   <Volume2 className="w-4 h-4 text-[#7B61FF]" />
-                  <span>Gear: <strong>Concert Line-Array &amp; Laser</strong></span>
+                  <span>Setup: <strong>Pioneer CDJ &amp; Line Array</strong></span>
                 </div>
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-4 pt-4">
+              <div className="flex flex-wrap items-center gap-4 pt-3">
                 <a
                   href="tel:+919980029977"
-                  className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#EE3775] text-white font-semibold text-sm sm:text-base shadow-lg shadow-[#EE3775]/25 hover:bg-[#D92C65] transition-all transform hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#EE3775] text-white font-bold text-sm sm:text-base shadow-lg shadow-[#EE3775]/25 hover:bg-[#D92C65] transition-all transform hover:-translate-y-0.5"
                 >
-                  <Phone className="w-4 h-4" />
+                  <Phone className="w-4 h-4 fill-white" />
                   <span>Call +91 99800 29977</span>
                 </a>
                 <a
-                  href="https://wa.me/919980029977?text=Hi%207Delights,%20I'm%20interested%20in%20booking%20DJ%20Sound%20and%20Lighting%20for%20my%20event."
+                  href="https://api.whatsapp.com/send/?phone=919980029977&text=Hi%207Delights,%20I%20am%20interested%20in%20DJ%20Music%20service.%20Please%20share%20packages."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#25D366] text-white font-semibold text-sm sm:text-base shadow-lg shadow-[#25D366]/25 hover:bg-[#20BA5A] transition-all transform hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#25D366] text-white font-bold text-sm sm:text-base shadow-lg shadow-[#25D366]/25 hover:bg-[#20BA5A] transition-all transform hover:-translate-y-0.5"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>WhatsApp Inquiry</span>
@@ -213,14 +257,14 @@ export default function DJMusicPage() {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] group">
                 <img
-                  src="/assets/dj-banner.webp"
+                  src="/assets/DJ-banner.webp"
                   alt="DJ Sound and Lighting Setup for Events in Bangalore"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   onError={(e) => {
-                    e.currentTarget.src = '/assets/dj-main.webp';
+                    e.currentTarget.src = '/assets/DJ.webp';
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#111A2E]/70 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#111A2E]/75 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#EE3775] text-xs font-bold uppercase tracking-wider mb-1">
                     Live DJ &amp; Sound
@@ -247,14 +291,14 @@ export default function DJMusicPage() {
       </section>
 
       {/* 2. ABOUT DJ MUSIC SECTION */}
-      <section className="py-14 md:py-18 bg-white">
+      <section className="py-14 md:py-18 bg-white border-b border-[#F5E6EC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Image display */}
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-[#F5E6EC]">
                 <img
-                  src="/assets/dj-main.webp"
+                  src="/assets/DJ.webp"
                   alt="DJ Console and Sound Setup in Bangalore"
                   className="w-full h-auto object-cover"
                 />
@@ -277,33 +321,42 @@ export default function DJMusicPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E] leading-snug">
-                The Ultimate Audio and Visual Experience to Keep Guests Dancing All Night
+                7Delights.in: Unleash the Beat with Professional DJ Setups
               </h2>
 
-              <p className="text-base text-[#5A6E85] leading-relaxed">
-                Get ready to ignite your event with electrifying music and an unforgettable party atmosphere! 7Delights provides top-of-the-line DJ setups and versatile artists to elevate your event. Whether it's an annual corporate gala, product launch cocktail, wedding reception, or milestone birthday, we create the perfect soundtrack.
+              <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
+                Get ready to ignite your event with electrifying music and an unforgettable party atmosphere! <strong>7Delights.in</strong> provides top-of-the-line DJ setups and professional DJs to elevate your event to the next level. Whether it's a wedding, corporate event, private party, or any celebration, we'll create the perfect soundtrack to keep your guests dancing all night long.
               </p>
 
-              <p className="text-base text-[#5A6E85] leading-relaxed">
-                Our DJs are masters at reading crowds, blending transitions smoothly, and adapting tracklists on the fly. From Top 40 international hits and Bollywood blockbusters to deep house and retro classics, we curate playlists that match your guests perfectly.
-              </p>
+              <div className="space-y-3 pt-2">
+                <div className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
+                  <h4 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
+                    <Sliders className="w-4 h-4 text-[#EE3775]" />
+                    <span>Professional DJ Equipment</span>
+                  </h4>
+                  <p className="text-xs sm:text-sm text-[#5A6E85]">
+                    We use only high-quality, industry-standard DJ equipment, including turntables, mixers, speakers, microphones, ensuring crystal-clear sound and a powerful audio experience.
+                  </p>
+                </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
-                <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[#FFFDF9] border border-[#F5E6EC]">
-                  <CheckCircle className="w-5 h-5 text-[#059669] shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm text-[#111A2E] font-medium">Industry-standard Pioneer CDJ &amp; mixer setups</span>
+                <div className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
+                  <h4 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
+                    <Flame className="w-4 h-4 text-[#D97706]" />
+                    <span>Dynamic Stage Lighting</span>
+                  </h4>
+                  <p className="text-xs sm:text-sm text-[#5A6E85]">
+                    Set the mood and create a captivating atmosphere with our state-of-the-art lighting systems. From vibrant colors and moving heads to lasers and special effects, we transform any venue into a dance floor paradise.
+                  </p>
                 </div>
-                <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[#FFFDF9] border border-[#F5E6EC]">
-                  <CheckCircle className="w-5 h-5 text-[#059669] shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm text-[#111A2E] font-medium">Line array speakers &amp; deep-bass subwoofers</span>
-                </div>
-                <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[#FFFDF9] border border-[#F5E6EC]">
-                  <CheckCircle className="w-5 h-5 text-[#059669] shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm text-[#111A2E] font-medium">Synchronized moving beam heads, lasers &amp; haze</span>
-                </div>
-                <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[#FFFDF9] border border-[#F5E6EC]">
-                  <CheckCircle className="w-5 h-5 text-[#059669] shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm text-[#111A2E] font-medium">Wireless cordless microphones for speeches &amp; toasts</span>
+
+                <div className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
+                  <h4 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
+                    <Users className="w-4 h-4 text-[#059669]" />
+                    <span>Talented &amp; Versatile DJs</span>
+                  </h4>
+                  <p className="text-xs sm:text-sm text-[#5A6E85]">
+                    Our talented DJs are experts at reading crowds and tailoring the music to suit all tastes and ages, spinning a wide variety of genres including Bollywood, EDM, Pop, Rock, and Hip-Hop.
+                  </p>
                 </div>
               </div>
             </div>
@@ -312,7 +365,7 @@ export default function DJMusicPage() {
       </section>
 
       {/* 3. DJ PACKAGES SELECTION */}
-      <section className="py-14 md:py-18 bg-[#FFF8FA] border-y border-[#F5E6EC]">
+      <section className="py-14 md:py-18 bg-[#FFF8FA] border-b border-[#F5E6EC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wider font-bold text-[#EE3775] bg-white px-3 py-1 rounded-md border border-[#F5E6EC]">
@@ -321,7 +374,8 @@ export default function DJMusicPage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E] mt-3">
               Professional DJ &amp; Sound Configurations
             </h2>
-            <p className="text-sm sm:text-base text-[#5A6E85] mt-2">
+            <GoldUnderline className="w-32 h-auto text-[#EE3775] mx-auto mt-2" />
+            <p className="text-xs sm:text-sm text-[#5A6E85] mt-2">
               Tailored sound footprints scaled for intimate 50-guest parties or 1,000+ attendee ballroom galas.
             </p>
           </div>
@@ -330,7 +384,7 @@ export default function DJMusicPage() {
             {djPackages.map((item, idx) => (
               <div 
                 key={idx} 
-                className="bg-white rounded-2xl overflow-hidden border border-[#F5E6EC] shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+                className="bg-white rounded-2xl overflow-hidden border border-[#F5E6EC] shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
               >
                 <div>
                   <div className="aspect-[16/11] overflow-hidden bg-gray-100">
@@ -358,68 +412,130 @@ export default function DJMusicPage() {
         </div>
       </section>
 
-      {/* 4. SPECIALTIES & WHY 7DELIGHTS */}
-      <section className="py-14 md:py-18 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#EE3775] bg-[#FFE8ED] px-3 py-1 rounded-md">
-              Specialties &amp; Audio Quality
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E] mt-3">
-              Why 7Delights is the Best Choice for DJ Music
-            </h2>
-            <p className="text-sm sm:text-base text-[#5A6E85] mt-2">
-              Unmatched audio fidelity, high-energy DJs, and dependable execution without feedback or lag.
-            </p>
+      {/* 4. SPECIALTIES OF DJ MUSIC & 7DELIGHTS - THE BEST EVENT */}
+      <section className="py-14 md:py-18 bg-white border-b border-[#F5E6EC]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          {/* Subsection A: Specialties */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-7 space-y-5">
+              <span className="text-xs uppercase tracking-wider font-bold text-[#EE3775] bg-[#FFE8ED] px-3 py-1 rounded-md">
+                Our Signature Strength
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E]">
+                Specialties of Dj Music
+              </h2>
+              <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
+                Our DJ at 7Delights.in is designed to be pure fun, energetic, and completely stress-free for the host. Here is what sets our musical curation apart:
+              </p>
+
+              <div className="space-y-3">
+                {specialtiesList.map((spec, i) => (
+                  <div key={i} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
+                    <CheckCircle2 className="w-5 h-5 text-[#EE3775] shrink-0 mt-0.5" />
+                    <div>
+                      <strong className="text-sm font-bold text-[#111A2E]">{spec.title}: </strong>
+                      <span className="text-xs sm:text-sm text-[#5A6E85]">{spec.text}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex items-center gap-3 pt-2">
+                <a
+                  href="tel:+919980029977"
+                  className="px-6 py-3 rounded-full bg-[#EE3775] hover:bg-[#DE2765] text-white font-bold text-xs sm:text-sm shadow-md transition-all"
+                >
+                  Book Now
+                </a>
+                <a
+                  href="tel:+919980029977"
+                  className="px-6 py-3 rounded-full border border-gray-200 text-[#111A2E] hover:border-[#EE3775] font-bold text-xs sm:text-sm transition-all"
+                >
+                  Make a Call
+                </a>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-100">
+                <img
+                  src="/assets/dj-mix.webp"
+                  alt="DJ Mixing in Action"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((feat, idx) => (
-              <div 
-                key={idx}
-                className="p-6 rounded-2xl bg-[#FFFDF9] border border-[#F5E6EC] hover:border-[#EE3775]/40 transition-all hover:shadow-sm"
-              >
-                <div className="w-12 h-12 rounded-xl bg-white shadow-sm border border-[#F5E6EC] flex items-center justify-center mb-4">
-                  {feat.icon}
-                </div>
-                <h3 className="text-base sm:text-lg font-bold text-[#111A2E] mb-2">{feat.title}</h3>
-                <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{feat.desc}</p>
+          {/* Subsection B: 7Delights - The Best Event for DJ Music */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-8 border-t border-gray-100">
+            <div className="lg:col-span-5 order-2 lg:order-1">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-100">
+                <img
+                  src="/assets/dj-music.webp"
+                  alt="Crowd Dancing with DJ Music"
+                  className="w-full h-auto object-cover"
+                />
               </div>
-            ))}
+            </div>
+
+            <div className="lg:col-span-7 order-1 lg:order-2 space-y-5">
+              <span className="text-xs uppercase tracking-wider font-bold text-[#00A86B] bg-[#EBF7F2] px-3 py-1 rounded-md">
+                Perfect for Any Occasion
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E]">
+                7Delights.in — The Best Event for Dj Music
+              </h2>
+              <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
+                7Delights.in is your authorized source for the ultimate DJ Music. We specialize in tailor-making musical atmospheres for every type of event in Bangalore:
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {occasionsList.map((occ, i) => (
+                  <div key={i} className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
+                    <h4 className="text-sm font-bold text-[#111A2E] mb-1">{occ.title}</h4>
+                    <p className="text-xs text-[#5A6E85] leading-relaxed">{occ.text}</p>
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-xs sm:text-sm text-[#5A6E85] italic">
+                Ready to Get the Party Started? Contact 7Delights.in today for a free consultation and let us help you create an unforgettable musical experience for your next event!
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 5. PHOTO GALLERY & VIDEO SECTION */}
-      <section className="py-14 md:py-18 bg-[#FFF8FA] border-y border-[#F5E6EC]">
+      {/* 5. PHOTO GALLERY & DEMO VIDEO */}
+      <section className="py-14 md:py-18 bg-[#FFF8FA] border-b border-[#F5E6EC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-xs uppercase tracking-wider font-bold text-[#EE3775] bg-white px-3 py-1 rounded-md border border-[#F5E6EC]">
               Gallery &amp; Demo
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E] mt-3">
-              DJ Performance Gallery
+              Dj Music Gallery
             </h2>
-            <p className="text-sm sm:text-base text-[#5A6E85] mt-2">
-              Browse actual photographs of our DJ consoles and lighting trusses across Bangalore venues.
+            <GoldUnderline className="w-28 h-auto text-[#EE3775] mx-auto mt-2" />
+            <p className="text-xs sm:text-sm text-[#5A6E85] mt-2">
+              Browse actual photographs of our DJ consoles, lighting trusses, and crowd celebrations across Bangalore venues.
             </p>
           </div>
 
           {/* Photo Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
             {galleryImages.map((img, idx) => (
               <div 
                 key={idx}
-                className="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-white border border-[#F5E6EC]"
+                className="group relative rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow bg-white border border-[#F5E6EC]"
               >
                 <div className="aspect-[4/3] overflow-hidden bg-gray-100">
                   <img
                     src={img.src}
                     alt={img.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => {
-                      e.currentTarget.src = '/assets/dj-main.webp';
-                    }}
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-4 bg-white">
@@ -430,7 +546,7 @@ export default function DJMusicPage() {
             ))}
           </div>
 
-          {/* Embedded Video Player */}
+          {/* Embedded YouTube Showcase Video */}
           <div className="max-w-3xl mx-auto bg-white p-4 sm:p-6 rounded-2xl border border-[#F5E6EC] shadow-md">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
@@ -438,7 +554,7 @@ export default function DJMusicPage() {
                   <Sparkles className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-sm sm:text-base font-bold text-[#111A2E]">Watch DJ Performance Video</h3>
+                  <h3 className="text-sm sm:text-base font-bold text-[#111A2E]">Watch Our Video</h3>
                   <p className="text-xs text-[#5A6E85]">See our lighting sync and guests dancing to live mixes</p>
                 </div>
               </div>
@@ -448,7 +564,7 @@ export default function DJMusicPage() {
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/G8OHJw0u5pQ?rel=0"
-                title="DJ Sound and Music by 7Delights Bangalore"
+                title="7Delights DJ Music Video Demo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -457,86 +573,81 @@ export default function DJMusicPage() {
         </div>
       </section>
 
-      {/* 6. FAQ SECTION */}
-      <section className="py-14 md:py-18 bg-white">
+      {/* 6. FAQS SECTION */}
+      <section className="py-14 md:py-18 bg-white border-b border-[#F5E6EC]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <div className="text-center mb-12">
             <span className="text-xs uppercase tracking-wider font-bold text-[#EE3775] bg-[#FFE8ED] px-3 py-1 rounded-md">
               Got Questions?
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E] mt-3">
-              Frequently Asked Questions
+              Event FAQ ?
             </h2>
-            <p className="text-sm sm:text-base text-[#5A6E85] mt-2">
-              Everything you need to know about booking our professional DJ setup for your event.
+            <GoldUnderline className="w-28 h-auto text-[#EE3775] mx-auto mt-2" />
+            <p className="text-xs sm:text-sm text-[#5A6E85] mt-2">
+              Everything you need to know about booking our DJ setups, sound systems, and timing in Bangalore.
             </p>
           </div>
 
-          <div className="space-y-3">
-            {faqs.map((faq, idx) => (
-              <div
-                key={idx}
-                className="border border-[#F5E6EC] rounded-xl overflow-hidden bg-[#FFFDF9] transition-colors"
-              >
-                <button
-                  onClick={() => toggleFaq(idx)}
-                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 focus:outline-none"
+          <div className="space-y-4">
+            {faqs.map((faq, index) => {
+              const isOpen = openFaq === index;
+              return (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl border border-[#F5E6EC] shadow-xs overflow-hidden transition-all duration-200"
                 >
-                  <span className="text-sm sm:text-base font-bold text-[#111A2E] flex items-center gap-2">
-                    <HelpCircle className="w-4 h-4 text-[#EE3775] shrink-0" />
-                    {faq.q}
-                  </span>
-                  <ChevronDown
-                    className={`w-5 h-5 text-[#5A6E85] transition-transform duration-200 shrink-0 ${
-                      openFaq === idx ? 'transform rotate-180 text-[#EE3775]' : ''
-                    }`}
-                  />
-                </button>
-                {openFaq === idx && (
-                  <div className="px-5 pb-4 pt-1 text-xs sm:text-sm text-[#5A6E85] leading-relaxed border-t border-[#F5E6EC]/60 bg-white">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
-            ))}
+                  <button
+                    onClick={() => toggleFaq(index)}
+                    className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-gray-50/50 transition-colors"
+                  >
+                    <span className="text-sm sm:text-base font-bold text-[#111A2E]">
+                      {faq.q}
+                    </span>
+                    <ChevronDown
+                      className={`w-4 h-4 text-[#EE3775] shrink-0 transition-transform duration-300 ${
+                        isOpen ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="px-6 pb-5 pt-1 text-xs sm:text-sm text-[#5A6E85] leading-relaxed border-t border-gray-50 bg-[#FFFDF9]">
+                      {faq.a}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* 7. BOTTOM CALL TO ACTION STRIP */}
-      <section className="bg-gradient-to-r from-[#111A2E] to-[#1C2B4B] text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-            <div>
-              <h3 className="text-xl sm:text-2xl font-bold tracking-tight">
-                Ready to Get the Party Started with 7Delights?
-              </h3>
-              <p className="text-sm text-gray-300 mt-1 max-w-xl">
-                Get an instant quote with complete Pioneer DJ consoles, sound arrays, and synchronized lighting in Bangalore.
-              </p>
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              <a
-                href="tel:+919980029977"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#EE3775] hover:bg-[#D92C65] text-white font-semibold text-sm transition-all shadow-md"
-              >
-                <Phone className="w-4 h-4" />
-                <span>+91 99800 29977</span>
-              </a>
-              <a
-                href="https://wa.me/919980029977?text=Hi%207Delights,%20I'm%20planning%20an%20event%20and%20want%20to%20book%20DJ%20Sound%20and%20Lighting."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#20BA5A] text-white font-semibold text-sm transition-all shadow-md"
-              >
-                <MessageCircle className="w-4 h-4" />
-                <span>WhatsApp Us</span>
-              </a>
-            </div>
+      {/* 7. BOTTOM CTA */}
+      <section className="py-14 bg-gradient-to-r from-[#111A2E] to-[#1E2C48] text-white text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-black mb-3">
+            Have queries about our services and performances?
+          </h2>
+          <p className="text-xs sm:text-sm text-gray-300 max-w-2xl mx-auto mb-8">
+            Feel Free to Talk To Us Right Away! Let us get your party stage and DJ audio ready before the show begins.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="tel:+919980029977"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#EE3775] hover:bg-[#DE2765] text-white font-bold text-sm shadow-lg shadow-[#EE3775]/30 hover:scale-105 transition-all"
+            >
+              <Phone className="w-4 h-4 fill-white" />
+              <span>Call +91 99800 29977</span>
+            </a>
+            <a
+              href="#dj-sound-stage-lighting"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-sm backdrop-blur-xs border border-white/20 transition-all"
+            >
+              <span>Back to DJ &amp; Stage Hub</span>
+            </a>
           </div>
         </div>
       </section>
     </div>
   );
 }
-

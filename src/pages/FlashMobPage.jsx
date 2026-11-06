@@ -86,7 +86,10 @@ export default function FlashMobPage() {
     { src: '/assets/flash-mob-banner.webp', alt: 'Flash Mob Performance Banner' },
     { src: '/assets/flash-mob-main.webp', alt: 'Surprise Flash Mob Dance Troupe' },
     { src: '/assets/flash-mob-g1.webp', alt: 'Public Mall Promotional Flash Mob' },
-    { src: '/assets/flash-mob-g2.webp', alt: 'High Energy Synchronized Urban Crew' }
+    { src: '/assets/flash-mob-g2.webp', alt: 'High Energy Synchronized Urban Crew' },
+    { src: '/assets/flash-mob-g3.webp', alt: 'Flash Mob Dance Troupe Performance' },
+    { src: '/assets/flash-mob-g4.webp', alt: 'Dance Crew Crowd Surprise Reveal' },
+    { src: '/assets/flash-mob-g5.webp', alt: 'Group Formation & Final Pose' }
   ];
 
   const faqs = [
@@ -340,6 +343,39 @@ export default function FlashMobPage() {
               <p className="text-xs text-[#5A6E85] leading-relaxed">{item.desc}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Authentic Flash Mob Gallery Showcase */}
+      <section className="py-14 px-4 sm:px-6 lg:px-8 bg-[#FAF6F4] border-t border-[#F3E8E9]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFE8ED] text-[#EE3775] text-xs font-semibold mb-2">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Event Photo Gallery</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E]">
+              Flash Mob Moments in Action
+            </h2>
+            <p className="text-xs sm:text-sm text-[#5A6E85] mt-2">
+              Authentic highlights from surprise mall events, corporate campus activations, and wedding sangeets across Bengaluru.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages.map((img, i) => (
+              <div key={i} className="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-[#F0E6E8] aspect-[4/3] bg-white">
+                <img 
+                  src={img.src} 
+                  alt={img.alt} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
+                  <span className="text-white text-xs font-semibold">{img.alt}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

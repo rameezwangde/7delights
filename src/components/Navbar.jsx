@@ -105,6 +105,12 @@ export default function Navbar({ currentPage = 'home' }) {
                             ? '#corporate-events'
                             : item === 'DANCE TROUPE & MUSIC'
                             ? '#dance-troup'
+                            : item === 'DJ SOUND STAGE LIGHTS'
+                            ? '#dj-sound-stage-lighting'
+                            : item === 'EVENT SFX'
+                            ? '#special-effects-event-sfx'
+                            : item === 'FLOWER DECORATIONS'
+                            ? '#flower-decorations'
                             : '#services';
                         return (
                           <a
@@ -209,6 +215,12 @@ export default function Navbar({ currentPage = 'home' }) {
                               ? '#corporate-events'
                               : item === 'DANCE TROUPE & MUSIC'
                               ? '#dance-troup'
+                              : item === 'DJ SOUND STAGE LIGHTS'
+                              ? '#dj-sound-stage-lighting'
+                              : item === 'EVENT SFX'
+                              ? '#special-effects-event-sfx'
+                              : item === 'FLOWER DECORATIONS'
+                              ? '#flower-decorations'
                               : '#services';
                           return (
                             <a

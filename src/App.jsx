@@ -62,6 +62,9 @@ import DolluKunithaPage from './pages/DolluKunithaPage';
 import PunjabiDholPage from './pages/PunjabiDholPage';
 import ChendaMelamPage from './pages/ChendaMelamPage';
 import FlashMobPage from './pages/FlashMobPage';
+import DJSoundStagePage from './pages/DJSoundStagePage';
+import EventSFXPage from './pages/EventSFXPage';
+import FlowerDecorationsPage from './pages/FlowerDecorationsPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -72,6 +75,49 @@ export default function App() {
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
         window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#flower-decorations' ||
+        hash === '#/flower-decorations' ||
+        hash === '#flower-decoration' ||
+        hash === '#/flower-decoration' ||
+        hash === '#flowers' ||
+        hash === '#/flowers' ||
+        hash.startsWith('#flowers-overview')
+      ) {
+        setCurrentPage('flower-decorations');
+        if (!hash.startsWith('#flowers-overview')) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      } else if (
+        hash === '#special-effects-event-sfx' ||
+        hash === '#/special-effects-event-sfx' ||
+        hash === '#event-sfx' ||
+        hash === '#/event-sfx' ||
+        hash === '#sfx' ||
+        hash === '#/sfx' ||
+        hash.startsWith('#sfx-overview')
+      ) {
+        setCurrentPage('event-sfx');
+        if (!hash.startsWith('#sfx-overview')) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      } else if (
+        hash === '#dj-sound-stage-lighting' ||
+        hash === '#/dj-sound-stage-lighting' ||
+        hash === '#dj-sound-stage-lights' ||
+        hash === '#/dj-sound-stage-lights' ||
+        hash === '#dj-sound-stage' ||
+        hash === '#/dj-sound-stage' ||
+        hash === '#dj-stage' ||
+        hash === '#/dj-stage' ||
+        hash === '#dj-stage-lighting' ||
+        hash === '#/dj-stage-lighting' ||
+        hash.startsWith('#dj-overview')
+      ) {
+        setCurrentPage('dj-sound-stage-lighting');
+        if (!hash.startsWith('#dj-overview')) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
       } else if (
         hash === '#dance-troup/flash-mob-dance' ||
         hash === '#/dance-troup/flash-mob-dance' ||
@@ -588,6 +634,21 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'flower-decorations' ? (
+          <>
+            <FlowerDecorationsPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'event-sfx' ? (
+          <>
+            <EventSFXPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'dj-sound-stage-lighting' ? (
+          <>
+            <DJSoundStagePage />
             <CtaSection />
           </>
         ) : currentPage === 'flash-mob' ? (
