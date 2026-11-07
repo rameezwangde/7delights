@@ -67,6 +67,12 @@ import EventSFXPage from './pages/EventSFXPage';
 import FlowerDecorationsPage from './pages/FlowerDecorationsPage';
 import PartyFunEatablesPage from './pages/PartyFunEatablesPage';
 import PopcornPage from './pages/PopcornPage';
+import CottonCandyPage from './pages/CottonCandyPage';
+import ChocolateFountainPage from './pages/ChocolateFountainPage';
+import SweetCornPage from './pages/SweetCornPage';
+import GolaIceCrushPage from './pages/GolaIceCrushPage';
+import BombayMithaiwalaPage from './pages/BombayMithaiwalaPage';
+import PhotographyVideoPage from './pages/PhotographyVideoPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -76,6 +82,74 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#photography-video' ||
+        hash === '#/photography-video' ||
+        hash === '#photography' ||
+        hash === '#/photography' ||
+        hash === '#videography' ||
+        hash === '#/videography' ||
+        hash === '#photo-video' ||
+        hash === '#/photo-video'
+      ) {
+        setCurrentPage('photography-video');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#party-fun-eatables/bombay-mithaiwala' ||
+        hash === '#/party-fun-eatables/bombay-mithaiwala' ||
+        hash === '#party-fun-eatables/bombay-mitthaiwala' ||
+        hash === '#/party-fun-eatables/bombay-mitthaiwala' ||
+        hash === '#bombay-mithaiwala' ||
+        hash === '#/bombay-mithaiwala' ||
+        hash === '#bombay-mitthaiwala' ||
+        hash === '#/bombay-mitthaiwala' ||
+        hash === '#mithaiwala' ||
+        hash === '#/mithaiwala'
+      ) {
+        setCurrentPage('bombay-mithaiwala');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#party-fun-eatables/gola-ice-crush' ||
+        hash === '#/party-fun-eatables/gola-ice-crush' ||
+        hash === '#gola-ice-crush' ||
+        hash === '#/gola-ice-crush' ||
+        hash === '#ice-gola' ||
+        hash === '#/ice-gola' ||
+        hash === '#chuski' ||
+        hash === '#/chuski'
+      ) {
+        setCurrentPage('gola-ice-crush');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#party-fun-eatables/sweet-corn' ||
+        hash === '#/party-fun-eatables/sweet-corn' ||
+        hash === '#sweet-corn' ||
+        hash === '#/sweet-corn' ||
+        hash === '#live-sweet-corn' ||
+        hash === '#/live-sweet-corn'
+      ) {
+        setCurrentPage('sweet-corn');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#party-fun-eatables/chocolate-fountain' ||
+        hash === '#/party-fun-eatables/chocolate-fountain' ||
+        hash === '#chocolate-fountain' ||
+        hash === '#/chocolate-fountain' ||
+        hash === '#fountain-chocolate' ||
+        hash === '#/fountain-chocolate'
+      ) {
+        setCurrentPage('chocolate-fountain');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#party-fun-eatables/cotton-candy' ||
+        hash === '#/party-fun-eatables/cotton-candy' ||
+        hash === '#cotton-candy' ||
+        hash === '#/cotton-candy' ||
+        hash === '#candy-floss' ||
+        hash === '#/candy-floss'
+      ) {
+        setCurrentPage('cotton-candy');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#party-fun-eatables/popcorn' ||
@@ -659,6 +733,36 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'photography-video' ? (
+          <>
+            <PhotographyVideoPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'bombay-mithaiwala' ? (
+          <>
+            <BombayMithaiwalaPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'gola-ice-crush' ? (
+          <>
+            <GolaIceCrushPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'sweet-corn' ? (
+          <>
+            <SweetCornPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'chocolate-fountain' ? (
+          <>
+            <ChocolateFountainPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'cotton-candy' ? (
+          <>
+            <CottonCandyPage />
             <CtaSection />
           </>
         ) : currentPage === 'popcorn' ? (

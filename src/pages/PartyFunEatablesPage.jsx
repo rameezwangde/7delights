@@ -56,6 +56,8 @@ export default function PartyFunEatablesPage() {
     {
       id: 2,
       title: 'Cotton Candy',
+      slug: '#party-fun-eatables/cotton-candy',
+      hasDedicatedPage: true,
       category: 'sweet',
       image: '/assets/cotton-candy-stall.webp',
       tag: 'Candy Floss / Buddi Ke Baal',
@@ -66,6 +68,8 @@ export default function PartyFunEatablesPage() {
     {
       id: 3,
       title: 'Chocolate Fountain',
+      slug: '#party-fun-eatables/chocolate-fountain',
+      hasDedicatedPage: true,
       category: 'sweet',
       image: '/assets/chocolate-fountain-stall.webp',
       tag: 'Fondue Fountain',
@@ -76,6 +80,8 @@ export default function PartyFunEatablesPage() {
     {
       id: 4,
       title: 'Sweet Corn',
+      slug: '#party-fun-eatables/sweet-corn',
+      hasDedicatedPage: true,
       category: 'snacks',
       image: '/assets/sweet-corn-stall.webp',
       tag: 'Steamed Sweet Corn',
@@ -86,6 +92,8 @@ export default function PartyFunEatablesPage() {
     {
       id: 5,
       title: 'Gola Ice Crush',
+      slug: '#party-fun-eatables/gola-ice-crush',
+      hasDedicatedPage: true,
       category: 'desi',
       image: '/assets/gola-ice-stall.webp',
       tag: 'Chuski / Ice Gola',
@@ -96,6 +104,8 @@ export default function PartyFunEatablesPage() {
     {
       id: 6,
       title: 'Bombay Mithaiwala',
+      slug: '#party-fun-eatables/bombay-mithaiwala',
+      hasDedicatedPage: true,
       category: 'desi',
       image: '/assets/bombay-mithaiwala-stall.webp',
       tag: 'Live Mithai Counter',
@@ -150,32 +160,32 @@ export default function PartyFunEatablesPage() {
   return (
     <div className="min-h-screen bg-[#FFFDF9] text-[#111A2E] flex flex-col font-sans selection:bg-[#EE3775] selection:text-white">
       {/* 1. HERO SECTION */}
-      <section className="relative pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#FFF5F7] via-[#FFFDF9] to-[#FFFDF9]">
+      <section className="relative pt-6 pb-8 lg:pt-8 lg:pb-10 overflow-hidden bg-gradient-to-b from-[#FFF5F7] via-[#FFFDF9] to-[#FFFDF9]">
         {/* Subtle decorative glow */}
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-r from-[#EE3775]/5 via-amber-200/10 to-[#7B61FF]/5 blur-3xl pointer-events-none -z-10" />
+        <div className="absolute top-6 left-1/2 -translate-x-1/2 w-full max-w-7xl h-64 bg-gradient-to-r from-[#EE3775]/5 via-amber-200/10 to-[#7B61FF]/5 blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FFE8ED] border border-[#FFD0DB] text-[#EE3775] text-xs sm:text-sm font-bold uppercase tracking-wider mb-6 animate-pulse">
-            <Sparkles className="w-4 h-4" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFE8ED] border border-[#FFD0DB] text-[#EE3775] text-xs font-bold uppercase tracking-wider mb-3 animate-pulse">
+            <Sparkles className="w-3.5 h-3.5" />
             <span>Bangalore's Premier Party Food Stalls &amp; Live Eatables</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#111A2E] tracking-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#111A2E] tracking-tight mb-2">
             Party Fun Eatables for Events
           </h1>
 
-          <div className="flex justify-center mb-6">
-            <GoldUnderline className="w-48 sm:w-64 h-auto text-[#EE3775]" />
+          <div className="flex justify-center mb-4">
+            <GoldUnderline className="w-40 sm:w-52 h-auto text-[#EE3775]" />
           </div>
 
-          <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-[#5A6E85] leading-relaxed mb-8">
+          <p className="max-w-3xl mx-auto text-sm sm:text-base md:text-lg text-[#5A6E85] leading-relaxed mb-6">
             Treat your guests to mouth-watering live party counters! 7Delights provides delicious fresh popcorn, fluffy cotton candy, multi-tier chocolate fountains, steamed sweet corn, desi ice gola, and Bombay mithai across Bengaluru celebrations.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-3">
             <a
               href="tel:+919980029977"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#EE3775] hover:bg-[#DE2765] text-white font-bold text-base shadow-lg shadow-[#EE3775]/25 hover:shadow-xl hover:shadow-[#EE3775]/35 transition-all duration-300 hover:scale-[1.02]"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#EE3775] hover:bg-[#DE2765] text-white font-bold text-sm shadow-md shadow-[#EE3775]/25 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
             >
               <Phone className="w-4 h-4 fill-white" />
               <span>Book Party Eatables</span>
@@ -184,7 +194,7 @@ export default function PartyFunEatablesPage() {
               href="https://api.whatsapp.com/send/?phone=919980029977&text=Hi%207Delights,%20I%20am%20interested%20in%20Party%20Fun%20Eatables.%20Please%20share%20packages."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-white hover:bg-gray-50 border border-gray-200 text-[#111A2E] font-bold text-base shadow-sm hover:shadow transition-all duration-300"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-white hover:bg-gray-50 border border-gray-200 text-[#111A2E] font-bold text-sm shadow-xs hover:shadow transition-all duration-300"
             >
               <span>Instant WhatsApp Quote</span>
               <ChevronRight className="w-4 h-4 text-[#EE3775]" />
@@ -194,10 +204,10 @@ export default function PartyFunEatablesPage() {
       </section>
 
       {/* 2. EATABLES SERVICES GRID */}
-      <section id="services-grid" className="py-12 lg:py-16 bg-[#FFFDF9] border-t border-gray-100">
+      <section id="services-grid" className="py-8 lg:py-10 bg-[#FFFDF9] border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Controls: Search & Category Pills */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
             {/* Category Pills */}
             <div className="flex flex-wrap items-center gap-2">
               {categories.map((cat) => (
@@ -322,9 +332,9 @@ export default function PartyFunEatablesPage() {
       </section>
 
       {/* 3. SECTION TWO: SERVING THE TASTIEST EATABLES */}
-      <section id="eatables-overview" className="py-16 lg:py-20 bg-white border-t border-gray-100">
+      <section id="eatables-overview" className="py-10 lg:py-12 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             {/* Left Image Showcase */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group">
               <img
@@ -381,19 +391,19 @@ export default function PartyFunEatablesPage() {
       </section>
 
       {/* 4. SECTION THREE: 4 CORE PILLARS OF 7DELIGHT INFRASTRUCTURE */}
-      <section className="py-16 bg-[#FFFDF9] border-t border-gray-100">
+      <section className="py-10 lg:py-12 bg-[#FFFDF9] border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] tracking-tight mb-3">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] tracking-tight mb-2">
               Why Bangalore Loves Our Party Food Counters
             </h2>
-            <GoldUnderline className="w-36 h-auto text-[#EE3775] mx-auto mb-3" />
+            <GoldUnderline className="w-32 h-auto text-[#EE3775] mx-auto mb-2" />
             <p className="text-xs sm:text-sm text-[#5A6E85]">
               Seamless execution backed by hygienic ingredients, food-grade equipment, and cheerful attendants.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center">
               <div className="w-14 h-14 rounded-2xl bg-[#FFE8ED] text-[#EE3775] flex items-center justify-center mx-auto mb-4">
                 <Sliders className="w-7 h-7" />
@@ -438,9 +448,9 @@ export default function PartyFunEatablesPage() {
       </section>
 
       {/* 5. SECTION FOUR: WE SERVE YOUR GUESTS THE BEST */}
-      <section className="py-16 lg:py-20 bg-white border-t border-gray-100">
+      <section className="py-10 lg:py-12 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             {/* Left Content */}
             <div>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EBF7F2] border border-[#C8EFE0] text-[#00A86B] text-xs font-bold uppercase tracking-wider mb-4">
@@ -504,17 +514,17 @@ export default function PartyFunEatablesPage() {
       </section>
 
       {/* 6. FAQS SECTION */}
-      <section className="py-16 lg:py-20 bg-[#FFFDF9] border-t border-gray-100">
+      <section className="py-10 lg:py-12 bg-[#FFFDF9] border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFE8ED] border border-[#FFD0DB] text-[#EE3775] text-xs font-bold uppercase tracking-wider mb-3">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFE8ED] border border-[#FFD0DB] text-[#EE3775] text-xs font-bold uppercase tracking-wider mb-2">
               <HelpCircle className="w-3.5 h-3.5" />
               <span>Got Questions?</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] tracking-tight mb-2">
               Event FAQ ?
             </h2>
-            <GoldUnderline className="w-28 h-auto text-[#EE3775] mx-auto mb-3" />
+            <GoldUnderline className="w-24 h-auto text-[#EE3775] mx-auto mb-2" />
             <p className="text-xs sm:text-sm text-[#5A6E85]">
               Everything you need to know about booking our party food stalls, power needs, and timing in Bangalore.
             </p>
@@ -554,12 +564,12 @@ export default function PartyFunEatablesPage() {
       </section>
 
       {/* 7. BOTTOM CTA SECTION */}
-      <section className="py-14 bg-gradient-to-r from-[#111A2E] to-[#1E2C48] text-white text-center">
+      <section className="py-10 bg-gradient-to-r from-[#111A2E] to-[#1E2C48] text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-black mb-3">
+          <h2 className="text-2xl sm:text-3xl font-black mb-2">
             Ready to Delight Your Guests with Delicious Party Eatables?
           </h2>
-          <p className="text-xs sm:text-sm text-gray-300 max-w-2xl mx-auto mb-8">
+          <p className="text-xs sm:text-sm text-gray-300 max-w-2xl mx-auto mb-6">
             Contact 7Delights today for combo packages on live popcorn, cotton candy, chocolate fountains, and ice gola counters!
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
