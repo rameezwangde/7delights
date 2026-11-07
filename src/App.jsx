@@ -73,6 +73,9 @@ import SweetCornPage from './pages/SweetCornPage';
 import GolaIceCrushPage from './pages/GolaIceCrushPage';
 import BombayMithaiwalaPage from './pages/BombayMithaiwalaPage';
 import PhotographyVideoPage from './pages/PhotographyVideoPage';
+import ThreeSixtySelfieBoothPage from './pages/ThreeSixtySelfieBoothPage';
+import DigitalCaricaturePage from './pages/DigitalCaricaturePage';
+import PhotoBoothPrintPage from './pages/PhotoBoothPrintPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -82,6 +85,44 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#photography-video/photo-booth-print' ||
+        hash === '#/photography-video/photo-booth-print' ||
+        hash === '#photo-booth-print' ||
+        hash === '#/photo-booth-print' ||
+        hash === '#photo-booth' ||
+        hash === '#/photo-booth' ||
+        hash === '#instant-photo-print' ||
+        hash === '#/instant-photo-print' ||
+        hash === '#insta-photo-print' ||
+        hash === '#/insta-photo-print'
+      ) {
+        setCurrentPage('photo-booth-print');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#photography-video/digital-caricature-booth' ||
+        hash === '#/photography-video/digital-caricature-booth' ||
+        hash === '#digital-caricature-booth' ||
+        hash === '#/digital-caricature-booth' ||
+        hash === '#digital-caricature' ||
+        hash === '#/digital-caricature' ||
+        hash === '#digital-caricatures' ||
+        hash === '#/digital-caricatures'
+      ) {
+        setCurrentPage('digital-caricature-booth');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#photography-video/360-video-selfie-booth' ||
+        hash === '#/photography-video/360-video-selfie-booth' ||
+        hash === '#360-video-selfie-booth' ||
+        hash === '#/360-video-selfie-booth' ||
+        hash === '#360-selfie-booth' ||
+        hash === '#/360-selfie-booth' ||
+        hash === '#360-booth' ||
+        hash === '#/360-booth'
+      ) {
+        setCurrentPage('360-video-selfie-booth');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#photography-video' ||
@@ -733,6 +774,21 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'photo-booth-print' ? (
+          <>
+            <PhotoBoothPrintPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'digital-caricature-booth' ? (
+          <>
+            <DigitalCaricaturePage />
+            <CtaSection />
+          </>
+        ) : currentPage === '360-video-selfie-booth' ? (
+          <>
+            <ThreeSixtySelfieBoothPage />
             <CtaSection />
           </>
         ) : currentPage === 'photography-video' ? (

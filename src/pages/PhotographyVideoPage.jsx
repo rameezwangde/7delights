@@ -126,6 +126,8 @@ export default function PhotographyVideoPage() {
     {
       id: 9,
       title: '360 Selfie Video Booth',
+      slug: '#photography-video/360-video-selfie-booth',
+      hasDedicatedPage: true,
       category: 'booth',
       image: '/assets/360-degree-video-booth.webp',
       tag: 'Interactive Viral Booth',
@@ -146,6 +148,8 @@ export default function PhotographyVideoPage() {
     {
       id: 11,
       title: 'Instant Photo Print & Strips',
+      slug: '#photography-video/photo-booth-print',
+      hasDedicatedPage: true,
       category: 'booth',
       image: '/assets/instant-photo-print.webp',
       tag: 'Live On-Site Prints',
@@ -156,6 +160,8 @@ export default function PhotographyVideoPage() {
     {
       id: 12,
       title: 'Digital Caricature Booth',
+      slug: '#photography-video/digital-caricature-booth',
+      hasDedicatedPage: true,
       category: 'booth',
       image: '/assets/digital-caricature-thumb.webp',
       tag: 'Live Stylus Portraits',
@@ -283,6 +289,10 @@ export default function PhotographyVideoPage() {
               <div
                 key={item.id}
                 onClick={() => {
+                  if (item.hasDedicatedPage && item.slug) {
+                    window.location.hash = item.slug;
+                    return;
+                  }
                   const el = document.getElementById('photo-overview');
                   if (el) {
                     el.scrollIntoView({ behavior: 'smooth' });
@@ -320,20 +330,31 @@ export default function PhotographyVideoPage() {
 
                   {/* Buttons */}
                   <div className="grid grid-cols-2 gap-2 mt-auto pt-2 border-t border-gray-50">
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        const el = document.getElementById('photo-overview');
-                        if (el) {
-                          el.scrollIntoView({ behavior: 'smooth' });
-                        }
-                      }}
-                      className="w-full py-2.5 px-3 rounded-xl bg-gray-50 text-gray-700 hover:bg-[#EE3775] hover:text-white font-bold text-xs flex items-center justify-center gap-1 transition-all duration-200 cursor-pointer"
-                    >
-                      <span>{item.btnText}</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </button>
+                    {item.hasDedicatedPage && item.slug ? (
+                      <a
+                        href={item.slug}
+                        onClick={(e) => e.stopPropagation()}
+                        className="w-full py-2.5 px-3 rounded-xl bg-[#FFE8ED] text-[#EE3775] hover:bg-[#EE3775] hover:text-white font-bold text-xs flex items-center justify-center gap-1 transition-all duration-200"
+                      >
+                        <span>{item.btnText}</span>
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      </a>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          const el = document.getElementById('photo-overview');
+                          if (el) {
+                            el.scrollIntoView({ behavior: 'smooth' });
+                          }
+                        }}
+                        className="w-full py-2.5 px-3 rounded-xl bg-gray-50 text-gray-700 hover:bg-[#EE3775] hover:text-white font-bold text-xs flex items-center justify-center gap-1 transition-all duration-200 cursor-pointer"
+                      >
+                        <span>{item.btnText}</span>
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      </button>
+                    )}
                     <a
                       href="tel:+919980029977"
                       onClick={(e) => e.stopPropagation()}
