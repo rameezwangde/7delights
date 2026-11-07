@@ -65,6 +65,7 @@ import FlashMobPage from './pages/FlashMobPage';
 import DJSoundStagePage from './pages/DJSoundStagePage';
 import EventSFXPage from './pages/EventSFXPage';
 import FlowerDecorationsPage from './pages/FlowerDecorationsPage';
+import PartyFunEatablesPage from './pages/PartyFunEatablesPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -75,6 +76,19 @@ export default function App() {
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
         window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#party-fun-eatables' ||
+        hash === '#/party-fun-eatables' ||
+        hash === '#fun-eatables' ||
+        hash === '#/fun-eatables' ||
+        hash === '#eatables' ||
+        hash === '#/eatables' ||
+        hash.startsWith('#eatables-overview')
+      ) {
+        setCurrentPage('party-fun-eatables');
+        if (!hash.startsWith('#eatables-overview')) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
       } else if (
         hash === '#flower-decorations' ||
         hash === '#/flower-decorations' ||
@@ -634,6 +648,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'party-fun-eatables' ? (
+          <>
+            <PartyFunEatablesPage />
             <CtaSection />
           </>
         ) : currentPage === 'flower-decorations' ? (

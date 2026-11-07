@@ -111,6 +111,8 @@ export default function Navbar({ currentPage = 'home' }) {
                             ? '#special-effects-event-sfx'
                             : item === 'FLOWER DECORATIONS'
                             ? '#flower-decorations'
+                            : item === 'PARTY FUN EATABLES'
+                            ? '#party-fun-eatables'
                             : '#services';
                         return (
                           <a
@@ -221,6 +223,8 @@ export default function Navbar({ currentPage = 'home' }) {
                               ? '#special-effects-event-sfx'
                               : item === 'FLOWER DECORATIONS'
                               ? '#flower-decorations'
+                              : item === 'PARTY FUN EATABLES'
+                              ? '#party-fun-eatables'
                               : '#services';
                           return (
                             <a
