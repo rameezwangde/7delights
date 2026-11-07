@@ -44,6 +44,8 @@ export default function PartyFunEatablesPage() {
     {
       id: 1,
       title: 'Party-Popcorn',
+      slug: '#party-fun-eatables/popcorn',
+      hasDedicatedPage: true,
       category: 'snacks',
       image: '/assets/popcorn-stall.webp',
       tag: 'Fresh Popcorn Stall',
@@ -268,22 +270,33 @@ export default function PartyFunEatablesPage() {
                     </p>
                   </div>
 
-                  {/* Actions (Always stay on same page) */}
+                  {/* Actions */}
                   <div className="pt-3 border-t border-gray-100 flex flex-col gap-2">
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        const el = document.getElementById('eatables-overview');
-                        if (el) {
-                          el.scrollIntoView({ behavior: 'smooth' });
-                        }
-                      }}
-                      className="w-full py-2.5 px-4 rounded-xl bg-gray-50 text-gray-700 hover:bg-[#EE3775] hover:text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-all duration-200 cursor-pointer"
-                    >
-                      <span>{item.btnText}</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </button>
+                    {item.hasDedicatedPage ? (
+                      <a
+                        href={item.slug}
+                        onClick={(e) => e.stopPropagation()}
+                        className="w-full py-2.5 px-4 rounded-xl bg-[#FFE8ED] text-[#EE3775] hover:bg-[#EE3775] hover:text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-all duration-200 cursor-pointer"
+                      >
+                        <span>{item.btnText}</span>
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      </a>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          const el = document.getElementById('eatables-overview');
+                          if (el) {
+                            el.scrollIntoView({ behavior: 'smooth' });
+                          }
+                        }}
+                        className="w-full py-2.5 px-4 rounded-xl bg-gray-50 text-gray-700 hover:bg-[#EE3775] hover:text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-all duration-200 cursor-pointer"
+                      >
+                        <span>{item.btnText}</span>
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      </button>
+                    )}
                     <a
                       href="tel:+919980029977"
                       onClick={(e) => e.stopPropagation()}

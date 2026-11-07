@@ -66,6 +66,7 @@ import DJSoundStagePage from './pages/DJSoundStagePage';
 import EventSFXPage from './pages/EventSFXPage';
 import FlowerDecorationsPage from './pages/FlowerDecorationsPage';
 import PartyFunEatablesPage from './pages/PartyFunEatablesPage';
+import PopcornPage from './pages/PopcornPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -75,6 +76,16 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#party-fun-eatables/popcorn' ||
+        hash === '#/party-fun-eatables/popcorn' ||
+        hash === '#popcorn' ||
+        hash === '#/popcorn' ||
+        hash === '#popcorn-counter' ||
+        hash === '#/popcorn-counter'
+      ) {
+        setCurrentPage('popcorn');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#party-fun-eatables' ||
@@ -648,6 +659,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'popcorn' ? (
+          <>
+            <PopcornPage />
             <CtaSection />
           </>
         ) : currentPage === 'party-fun-eatables' ? (
