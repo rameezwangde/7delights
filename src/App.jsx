@@ -77,6 +77,8 @@ import ThreeSixtySelfieBoothPage from './pages/ThreeSixtySelfieBoothPage';
 import DigitalCaricaturePage from './pages/DigitalCaricaturePage';
 import PhotoBoothPrintPage from './pages/PhotoBoothPrintPage';
 import ShowsEntertainmentPage from './pages/ShowsEntertainmentPage';
+import PuppetShowPage from './pages/PuppetShowPage';
+import MagicShowStagePage from './pages/MagicShowStagePage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -86,6 +88,32 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/magic-shows-stage-shows' ||
+        hash === '#/shows-entertainment/magic-shows-stage-shows' ||
+        hash === '#shows-entertainment/magic-show-stage' ||
+        hash === '#/shows-entertainment/magic-show-stage' ||
+        hash === '#magic-shows-stage-shows' ||
+        hash === '#/magic-shows-stage-shows' ||
+        hash === '#magic-show-stage' ||
+        hash === '#/magic-show-stage' ||
+        hash === '#magic-stage-show' ||
+        hash === '#/magic-stage-show' ||
+        hash === '#magic-stage' ||
+        hash === '#/magic-stage'
+      ) {
+        setCurrentPage('magic-show-stage');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/puppet-show' ||
+        hash === '#/shows-entertainment/puppet-show' ||
+        hash === '#puppet-show' ||
+        hash === '#/puppet-show' ||
+        hash === '#puppet-shows' ||
+        hash === '#/puppet-shows'
+      ) {
+        setCurrentPage('puppet-show');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#shows-entertainment' ||
@@ -785,6 +813,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'magic-show-stage' ? (
+          <>
+            <MagicShowStagePage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'puppet-show' ? (
+          <>
+            <PuppetShowPage />
             <CtaSection />
           </>
         ) : currentPage === 'shows-entertainment' ? (

@@ -51,6 +51,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#FFE8ED] text-[#EE3775] border-[#FFD0DB]',
       desc: 'We arrange top performers with decent skills in puppet shows! Colorful mobile puppet booths, classic folk tales, and interactive storytelling for kids.',
       btnText: 'View Puppet Shows',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/puppet-show',
     },
     {
       id: 2,
@@ -61,6 +63,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#FFF3DF] text-[#D97706] border-[#FFE4B8]',
       desc: 'Our magic stage shows are extremely popular among our bona fide clients! Sleight of hand, mentalism, disappearing props, and hilarious audience participation.',
       btnText: 'View Stage Magic',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/magic-shows-stage-shows',
     },
     {
       id: 3,
@@ -292,9 +296,14 @@ export default function ShowsEntertainmentPage() {
               <div
                 key={item.id}
                 onClick={() => {
-                  const el = document.getElementById('shows-overview');
-                  if (el) {
-                    el.scrollIntoView({ behavior: 'smooth' });
+                  if (item.hasDedicatedPage && item.slug) {
+                    window.location.hash = item.slug;
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  } else {
+                    const el = document.getElementById('shows-overview');
+                    if (el) {
+                      el.scrollIntoView({ behavior: 'smooth' });
+                    }
                   }
                 }}
                 className="bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-[#FFD0DB] hover:shadow-xl transition-all duration-300 flex flex-col group cursor-pointer"
@@ -333,9 +342,14 @@ export default function ShowsEntertainmentPage() {
                       type="button"
                       onClick={(e) => {
                         e.stopPropagation();
-                        const el = document.getElementById('shows-overview');
-                        if (el) {
-                          el.scrollIntoView({ behavior: 'smooth' });
+                        if (item.hasDedicatedPage && item.slug) {
+                          window.location.hash = item.slug;
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        } else {
+                          const el = document.getElementById('shows-overview');
+                          if (el) {
+                            el.scrollIntoView({ behavior: 'smooth' });
+                          }
                         }
                       }}
                       className="w-full py-2.5 px-3 rounded-xl bg-gray-50 text-gray-700 hover:bg-[#EE3775] hover:text-white font-bold text-xs flex items-center justify-center gap-1 transition-all duration-200 cursor-pointer"
