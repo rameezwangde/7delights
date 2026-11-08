@@ -84,6 +84,7 @@ import MCGamesPage from './pages/MCGamesPage';
 import BubbleShowPage from './pages/BubbleShowPage';
 import LiveSandArtPage from './pages/LiveSandArtPage';
 import ClownWithMagicPage from './pages/ClownWithMagicPage';
+import ClownWithGamesPage from './pages/ClownWithGamesPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -93,6 +94,20 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/clown-with-game' ||
+        hash === '#/shows-entertainment/clown-with-game' ||
+        hash === '#shows-entertainment/clown-with-games' ||
+        hash === '#/shows-entertainment/clown-with-games' ||
+        hash === '#clown-with-game' ||
+        hash === '#/clown-with-game' ||
+        hash === '#clown-with-games' ||
+        hash === '#/clown-with-games' ||
+        hash === '#clown-games' ||
+        hash === '#/clown-games'
+      ) {
+        setCurrentPage('clown-with-games');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#shows-entertainment/clown-with-magic-shows' ||
@@ -888,6 +903,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'clown-with-games' ? (
+          <>
+            <ClownWithGamesPage />
             <CtaSection />
           </>
         ) : currentPage === 'clown-with-magic' ? (

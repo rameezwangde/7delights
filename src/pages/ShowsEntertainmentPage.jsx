@@ -135,6 +135,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#F2EDFF] text-[#7B61FF] border-[#E0D5FF]',
       desc: 'Our clowns can make you participate in various games and win in the end! Musical chairs, tug-of-war, dance-offs, and fun balloon party games.',
       btnText: 'View Clown Games',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/clown-with-game',
     },
     {
       id: 9,
