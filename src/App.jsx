@@ -79,6 +79,9 @@ import PhotoBoothPrintPage from './pages/PhotoBoothPrintPage';
 import ShowsEntertainmentPage from './pages/ShowsEntertainmentPage';
 import PuppetShowPage from './pages/PuppetShowPage';
 import MagicShowStagePage from './pages/MagicShowStagePage';
+import MagicShowWalkAroundPage from './pages/MagicShowWalkAroundPage';
+import MCGamesPage from './pages/MCGamesPage';
+import BubbleShowPage from './pages/BubbleShowPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -88,6 +91,48 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/bubble-shows' ||
+        hash === '#/shows-entertainment/bubble-shows' ||
+        hash === '#shows-entertainment/bubble-show' ||
+        hash === '#/shows-entertainment/bubble-show' ||
+        hash === '#bubble-shows' ||
+        hash === '#/bubble-shows' ||
+        hash === '#bubble-show' ||
+        hash === '#/bubble-show'
+      ) {
+        setCurrentPage('bubble-show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/mc-game-master-of-ceremony' ||
+        hash === '#/shows-entertainment/mc-game-master-of-ceremony' ||
+        hash === '#shows-entertainment/mc-games' ||
+        hash === '#/shows-entertainment/mc-games' ||
+        hash === '#mc-game-master-of-ceremony' ||
+        hash === '#/mc-game-master-of-ceremony' ||
+        hash === '#mc-games' ||
+        hash === '#/mc-games' ||
+        hash === '#emcee-games' ||
+        hash === '#/emcee-games' ||
+        hash === '#master-of-ceremony' ||
+        hash === '#/master-of-ceremony'
+      ) {
+        setCurrentPage('mc-games');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/magic-show-walk-around' ||
+        hash === '#/shows-entertainment/magic-show-walk-around' ||
+        hash === '#magic-show-walk-around' ||
+        hash === '#/magic-show-walk-around' ||
+        hash === '#magic-walk-around' ||
+        hash === '#/magic-walk-around' ||
+        hash === '#walk-around-magic' ||
+        hash === '#/walk-around-magic' ||
+        hash === '#close-up-magic' ||
+        hash === '#/close-up-magic'
+      ) {
+        setCurrentPage('magic-show-walk-around');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#shows-entertainment/magic-shows-stage-shows' ||
@@ -813,6 +858,21 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'bubble-show' ? (
+          <>
+            <BubbleShowPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'mc-games' ? (
+          <>
+            <MCGamesPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'magic-show-walk-around' ? (
+          <>
+            <MagicShowWalkAroundPage />
             <CtaSection />
           </>
         ) : currentPage === 'magic-show-stage' ? (

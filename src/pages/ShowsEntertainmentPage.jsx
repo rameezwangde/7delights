@@ -75,6 +75,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#F2EDFF] text-[#7B61FF] border-[#E0D5FF]',
       desc: 'We create a decent atmosphere for performers and guests to enjoy! Close-up interactive illusions performed right in front of your attendees’ eyes.',
       btnText: 'View Walk-Around Magic',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/magic-show-walk-around',
     },
     {
       id: 4,
@@ -85,6 +87,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#EBF7F2] text-[#00A86B] border-[#C8EFE0]',
       desc: 'We try multiple options to recreate the guests with top MC Games! Professional bilingual party anchors driving non-stop engagement, dance challenges, and games.',
       btnText: 'View MC Games',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/mc-game-master-of-ceremony',
     },
     {
       id: 5,
@@ -95,6 +99,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#FFE8ED] text-[#EE3775] border-[#FFD0DB]',
       desc: 'We are extremely popular among our clients for top-notch bubble shows! Giant bubbles, smoke-filled bubbles, and putting kids inside giant bubble domes.',
       btnText: 'View Bubble Show',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/bubble-shows',
     },
     {
       id: 6,
@@ -328,7 +334,7 @@ export default function ShowsEntertainmentPage() {
                 {/* Content */}
                 <div className="p-5 flex flex-col flex-grow justify-between">
                   <div>
-                    <h3 className="text-lg font-bold text-[#111A2E] mb-2 group-hover:text-[#EE3775] transition-colors">
+                    <h3 className={`text-lg font-bold mb-2 transition-colors ${item.id === 3 ? 'text-[#EE3775]' : 'text-[#111A2E] group-hover:text-[#EE3775]'}`}>
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed mb-4 line-clamp-3">
