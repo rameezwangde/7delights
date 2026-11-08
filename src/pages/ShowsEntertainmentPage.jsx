@@ -123,6 +123,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#FFF3DF] text-[#D97706] border-[#FFE4B8]',
       desc: 'Clowns can play magical tricks, too! We prove this with our expert funny clowns who blend slapstick comedy with astonishing stage magic.',
       btnText: 'View Clown Magic',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/clown-with-magic-shows',
     },
     {
       id: 8,

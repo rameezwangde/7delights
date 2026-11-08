@@ -83,6 +83,7 @@ import MagicShowWalkAroundPage from './pages/MagicShowWalkAroundPage';
 import MCGamesPage from './pages/MCGamesPage';
 import BubbleShowPage from './pages/BubbleShowPage';
 import LiveSandArtPage from './pages/LiveSandArtPage';
+import ClownWithMagicPage from './pages/ClownWithMagicPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -92,6 +93,20 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/clown-with-magic-shows' ||
+        hash === '#/shows-entertainment/clown-with-magic-shows' ||
+        hash === '#shows-entertainment/clown-with-magic' ||
+        hash === '#/shows-entertainment/clown-with-magic' ||
+        hash === '#clown-with-magic-shows' ||
+        hash === '#/clown-with-magic-shows' ||
+        hash === '#clown-with-magic' ||
+        hash === '#/clown-with-magic' ||
+        hash === '#clown-magic' ||
+        hash === '#/clown-magic'
+      ) {
+        setCurrentPage('clown-with-magic');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#shows-entertainment/live-sand-art-show' ||
@@ -873,6 +888,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'clown-with-magic' ? (
+          <>
+            <ClownWithMagicPage />
             <CtaSection />
           </>
         ) : currentPage === 'live-sand-art' ? (
