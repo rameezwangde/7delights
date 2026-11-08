@@ -82,6 +82,7 @@ import MagicShowStagePage from './pages/MagicShowStagePage';
 import MagicShowWalkAroundPage from './pages/MagicShowWalkAroundPage';
 import MCGamesPage from './pages/MCGamesPage';
 import BubbleShowPage from './pages/BubbleShowPage';
+import LiveSandArtPage from './pages/LiveSandArtPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -91,6 +92,20 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/live-sand-art-show' ||
+        hash === '#/shows-entertainment/live-sand-art-show' ||
+        hash === '#shows-entertainment/live-sand-art' ||
+        hash === '#/shows-entertainment/live-sand-art' ||
+        hash === '#live-sand-art-show' ||
+        hash === '#/live-sand-art-show' ||
+        hash === '#live-sand-art' ||
+        hash === '#/live-sand-art' ||
+        hash === '#sand-art-show' ||
+        hash === '#/sand-art-show'
+      ) {
+        setCurrentPage('live-sand-art');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#shows-entertainment/bubble-shows' ||
@@ -858,6 +873,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'live-sand-art' ? (
+          <>
+            <LiveSandArtPage />
             <CtaSection />
           </>
         ) : currentPage === 'bubble-show' ? (

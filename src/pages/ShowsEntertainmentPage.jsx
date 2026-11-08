@@ -111,6 +111,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#EDF5FF] text-[#2563EB] border-[#D0E2FF]',
       desc: 'We are extremely popular among our clients for top-notch Live Sand Art Shows! Visual storytelling drawn live on light-tables projected onto big LED screens.',
       btnText: 'View Sand Art Show',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/live-sand-art-show',
     },
     {
       id: 7,
