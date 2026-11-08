@@ -147,6 +147,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#EBF7F2] text-[#00A86B] border-[#C8EFE0]',
       desc: 'Our Emcee games engage your mind to participate and win! Talented anchors who effortlessly transition from crowd management to mind-boggling magic acts.',
       btnText: 'View Emcee Magic',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/emcee-games-and-magics',
     },
     {
       id: 10,
@@ -157,6 +159,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#FFE8ED] text-[#EE3775] border-[#FFD0DB]',
       desc: 'We make children live their fancy dreams by putting their favorite dwarf-clown-jokers live! Energetic slapstick routines, funny walks, and photo ops.',
       btnText: 'View Dwarf Clowns',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/dwarf-clown-jokers',
     },
     {
       id: 11,

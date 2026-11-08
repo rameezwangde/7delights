@@ -85,6 +85,8 @@ import BubbleShowPage from './pages/BubbleShowPage';
 import LiveSandArtPage from './pages/LiveSandArtPage';
 import ClownWithMagicPage from './pages/ClownWithMagicPage';
 import ClownWithGamesPage from './pages/ClownWithGamesPage';
+import EmceeGamesAndMagicPage from './pages/EmceeGamesAndMagicPage';
+import DwarfClownJokersPage from './pages/DwarfClownJokersPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -94,6 +96,34 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/dwarf-clown-jokers' ||
+        hash === '#/shows-entertainment/dwarf-clown-jokers' ||
+        hash === '#shows-entertainment/dwarf-clown' ||
+        hash === '#/shows-entertainment/dwarf-clown' ||
+        hash === '#dwarf-clown-jokers' ||
+        hash === '#/dwarf-clown-jokers' ||
+        hash === '#dwarf-clown' ||
+        hash === '#/dwarf-clown' ||
+        hash === '#dwarf-jokers' ||
+        hash === '#/dwarf-jokers'
+      ) {
+        setCurrentPage('dwarf-clown-jokers');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/emcee-games-and-magics' ||
+        hash === '#/shows-entertainment/emcee-games-and-magics' ||
+        hash === '#shows-entertainment/emcee-games-magic' ||
+        hash === '#/shows-entertainment/emcee-games-magic' ||
+        hash === '#emcee-games-and-magics' ||
+        hash === '#/emcee-games-and-magics' ||
+        hash === '#emcee-games-magic' ||
+        hash === '#/emcee-games-magic' ||
+        hash === '#mc-games-magic' ||
+        hash === '#/mc-games-magic'
+      ) {
+        setCurrentPage('emcee-games-magic');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#shows-entertainment/clown-with-game' ||
@@ -903,6 +933,16 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'dwarf-clown-jokers' ? (
+          <>
+            <DwarfClownJokersPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'emcee-games-magic' ? (
+          <>
+            <EmceeGamesAndMagicPage />
             <CtaSection />
           </>
         ) : currentPage === 'clown-with-games' ? (
