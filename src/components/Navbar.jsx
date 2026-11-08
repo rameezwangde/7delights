@@ -115,6 +115,8 @@ export default function Navbar({ currentPage = 'home' }) {
                             ? '#party-fun-eatables'
                             : item === 'PHOTOGRAPHY & VIDEO'
                             ? '#photography-video'
+                            : item === 'SHOWS & ENTERTAINMENT'
+                            ? '#shows-entertainment'
                             : '#services';
                         return (
                           <a
@@ -229,6 +231,8 @@ export default function Navbar({ currentPage = 'home' }) {
                               ? '#party-fun-eatables'
                               : item === 'PHOTOGRAPHY & VIDEO'
                               ? '#photography-video'
+                              : item === 'SHOWS & ENTERTAINMENT'
+                              ? '#shows-entertainment'
                               : '#services';
                           return (
                             <a

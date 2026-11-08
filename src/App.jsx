@@ -76,6 +76,7 @@ import PhotographyVideoPage from './pages/PhotographyVideoPage';
 import ThreeSixtySelfieBoothPage from './pages/ThreeSixtySelfieBoothPage';
 import DigitalCaricaturePage from './pages/DigitalCaricaturePage';
 import PhotoBoothPrintPage from './pages/PhotoBoothPrintPage';
+import ShowsEntertainmentPage from './pages/ShowsEntertainmentPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -85,6 +86,16 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment' ||
+        hash === '#/shows-entertainment' ||
+        hash === '#shows' ||
+        hash === '#/shows' ||
+        hash === '#entertainment' ||
+        hash === '#/entertainment'
+      ) {
+        setCurrentPage('shows-entertainment');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#photography-video/photo-booth-print' ||
@@ -774,6 +785,11 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'shows-entertainment' ? (
+          <>
+            <ShowsEntertainmentPage />
             <CtaSection />
           </>
         ) : currentPage === 'photo-booth-print' ? (
