@@ -171,6 +171,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#EDF5FF] text-[#2563EB] border-[#D0E2FF]',
       desc: 'We make children live their fancy dreams by putting their favorite storytelling live! Animated voice modulation, expressive facial theatre, and moral tales.',
       btnText: 'View Storytelling',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/kids-storytelling',
     },
     {
       id: 12,
@@ -181,6 +183,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#FFF3DF] text-[#D97706] border-[#FFE4B8]',
       desc: 'Our juggling clowns put on a decent show to entertain you! Spinning plates, juggling glowing clubs, balance boards, and unicycle performances.',
       btnText: 'View Juggling Clowns',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/clowns-and-juggling',
     },
     {
       id: 13,
@@ -191,6 +195,8 @@ export default function ShowsEntertainmentPage() {
       badgeBg: 'bg-[#F2EDFF] text-[#7B61FF] border-[#E0D5FF]',
       desc: 'We make children live their fancy dreams with their favorite live cartoon characters! Life-sized mascot greetings, cake cutting accompaniment, and joyful dance.',
       btnText: 'View Cartoon Mascots',
+      hasDedicatedPage: true,
+      slug: '#shows-entertainment/live-cartoon-mascots',
     },
   ];
 

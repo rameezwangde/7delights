@@ -87,6 +87,10 @@ import ClownWithMagicPage from './pages/ClownWithMagicPage';
 import ClownWithGamesPage from './pages/ClownWithGamesPage';
 import EmceeGamesAndMagicPage from './pages/EmceeGamesAndMagicPage';
 import DwarfClownJokersPage from './pages/DwarfClownJokersPage';
+import StorytellingPage from './pages/StorytellingPage';
+import ClownAndJugglingPage from './pages/ClownAndJugglingPage';
+import CartoonMascotsPage from './pages/CartoonMascotsPage';
+import PartyCakesPage from './pages/PartyCakesPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -96,6 +100,69 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#cakes' ||
+        hash === '#/cakes' ||
+        hash === '#party-cakes' ||
+        hash === '#/party-cakes' ||
+        hash === '#birthday-cakes' ||
+        hash === '#/birthday-cakes' ||
+        hash.startsWith('#cakes-overview')
+      ) {
+        setCurrentPage('party-cakes');
+        if (!hash.startsWith('#cakes-overview')) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      } else if (
+        hash === '#shows-entertainment/live-cartoon-mascots' ||
+        hash === '#/shows-entertainment/live-cartoon-mascots' ||
+        hash === '#shows-entertainment/live-cartoon-characters' ||
+        hash === '#/shows-entertainment/live-cartoon-characters' ||
+        hash === '#shows-entertainment/cartoon-mascots' ||
+        hash === '#/shows-entertainment/cartoon-mascots' ||
+        hash === '#live-cartoon-mascots' ||
+        hash === '#/live-cartoon-mascots' ||
+        hash === '#live-cartoon-characters' ||
+        hash === '#/live-cartoon-characters' ||
+        hash === '#cartoon-mascots' ||
+        hash === '#/cartoon-mascots' ||
+        hash === '#cartoon-characters' ||
+        hash === '#/cartoon-characters' ||
+        hash === '#mascots' ||
+        hash === '#/mascots'
+      ) {
+        setCurrentPage('live-cartoon-mascots');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/clowns-and-juggling' ||
+        hash === '#/shows-entertainment/clowns-and-juggling' ||
+        hash === '#shows-entertainment/clown-and-juggling' ||
+        hash === '#/shows-entertainment/clown-and-juggling' ||
+        hash === '#clowns-and-juggling' ||
+        hash === '#/clowns-and-juggling' ||
+        hash === '#clown-and-juggling' ||
+        hash === '#/clown-and-juggling' ||
+        hash === '#clown-juggling' ||
+        hash === '#/clown-juggling' ||
+        hash === '#juggling' ||
+        hash === '#/juggling'
+      ) {
+        setCurrentPage('clowns-and-juggling');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#shows-entertainment/kids-storytelling' ||
+        hash === '#/shows-entertainment/kids-storytelling' ||
+        hash === '#shows-entertainment/storytelling' ||
+        hash === '#/shows-entertainment/storytelling' ||
+        hash === '#kids-storytelling' ||
+        hash === '#/kids-storytelling' ||
+        hash === '#storytelling' ||
+        hash === '#/storytelling' ||
+        hash === '#storytelling-show' ||
+        hash === '#/storytelling-show'
+      ) {
+        setCurrentPage('storytelling');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#shows-entertainment/dwarf-clown-jokers' ||
@@ -933,6 +1000,26 @@ export default function App() {
         {currentPage === 'about' ? (
           <>
             <AboutPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'party-cakes' ? (
+          <>
+            <PartyCakesPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'live-cartoon-mascots' ? (
+          <>
+            <CartoonMascotsPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'clowns-and-juggling' ? (
+          <>
+            <ClownAndJugglingPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'storytelling' ? (
+          <>
+            <StorytellingPage />
             <CtaSection />
           </>
         ) : currentPage === 'dwarf-clown-jokers' ? (
