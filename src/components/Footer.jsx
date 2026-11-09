@@ -35,11 +35,14 @@ export default function Footer() {
             </p>
 
             {/* Social Links */}
-            <div className="flex items-center space-x-3">
+            <div className="flex flex-wrap items-center gap-2.5">
+              {/* Instagram */}
               <a
-                href="#placeholder"
+                href="https://www.instagram.com/7delights.in/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#EE3775] text-white border border-white/15 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-[#EE3775] text-white border border-white/15 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md hover:scale-105"
               >
                 <svg className="w-4.5 h-4.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -47,37 +50,75 @@ export default function Footer() {
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                 </svg>
               </a>
+
+              {/* Facebook */}
               <a
-                href="#placeholder"
+                href="https://www.facebook.com/7Delights"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#EE3775] text-white border border-white/15 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-[#1877F2] text-white border border-white/15 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md hover:scale-105"
               >
                 <svg className="w-4.5 h-4.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
               </a>
+
+              {/* YouTube */}
+              <a
+                href="https://www.youtube.com/@7delights"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-[#FF0000] text-white border border-white/15 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md hover:scale-105"
+              >
+                <svg className="w-4.5 h-4.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                  <polygon points="10 15 15 12 10 9 10 15" fill="currentColor" />
+                </svg>
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/7delights"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-[#0A66C2] text-white border border-white/15 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md hover:scale-105"
+              >
+                <svg className="w-4 h-4 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+
+              {/* X (formerly Twitter) */}
+              <a
+                href="https://x.com/7delights"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (formerly Twitter)"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-black text-white border border-white/15 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md hover:scale-105"
+              >
+                <svg className="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+
+              {/* WhatsApp */}
               <a
                 href="https://api.whatsapp.com/send/?phone=919980029977&text=Hi%207Delights,%20I%20am%20interested%20in%20your%20event%20planning%20services.%20Please%20share%20details."
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className="w-10 h-10 rounded-full bg-[#25D366]/20 hover:bg-[#25D366] text-white border border-[#25D366]/40 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md hover:scale-105"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#25D366]/20 hover:bg-[#25D366] text-white border border-[#25D366]/40 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md hover:scale-105"
               >
                 <img
                   src="/assets/fixed_whatsapp.svg"
                   alt="WhatsApp"
                   className="w-5 h-5 object-contain"
                 />
-              </a>
-              <a
-                href="#placeholder"
-                aria-label="YouTube"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#EE3775] text-white border border-white/15 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md"
-              >
-                <svg className="w-4.5 h-4.5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
-                  <polygon points="10 15 15 12 10 9 10 15" fill="currentColor" />
-                </svg>
               </a>
             </div>
           </div>
