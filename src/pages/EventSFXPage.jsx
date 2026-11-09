@@ -293,6 +293,10 @@ export default function EventSFXPage() {
           </div>
 
           {/* Cards Grid */}
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-3">Special Effects & Stage Pyrotechnics</h2>
+            <p className="text-sm sm:text-base text-[#5A6E85]">Safe, indoor-approved cold pyros, dry ice fog clouds, paper confetti cannons, and breathtaking visual moments.</p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
             {filteredCards.map((item) => (
               <div
@@ -390,7 +394,7 @@ export default function EventSFXPage() {
                   <span className="px-3 py-1 rounded-full bg-[#EE3775] text-[11px] font-bold uppercase tracking-wider mb-2 inline-block">
                     Cinematic SFX
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold">Synchronized Cold Pyros &amp; CO2 Blasts</h4>
+                  <p className="text-xl sm:text-2xl font-bold">Synchronized Cold Pyros &amp; CO2 Blasts</p>
                   <p className="text-xs sm:text-sm text-gray-200">Engineered for unforgettable crescendo moments</p>
                 </div>
               </div>
@@ -411,17 +415,17 @@ export default function EventSFXPage() {
                 Want to turn a great event into a breathtaking cinematic experience? <strong>7Delights.in</strong> specializes in professional Special Effects (SFX) that add that "wow" factor, drama, and excitement to your most important moments. Whether it's a high-profile product launch, a grand wedding entry, or a high-energy concert in Bengaluru, our SFX services are designed to leave your audience absolutely spellbound.
               </p>
 
-              <h4 className="text-base font-bold text-[#111A2E] mb-3">
+              <h3 className="text-base font-bold text-[#111A2E] mb-3">
                 Create "The Moment" with Our SFX Lineup:
-              </h4>
+              </h3>
 
               <div className="space-y-3 mb-6">
                 {sfxLineup.map((item, idx) => (
                   <div key={idx} className="p-3.5 rounded-xl bg-[#FFFDF9] border border-gray-100">
-                    <h5 className="text-xs sm:text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
+                    <h3 className="text-xs sm:text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
                       <Sparkle className="w-3.5 h-3.5 text-[#EE3775]" />
                       <span>{item.title}</span>
-                    </h5>
+                    </h3>
                     <p className="text-xs text-[#5A6E85] leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
@@ -459,7 +463,7 @@ export default function EventSFXPage() {
               <div className="w-14 h-14 rounded-2xl bg-[#FFE8ED] text-[#EE3775] flex items-center justify-center mx-auto mb-4">
                 <Sliders className="w-7 h-7" />
               </div>
-              <h3 className="text-base font-bold text-[#111A2E] mb-2">Customizable SFX Packages</h3>
+              <p className="text-base font-bold text-[#111A2E] mb-2">Customizable SFX Packages</p>
               <p className="text-xs text-[#5A6E85] leading-relaxed">
                 Meeting your dream and fascination becomes a priority for us, and we do it with all our strength!
               </p>
@@ -555,7 +559,7 @@ export default function EventSFXPage() {
                   <span className="px-3 py-1 rounded-full bg-[#00A86B] text-[11px] font-bold uppercase tracking-wider mb-2 inline-block">
                     Outdoor Spectacle
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold">Colour Sky Shots &amp; Pyrotechnics</h4>
+                  <p className="text-xl sm:text-2xl font-bold">Colour Sky Shots &amp; Pyrotechnics</p>
                   <p className="text-xs sm:text-sm text-gray-200">Synchronized fireworks displays for grand finale celebrations</p>
                 </div>
               </div>

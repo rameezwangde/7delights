@@ -245,6 +245,10 @@ export default function FlowerDecorationsPage() {
           </div>
 
           {/* Cards Grid */}
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-3">Floral Architecture & Decoration Services</h2>
+            <p className="text-sm sm:text-base text-[#5A6E85]">Fresh farm blossoms, exotic imported flowers, traditional marigolds, and contemporary luxury floral sets.</p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {filteredCards.map((item) => (
               <div
@@ -342,7 +346,7 @@ export default function FlowerDecorationsPage() {
                   <span className="px-3 py-1 rounded-full bg-[#EE3775] text-[11px] font-bold uppercase tracking-wider mb-2 inline-block">
                     Botanical Artistry
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold">Original &amp; Exotic Floral Architecture</h4>
+                  <p className="text-xl sm:text-2xl font-bold">Original &amp; Exotic Floral Architecture</p>
                   <p className="text-xs sm:text-sm text-gray-200">Crafted with farm-fresh blossoms across Bengaluru</p>
                 </div>
               </div>
@@ -403,7 +407,7 @@ export default function FlowerDecorationsPage() {
               <div className="w-14 h-14 rounded-2xl bg-[#FFE8ED] text-[#EE3775] flex items-center justify-center mx-auto mb-4">
                 <Sliders className="w-7 h-7" />
               </div>
-              <h3 className="text-base font-bold text-[#111A2E] mb-2">Customizable Decoration</h3>
+              <p className="text-base font-bold text-[#111A2E] mb-2">Customizable Decoration</p>
               <p className="text-xs text-[#5A6E85] leading-relaxed">
                 Meeting your dream and fascination becomes a priority for us, and we do it with all our strength!
               </p>
@@ -499,7 +503,7 @@ export default function FlowerDecorationsPage() {
                   <span className="px-3 py-1 rounded-full bg-[#EE3775] text-[11px] font-bold uppercase tracking-wider mb-2 inline-block">
                     Regal Ambience
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold">Grand Wedding &amp; Mandap Sets</h4>
+                  <p className="text-xl sm:text-2xl font-bold">Grand Wedding &amp; Mandap Sets</p>
                   <p className="text-xs sm:text-sm text-gray-200">Custom flower styling matching your celebration theme</p>
                 </div>
               </div>
@@ -540,7 +544,7 @@ export default function FlowerDecorationsPage() {
                   />
                 </div>
                 <div className="p-4 bg-white">
-                  <h4 className="text-sm font-bold text-[#111A2E] mb-1">{img.title}</h4>
+                  <h3 className="text-sm font-bold text-[#111A2E] mb-1">{img.title}</h3>
                   <p className="text-xs text-[#5A6E85]">{img.desc}</p>
                 </div>
               </div>

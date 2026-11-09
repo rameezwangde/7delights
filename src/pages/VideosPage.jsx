@@ -425,12 +425,12 @@ export default function VideosPage() {
                 {/* Card Content Body */}
                 <div className="p-5 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3
+                    <p
                       onClick={() => setSelectedVideo(video)}
                       className="text-[17px] font-bold text-[#111A2E] font-serif mb-2 group-hover:text-[#EE3775] transition-colors cursor-pointer leading-snug"
                     >
                       {video.title}
-                    </h3>
+                    </p>
                     
                     <p className="text-[13px] text-[#5A6E85] leading-relaxed mb-4 line-clamp-2">
                       {video.description}
@@ -605,9 +605,9 @@ export default function VideosPage() {
                 <span className="px-2.5 py-0.5 rounded-full bg-[#EE3775] text-[11px] font-bold uppercase">
                   {selectedVideo.tag}
                 </span>
-                <h4 className="text-[15px] sm:text-[17px] font-bold truncate max-w-md">
+                <h3 className="text-[15px] sm:text-[17px] font-bold truncate max-w-md">
                   {selectedVideo.title}
-                </h4>
+                </h3>
               </div>
 
               <button

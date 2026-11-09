@@ -419,9 +419,9 @@ Visit the website to explore more: https://www.7delights.in/`,
                 <span className="px-3 py-1 rounded-full bg-[#FFE8ED] text-[#EE3775] text-[11.5px] font-bold uppercase">
                   {selectedArticle.tag}
                 </span>
-                <h3 className="text-[22px] sm:text-[24px] font-bold text-[#111A2E] font-serif mt-2">
+                <p className="text-[22px] sm:text-[24px] font-bold text-[#111A2E] font-serif mt-2">
                   {selectedArticle.title}
-                </h3>
+                </p>
                 <div className="flex items-center space-x-3 text-[12.5px] text-[#8494A7] mt-1">
                   <span>{selectedArticle.date}</span>
                   <span>•</span>

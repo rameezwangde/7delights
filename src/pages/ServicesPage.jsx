@@ -403,9 +403,9 @@ export default function ServicesPage() {
                 {/* Content Body */}
                 <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-[18px] font-bold text-[#111A2E] font-serif mb-2 group-hover:text-[#EE3775] transition-colors leading-snug">
+                    <p className="text-[18px] font-bold text-[#111A2E] font-serif mb-2 group-hover:text-[#EE3775] transition-colors leading-snug">
                       {act.title}
-                    </h3>
+                    </p>
                     <p className="text-[13px] text-[#5A6E85] leading-relaxed mb-4">
                       {act.desc}
                     </p>

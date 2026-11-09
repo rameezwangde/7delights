@@ -172,9 +172,9 @@ export default function ContactPage() {
                     <Building2 className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-[16px] font-bold text-[#111A2E] mb-1 font-sans">
+                    <p className="text-[16px] font-bold text-[#111A2E] mb-1 font-sans">
                       7Delights.in ® Events — Head Office
-                    </h3>
+                    </p>
                     <p className="text-[14px] text-[#5A6E85] leading-relaxed">
                       No 45, 2nd Main 1st Cross, Vivekananda Colony, Kanakapura Main Road, J.P. Nagar PO, Bangalore 560078.
                     </p>
@@ -189,9 +189,9 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-[16px] font-bold text-[#111A2E] mb-1 font-sans">
+                    <p className="text-[16px] font-bold text-[#111A2E] mb-1 font-sans">
                       7Delights.in ® Events — Branch Office
-                    </h3>
+                    </p>
                     <p className="text-[14px] text-[#5A6E85] leading-relaxed">
                       No 1709, 17th 'A' Main, 8th Cross, J.P. Nagar 2nd Phase, Bangalore 560078 (Near 9th Cross HDFC Bank Ltd).
                     </p>
@@ -237,7 +237,7 @@ export default function ContactPage() {
                     <CreditCard className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-[15px] font-bold text-[#111A2E]">Instant Online Payment</h4>
+                    <h3 className="text-[15px] font-bold text-[#111A2E]">Instant Online Payment</h3>
                     <p className="text-[12.5px] text-[#5A6E85]">Secured by Razorpay • UPI / Cards / NetBanking</p>
                   </div>
                 </div>

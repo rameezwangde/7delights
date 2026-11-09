@@ -233,7 +233,7 @@ export default function TurbanPagriTyingPage() {
                     <span className="inline-block px-3 py-1 rounded-full bg-[#D97706] text-white text-xs font-semibold w-max mb-2">
                       Live Guest &amp; Groom Styling
                     </span>
-                    <h3 className="text-xl font-bold">Royal Rajasthani &amp; Punjabi Safas</h3>
+                    <p className="text-xl font-bold">Royal Rajasthani &amp; Punjabi Safas</p>
                     <p className="text-xs text-white/90 mt-1">Make every guest feel like an honored Maharaja at your wedding or gala.</p>
                   </div>
                 </div>
@@ -283,7 +283,7 @@ export default function TurbanPagriTyingPage() {
                       {st.tag}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold text-[#111A2E] mb-2">{st.title}</h3>
+                  <p className="text-lg font-bold text-[#111A2E] mb-2">{st.title}</p>
                   <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{st.desc}</p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-[#F2ECE4] flex items-center gap-1.5 text-[11px] text-[#D97706] font-semibold">
@@ -415,7 +415,7 @@ export default function TurbanPagriTyingPage() {
                   <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#FFF3DF] text-[#D97706] mb-1">
                     {img.tag}
                   </span>
-                  <h4 className="text-sm font-bold text-[#111A2E]">{img.title}</h4>
+                  <h3 className="text-sm font-bold text-[#111A2E]">{img.title}</h3>
                 </div>
               </div>
             ))}

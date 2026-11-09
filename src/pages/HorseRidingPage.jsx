@@ -227,7 +227,7 @@ export default function HorseRidingPage() {
                     <span className="inline-block px-3 py-1 rounded-full bg-[#D97706] text-white text-xs font-semibold w-max mb-2">
                       Royal Equine Experience
                     </span>
-                    <h3 className="text-xl font-bold">Gentle Saddle &amp; Chariot Rides</h3>
+                    <p className="text-xl font-bold">Gentle Saddle &amp; Chariot Rides</p>
                     <p className="text-xs text-white/90 mt-1">Make your wedding entry or birthday party feel like true royalty.</p>
                   </div>
                 </div>
@@ -277,7 +277,7 @@ export default function HorseRidingPage() {
                       {opt.tag}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold text-[#111A2E] mb-2">{opt.title}</h3>
+                  <p className="text-lg font-bold text-[#111A2E] mb-2">{opt.title}</p>
                   <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{opt.desc}</p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-[#F2ECE4] flex items-center gap-1.5 text-[11px] text-[#D97706] font-semibold">
@@ -409,7 +409,7 @@ export default function HorseRidingPage() {
                   <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#FFF3DF] text-[#D97706] mb-1">
                     {img.tag}
                   </span>
-                  <h4 className="text-sm font-bold text-[#111A2E]">{img.title}</h4>
+                  <h3 className="text-sm font-bold text-[#111A2E]">{img.title}</h3>
                 </div>
               </div>
             ))}

@@ -232,7 +232,7 @@ export default function SandArtBottlePage() {
                     <span className="inline-block px-3 py-1 rounded-full bg-[#EE3775] text-white text-xs font-semibold w-max mb-2">
                       Live Craft Counter
                     </span>
-                    <h3 className="text-xl font-bold">Rainbow Layered Bottle Art</h3>
+                    <p className="text-xl font-bold">Rainbow Layered Bottle Art</p>
                     <p className="text-xs text-white/90 mt-1">Guests pour vibrant sand layers into glass vials creating permanent desk souvenirs.</p>
                   </div>
                 </div>
@@ -283,7 +283,7 @@ export default function SandArtBottlePage() {
                       {st.icon}
                     </div>
                   </div>
-                  <h3 className="text-lg font-bold text-[#111A2E] mb-2">{st.title}</h3>
+                  <p className="text-lg font-bold text-[#111A2E] mb-2">{st.title}</p>
                   <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{st.desc}</p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-[#F2ECE4] flex items-center gap-1.5 text-[11px] text-[#EE3775] font-semibold">
@@ -415,7 +415,7 @@ export default function SandArtBottlePage() {
                   <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#FFE8ED] text-[#EE3775] mb-1">
                     {img.tag}
                   </span>
-                  <h4 className="text-sm font-bold text-[#111A2E]">{img.title}</h4>
+                  <h3 className="text-sm font-bold text-[#111A2E]">{img.title}</h3>
                 </div>
               </div>
             ))}

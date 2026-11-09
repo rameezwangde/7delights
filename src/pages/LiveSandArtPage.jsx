@@ -224,7 +224,7 @@ export default function LiveSandArtPage() {
                     <span className="inline-block px-2.5 py-1 rounded bg-[#2563EB] text-[11px] font-bold tracking-wide uppercase mb-1">
                       Poetic Visual Art
                     </span>
-                    <h3 className="text-lg font-bold">Bangalore’s Premier Sand Animation</h3>
+                    <p className="text-lg font-bold">Bangalore’s Premier Sand Animation</p>
                     <p className="text-xs text-white/90">Bespoke love stories, corporate journeys, and heritage epics.</p>
                   </div>
                 </div>
@@ -267,7 +267,7 @@ export default function LiveSandArtPage() {
                 <div className="w-10 h-10 rounded-lg bg-white shadow-sm border border-gray-100 flex items-center justify-center mb-3">
                   {item.icon}
                 </div>
-                <h3 className="font-bold text-[#111A2E] text-base mb-1.5">{item.title}</h3>
+                <p className="font-bold text-[#111A2E] text-base mb-1.5">{item.title}</p>
                 <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -461,7 +461,7 @@ export default function LiveSandArtPage() {
           {/* Direct Support Card */}
           <div className="mt-8 p-5 rounded-xl bg-white border border-[#2563EB]/20 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              <h4 className="font-bold text-[#111A2E] text-sm sm:text-base">Want a custom couple love story or corporate milestone script?</h4>
+              <h3 className="font-bold text-[#111A2E] text-sm sm:text-base">Want a custom couple love story or corporate milestone script?</h3>
               <p className="text-xs text-[#5A6E85] mt-0.5">Consult directly with our Bangalore sand storytelling animators.</p>
             </div>
             <a 

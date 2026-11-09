@@ -328,7 +328,7 @@ export default function RingTossGamePage() {
                   <span className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full border mb-4 ${gift.color}`}>
                     {gift.tag}
                   </span>
-                  <h3 className="text-lg font-bold text-[#111A2E] mb-2">{gift.title}</h3>
+                  <p className="text-lg font-bold text-[#111A2E] mb-2">{gift.title}</p>
                   <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{gift.desc}</p>
                 </div>
                 <div className="pt-4 mt-4 border-t border-[#F5E6EC] flex items-center gap-1.5 text-xs font-semibold text-[#EE3775]">
@@ -406,7 +406,7 @@ export default function RingTossGamePage() {
                   />
                 </div>
                 <div className="p-4">
-                  <h4 className="text-sm font-bold text-[#111A2E] mb-1">{img.title}</h4>
+                  <h3 className="text-sm font-bold text-[#111A2E] mb-1">{img.title}</h3>
                   <p className="text-xs text-[#5A6E85]">{img.desc}</p>
                 </div>
               </div>

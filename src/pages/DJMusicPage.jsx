@@ -330,30 +330,30 @@ export default function DJMusicPage() {
 
               <div className="space-y-3 pt-2">
                 <div className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
-                  <h4 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
                     <Sliders className="w-4 h-4 text-[#EE3775]" />
                     <span>Professional DJ Equipment</span>
-                  </h4>
+                  </h3>
                   <p className="text-xs sm:text-sm text-[#5A6E85]">
                     We use only high-quality, industry-standard DJ equipment, including turntables, mixers, speakers, microphones, ensuring crystal-clear sound and a powerful audio experience.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
-                  <h4 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
                     <Flame className="w-4 h-4 text-[#D97706]" />
                     <span>Dynamic Stage Lighting</span>
-                  </h4>
+                  </h3>
                   <p className="text-xs sm:text-sm text-[#5A6E85]">
                     Set the mood and create a captivating atmosphere with our state-of-the-art lighting systems. From vibrant colors and moving heads to lasers and special effects, we transform any venue into a dance floor paradise.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
-                  <h4 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
                     <Users className="w-4 h-4 text-[#059669]" />
                     <span>Talented &amp; Versatile DJs</span>
-                  </h4>
+                  </h3>
                   <p className="text-xs sm:text-sm text-[#5A6E85]">
                     Our talented DJs are experts at reading crowds and tailoring the music to suit all tastes and ages, spinning a wide variety of genres including Bollywood, EDM, Pop, Rock, and Hip-Hop.
                   </p>
@@ -398,7 +398,7 @@ export default function DJMusicPage() {
                     <span className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full border mb-3 ${item.color}`}>
                       {item.tag}
                     </span>
-                    <h3 className="text-lg font-bold text-[#111A2E] mb-2">{item.title}</h3>
+                    <p className="text-lg font-bold text-[#111A2E] mb-2">{item.title}</p>
                     <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
@@ -493,7 +493,7 @@ export default function DJMusicPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {occasionsList.map((occ, i) => (
                   <div key={i} className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
-                    <h4 className="text-sm font-bold text-[#111A2E] mb-1">{occ.title}</h4>
+                    <h3 className="text-sm font-bold text-[#111A2E] mb-1">{occ.title}</h3>
                     <p className="text-xs text-[#5A6E85] leading-relaxed">{occ.text}</p>
                   </div>
                 ))}
@@ -539,7 +539,7 @@ export default function DJMusicPage() {
                   />
                 </div>
                 <div className="p-4 bg-white">
-                  <h4 className="text-sm font-bold text-[#111A2E] mb-1">{img.title}</h4>
+                  <h3 className="text-sm font-bold text-[#111A2E] mb-1">{img.title}</h3>
                   <p className="text-xs text-[#5A6E85]">{img.desc}</p>
                 </div>
               </div>

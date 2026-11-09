@@ -223,7 +223,7 @@ export default function ClownWithMagicPage() {
                     <span className="inline-block px-2.5 py-1 rounded bg-[#D97706] text-[11px] font-bold tracking-wide uppercase mb-1">
                       Comedy & Illusion Show
                     </span>
-                    <h3 className="text-lg font-bold">Bangalore’s Funniest Clown Magicians</h3>
+                    <p className="text-lg font-bold">Bangalore’s Funniest Clown Magicians</p>
                     <p className="text-xs text-white/90">Slapstick skits, interactive comedy, and stage magic wonders.</p>
                   </div>
                 </div>
@@ -266,7 +266,7 @@ export default function ClownWithMagicPage() {
                 <div className="w-10 h-10 rounded-lg bg-white shadow-sm border border-gray-100 flex items-center justify-center mb-3">
                   {item.icon}
                 </div>
-                <h3 className="font-bold text-[#111A2E] text-base mb-1.5">{item.title}</h3>
+                <p className="font-bold text-[#111A2E] text-base mb-1.5">{item.title}</p>
                 <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -460,7 +460,7 @@ export default function ClownWithMagicPage() {
           {/* Direct Support Card */}
           <div className="mt-8 p-5 rounded-xl bg-white border border-[#D97706]/20 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              <h4 className="font-bold text-[#111A2E] text-sm sm:text-base">Want a customized clown entry or specific birthday theme gag?</h4>
+              <h3 className="font-bold text-[#111A2E] text-sm sm:text-base">Want a customized clown entry or specific birthday theme gag?</h3>
               <p className="text-xs text-[#5A6E85] mt-0.5">Consult directly with our Bangalore entertainment specialists.</p>
             </div>
             <a 

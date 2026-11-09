@@ -284,6 +284,10 @@ export default function PhotographyVideoPage() {
           </div>
 
           {/* Cards Grid: 12 Authentic Services */}
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-3">Event Photography & Videography Services</h2>
+            <p className="text-sm sm:text-base text-[#5A6E85]">Capture every magical moment with our experienced event photographers, cinematic videographers, and interactive photo booths.</p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {filteredCards.map((item) => (
               <div
@@ -395,7 +399,7 @@ export default function PhotographyVideoPage() {
                   <span className="px-3 py-1 rounded-full bg-[#EE3775] text-[11px] font-bold uppercase tracking-wider mb-2 inline-block">
                     Cinematic Memories
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold">Preserve The Past For Tomorrow</h4>
+                  <p className="text-xl sm:text-2xl font-bold">Preserve The Past For Tomorrow</p>
                   <p className="text-xs sm:text-sm text-gray-200">World-class cameras, lenses, cranes, and slow-motion booths</p>
                 </div>
               </div>
@@ -456,7 +460,7 @@ export default function PhotographyVideoPage() {
               <div className="w-14 h-14 rounded-2xl bg-[#FFE8ED] text-[#EE3775] flex items-center justify-center mx-auto mb-4">
                 <Sliders className="w-7 h-7" />
               </div>
-              <h3 className="text-base font-bold text-[#111A2E] mb-2">Customizable Coverage</h3>
+              <p className="text-base font-bold text-[#111A2E] mb-2">Customizable Coverage</p>
               <p className="text-xs text-[#5A6E85] leading-relaxed">
                 Meeting your dream and visual preferences becomes our priority, customized to every tradition and format.
               </p>
@@ -554,7 +558,7 @@ export default function PhotographyVideoPage() {
                   <span className="px-3 py-1 rounded-full bg-[#00A86B] text-[11px] font-bold uppercase tracking-wider mb-2 inline-block">
                     On-Site Souvenirs
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold">Instant Photo Prints &amp; Caricatures</h4>
+                  <p className="text-xl sm:text-2xl font-bold">Instant Photo Prints &amp; Caricatures</p>
                   <p className="text-xs sm:text-sm text-gray-200">Cherished memories guests can hold in their hands right at the venue</p>
                 </div>
               </div>

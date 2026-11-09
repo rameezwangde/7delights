@@ -228,7 +228,7 @@ export default function MerryGoRoundPage() {
                     <span className="inline-block px-3 py-1 rounded-full bg-[#7B61FF] text-white text-xs font-semibold w-max mb-2">
                       Fairground Centerpiece
                     </span>
-                    <h3 className="text-xl font-bold">Classic Musical Merry-Go-Round</h3>
+                    <p className="text-xl font-bold">Classic Musical Merry-Go-Round</p>
                     <p className="text-xs text-white/90 mt-1">Revolving colorful horses and animals with cheerful carnival chimes.</p>
                   </div>
                 </div>
@@ -278,7 +278,7 @@ export default function MerryGoRoundPage() {
                       {rt.tag}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold text-[#111A2E] mb-2">{rt.title}</h3>
+                  <p className="text-lg font-bold text-[#111A2E] mb-2">{rt.title}</p>
                   <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{rt.desc}</p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-[#F2ECE4] flex items-center gap-1.5 text-[11px] text-[#7B61FF] font-semibold">
@@ -410,7 +410,7 @@ export default function MerryGoRoundPage() {
                   <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#F2EDFF] text-[#7B61FF] mb-1">
                     {img.tag}
                   </span>
-                  <h4 className="text-sm font-bold text-[#111A2E]">{img.title}</h4>
+                  <h3 className="text-sm font-bold text-[#111A2E]">{img.title}</h3>
                 </div>
               </div>
             ))}

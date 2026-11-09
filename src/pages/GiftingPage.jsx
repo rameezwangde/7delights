@@ -242,7 +242,7 @@ export default function GiftingPage() {
                       <span className="bg-[#EE3775] text-white text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">
                         Cherished Keepsakes
                       </span>
-                      <h3 className="text-xl font-bold">Unforgettable Memories Packed With Love</h3>
+                      <p className="text-xl font-bold">Unforgettable Memories Packed With Love</p>
                       <p className="text-xs text-white/90">
                         Tailored hampers, theme return gifts, and corporate executive packaging.
                       </p>
@@ -358,7 +358,7 @@ export default function GiftingPage() {
                 
                 <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
                   <div>
-                    <h3 className="text-lg font-bold text-[#111A2E] leading-snug group-hover:text-[#EE3775] transition-colors">{card.title}</h3>
+                    <p className="text-lg font-bold text-[#111A2E] leading-snug group-hover:text-[#EE3775] transition-colors">{card.title}</p>
                     <p className="text-xs text-[#5A6E85] mt-2 leading-relaxed">{card.desc}</p>
                     
                     {/* Key features bullets */}
@@ -450,40 +450,40 @@ export default function GiftingPage() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-[#FFFDF9] p-4 rounded-2xl border border-gray-100 shadow-xs">
-                  <h4 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-[#EE3775]" />
                     Customizable Decoration & Theme
-                  </h4>
+                  </h3>
                   <p className="text-xs text-[#5A6E85] mt-1">
                     Meeting your dream and fascination is our priority. From superhero return gift bags to royal silk trousseau wrapping.
                   </p>
                 </div>
 
                 <div className="bg-[#FFFDF9] p-4 rounded-2xl border border-gray-100 shadow-xs">
-                  <h4 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
                     Rich Infrastructure & Sourcing
-                  </h4>
+                  </h3>
                   <p className="text-xs text-[#5A6E85] mt-1">
                     Direct tie-ups with premium manufacturers ensure high-grade toys, stationery, dry fruits, and executive electronics.
                   </p>
                 </div>
 
                 <div className="bg-[#FFFDF9] p-4 rounded-2xl border border-gray-100 shadow-xs">
-                  <h4 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
                     <Truck className="w-4 h-4 text-blue-600" />
                     Punctual Doorstep Delivery
-                  </h4>
+                  </h3>
                   <p className="text-xs text-[#5A6E85] mt-1">
                     Safe bulk packaging and venue drop-off across Bangalore make party preparations completely hassle-free.
                   </p>
                 </div>
 
                 <div className="bg-[#FFFDF9] p-4 rounded-2xl border border-gray-100 shadow-xs">
-                  <h4 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
                     <Clock className="w-4 h-4 text-amber-500" />
                     24/7 Dedicated Support
-                  </h4>
+                  </h3>
                   <p className="text-xs text-[#5A6E85] mt-1">
                     Our team of caring coordinators is on hand round-the-clock to help you select items, adjust quantities, and meet deadlines.
                   </p>
@@ -515,9 +515,9 @@ export default function GiftingPage() {
                 <span className="bg-[#EE3775] text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md">
                   Host Convenience Reassurance
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-black">
+                <p className="text-2xl sm:text-3xl font-black">
                   Stress-Free Celebrations With 7Delights Gifting
-                </h3>
+                </p>
                 <p className="text-sm text-gray-300 leading-relaxed">
                   Avoid the stress of sourcing, packing, and individual ribbon-tying! We deliver neatly arranged, pre-packed gift sets ready to be distributed directly to your attendees at the party.
                 </p>
@@ -604,7 +604,7 @@ export default function GiftingPage() {
           {/* Additional Support Callout */}
           <div className="mt-10 p-6 rounded-2xl bg-[#FFE8ED]/40 border border-[#FFD0DB] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             <div>
-              <h4 className="text-base font-bold text-[#111A2E]">Planning a large corporate event or 100+ return gifts?</h4>
+              <h3 className="text-base font-bold text-[#111A2E]">Planning a large corporate event or 100+ return gifts?</h3>
               <p className="text-xs text-[#5A6E85] mt-1">Our gifting consultants will share a customized itemized catalog tailored to your exact budget.</p>
             </div>
             <a
@@ -620,9 +620,9 @@ export default function GiftingPage() {
       {/* Bottom Floating/Fixed CTA Banner */}
       <section className="py-10 bg-gradient-to-r from-[#FFF5F7] to-[#FFE8ED] border-t border-[#FFD0DB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <h3 className="text-xl sm:text-2xl font-black text-[#111A2E]">
+          <p className="text-xl sm:text-2xl font-black text-[#111A2E]">
             Delight Your Guests With Handpicked Gifts!
-          </h3>
+          </p>
           <p className="text-xs sm:text-sm text-[#5A6E85] max-w-xl mx-auto">
             Order your customized party return gifts, wedding hampers, or corporate gift packages today with 7Delights in Bangalore.
           </p>

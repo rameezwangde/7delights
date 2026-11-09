@@ -212,7 +212,7 @@ export default function CartoonMascotsPage() {
                       <span className="bg-[#EE3775] text-white text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">
                         Kids Party Favorite
                       </span>
-                      <h3 className="text-xl font-bold">Unforgettable Childhood Memories</h3>
+                      <p className="text-xl font-bold">Unforgettable Childhood Memories</p>
                       <p className="text-xs text-white/90">
                         Life-sized characters dancing, greeting guests, and posing with the birthday star!
                       </p>
@@ -310,7 +310,7 @@ export default function CartoonMascotsPage() {
                     <CheckCircle className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#111A2E]">Animated Movements & Joyful Energy</h4>
+                    <p className="text-sm font-bold text-[#111A2E]">Animated Movements & Joyful Energy</p>
                     <p className="text-xs text-[#5A6E85] mt-0.5">Our mascot artists are trained physical performers who embody the signature walks, funny gestures, and cheerful mannerisms of every character.</p>
                   </div>
                 </div>
@@ -320,7 +320,7 @@ export default function CartoonMascotsPage() {
                     <CheckCircle className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#111A2E]">Cake Cutting Centerpiece & Gift Distribution</h4>
+                    <p className="text-sm font-bold text-[#111A2E]">Cake Cutting Centerpiece & Gift Distribution</p>
                     <p className="text-xs text-[#5A6E85] mt-0.5">Mascots accompany the birthday boy or girl right at the cake table, leading the birthday song cheer and handing out return favors.</p>
                   </div>
                 </div>
@@ -330,7 +330,7 @@ export default function CartoonMascotsPage() {
                     <CheckCircle className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#111A2E]">Punctual & Stress-Free Coordination</h4>
+                    <p className="text-sm font-bold text-[#111A2E]">Punctual & Stress-Free Coordination</p>
                     <p className="text-xs text-[#5A6E85] mt-0.5">7Delights handles complete logistics: prompt arrival, dedicated assistant handler, costume dressing, and disciplined performance schedules.</p>
                   </div>
                 </div>
@@ -384,7 +384,7 @@ export default function CartoonMascotsPage() {
                 </div>
                 <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
                   <div>
-                    <h3 className="text-base font-bold text-[#111A2E] leading-snug">{item.title}</h3>
+                    <p className="text-base font-bold text-[#111A2E] leading-snug">{item.title}</p>
                     <p className="text-xs text-[#5A6E85] mt-2 leading-relaxed">{item.desc}</p>
                   </div>
                   <div className="pt-2 border-t border-gray-100 flex items-center justify-between">
@@ -410,9 +410,9 @@ export default function CartoonMascotsPage() {
                 <span className="bg-[#EE3775] text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md">
                   Host Convenience Guide
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-black">
+                <h2 className="text-2xl sm:text-3xl font-black">
                   What We Need: A Table & A Small Changing Space!
-                </h3>
+                </h2>
                 <p className="text-sm text-gray-300 leading-relaxed">
                   We bring the full sanitized plush costume, accessories, and a supportive team assistant. All the host needs to provide is a private, clean greenroom or changing area where the performer can suit up comfortably, take hydration breathers, and a table to keep belongings.
                 </p>
@@ -476,9 +476,9 @@ export default function CartoonMascotsPage() {
                   <span className="text-[11px] font-bold text-[#EE3775] bg-white/95 px-2 py-0.5 rounded w-max mb-1.5">
                     {img.tag}
                   </span>
-                  <h4 className="text-sm font-bold text-white leading-tight">
+                  <p className="text-sm font-bold text-white leading-tight">
                     {img.caption}
-                  </h4>
+                  </p>
                 </div>
               </div>
             ))}
@@ -539,7 +539,7 @@ export default function CartoonMascotsPage() {
           {/* Additional Support Callout */}
           <div className="mt-10 p-6 rounded-2xl bg-[#FFE8ED]/40 border border-[#FFD0DB] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             <div>
-              <h4 className="text-base font-bold text-[#111A2E]">Want a pair of mascots or a custom themed character?</h4>
+              <h3 className="text-base font-bold text-[#111A2E]">Want a pair of mascots or a custom themed character?</h3>
               <p className="text-xs text-[#5A6E85] mt-1">Our party coordinators can arrange character duos (e.g., Mickey & Minnie) for double the joy.</p>
             </div>
             <a

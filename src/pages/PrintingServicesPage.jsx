@@ -246,7 +246,7 @@ export default function PrintingServicesPage() {
             <div className="p-5 rounded-2xl bg-[#FFF8FA] border border-[#F5E6EC]">
               <div className="flex items-center gap-3 mb-2">
                 <Tag className="w-5 h-5 text-[#EE3775]" />
-                <h4 className="text-sm font-bold text-[#111A2E]">Corporate Merchandise & Swag Kits</h4>
+                <h3 className="text-sm font-bold text-[#111A2E]">Corporate Merchandise & Swag Kits</h3>
               </div>
               <p className="text-xs text-[#5A6E85] leading-relaxed">
                 Create lasting employee and client impressions with custom-printed items they take home: branded tote bags, premium hoodies, ceramic tumblers, and executive leather journals.

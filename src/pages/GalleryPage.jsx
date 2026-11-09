@@ -291,12 +291,12 @@ export default function GalleryPage() {
                 {/* Card Content Body */}
                 <div className="p-5 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3
+                    <p
                       onClick={() => setSelectedPhoto(item)}
                       className="text-[18px] font-bold text-[#111A2E] font-serif mb-2 group-hover:text-[#EE3775] transition-colors cursor-pointer"
                     >
                       {item.title}
-                    </h3>
+                    </p>
                     <p className="text-[13px] text-[#5A6E85] leading-relaxed mb-4">
                       {item.description}
                     </p>
@@ -391,9 +391,9 @@ export default function GalleryPage() {
 
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-[18px] font-bold text-[#111A2E] font-serif mb-2 group-hover:text-[#EE3775] transition-colors">
+                    <p className="text-[18px] font-bold text-[#111A2E] font-serif mb-2 group-hover:text-[#EE3775] transition-colors">
                       {vid.title}
-                    </h3>
+                    </p>
                     <p className="text-[13px] text-[#5A6E85] leading-relaxed">
                       {vid.description}
                     </p>
@@ -527,9 +527,9 @@ export default function GalleryPage() {
                 <span className="px-2.5 py-0.5 rounded-full bg-[#FFE8ED] text-[#EE3775] text-[11px] font-bold uppercase">
                   {selectedPhoto.tag || '7Delights Gallery'}
                 </span>
-                <h4 className="text-[17px] font-bold text-[#111A2E] mt-1 font-serif">
+                <h3 className="text-[17px] font-bold text-[#111A2E] mt-1 font-serif">
                   {selectedPhoto.title}
-                </h4>
+                </h3>
               </div>
 
               <button

@@ -319,9 +319,9 @@ export default function AmusementsPage() {
                 {/* Card Content */}
                 <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-[19px] sm:text-[20px] font-bold text-[#111A2E] font-serif group-hover:text-[#EE3775] transition-colors leading-tight mb-2">
+                    <p className="text-[19px] sm:text-[20px] font-bold text-[#111A2E] font-serif group-hover:text-[#EE3775] transition-colors leading-tight mb-2">
                       {game.title}
-                    </h3>
+                    </p>
                     <p className="text-[13.5px] text-[#5A6E85] leading-relaxed line-clamp-3">
                       {game.desc}
                     </p>

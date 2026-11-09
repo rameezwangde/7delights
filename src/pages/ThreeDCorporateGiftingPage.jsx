@@ -205,7 +205,7 @@ export default function ThreeDCorporateGiftingPage() {
                       <span className="bg-[#EE3775] text-white text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">
                         Futuristic Executive Gifts
                       </span>
-                      <h3 className="text-xl font-bold">Designed For You, Layer By Layer</h3>
+                      <p className="text-xl font-bold">Designed For You, Layer By Layer</p>
                       <p className="text-xs text-white/90">
                         High-precision custom items impossible to manufacture via standard mass tooling.
                       </p>
@@ -276,7 +276,7 @@ export default function ThreeDCorporateGiftingPage() {
                     <CheckCircle className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#111A2E]">Concept to Creation (CAD Engineering)</h4>
+                    <p className="text-sm font-bold text-[#111A2E]">Concept to Creation (CAD Engineering)</p>
                     <p className="text-xs text-[#5A6E85] mt-0.5">You don’t need to be a designer. Our team brainstorms ideas, builds digital CAD files, and tests rapid prototypes.</p>
                   </div>
                 </div>
@@ -286,7 +286,7 @@ export default function ThreeDCorporateGiftingPage() {
                     <CheckCircle className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#111A2E]">Local Tech Prowess in Bengaluru</h4>
+                    <p className="text-sm font-bold text-[#111A2E]">Local Tech Prowess in Bengaluru</p>
                     <p className="text-xs text-[#5A6E85] mt-0.5">Direct access to state-of-the-art additive printers guarantees ultra-fine layer resolution, fast turnaround, and zero shipping delays.</p>
                   </div>
                 </div>
@@ -296,7 +296,7 @@ export default function ThreeDCorporateGiftingPage() {
                     <CheckCircle className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#111A2E]">Integrated Live-Printing Event Booths</h4>
+                    <p className="text-sm font-bold text-[#111A2E]">Integrated Live-Printing Event Booths</p>
                     <p className="text-xs text-[#5A6E85] mt-0.5">Incorporate 3D printers into your corporate summit or exhibition, allowing attendees to watch customized souvenirs fabricated live.</p>
                   </div>
                 </div>
@@ -350,7 +350,7 @@ export default function ThreeDCorporateGiftingPage() {
                 </div>
                 <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
                   <div>
-                    <h3 className="text-base font-bold text-[#111A2E] leading-snug">{item.title}</h3>
+                    <p className="text-base font-bold text-[#111A2E] leading-snug">{item.title}</p>
                     <p className="text-xs text-[#5A6E85] mt-2 leading-relaxed">{item.desc}</p>
                   </div>
                   <div className="pt-2 border-t border-gray-100 flex items-center justify-between">
@@ -376,9 +376,9 @@ export default function ThreeDCorporateGiftingPage() {
                 <span className="bg-[#EE3775] text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md">
                   Perfect For Business Milestones
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-black">
+                <h2 className="text-2xl sm:text-3xl font-black">
                   Product Launches • Employee Anniversaries • VIP Rewards
-                </h3>
+                </h2>
                 <p className="text-sm text-gray-300 leading-relaxed">
                   Celebrate 5 or 10-year work milestones with one-of-a-kind personalized employee sculptures, give VIP guests a tangible miniature of your newly launched product, or distribute high-value conference items that won&apos;t end up in the bin.
                 </p>
@@ -442,9 +442,9 @@ export default function ThreeDCorporateGiftingPage() {
                   <span className="text-[11px] font-bold text-[#EE3775] bg-white/95 px-2 py-0.5 rounded w-max mb-1.5">
                     {img.tag}
                   </span>
-                  <h4 className="text-sm font-bold text-white leading-tight">
+                  <p className="text-sm font-bold text-white leading-tight">
                     {img.caption}
-                  </h4>
+                  </p>
                 </div>
               </div>
             ))}
@@ -505,7 +505,7 @@ export default function ThreeDCorporateGiftingPage() {
           {/* Additional Support Callout */}
           <div className="mt-10 p-6 rounded-2xl bg-[#FFE8ED]/40 border border-[#FFD0DB] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             <div>
-              <h4 className="text-base font-bold text-[#111A2E]">Have a proprietary patent or sensitive industrial design?</h4>
+              <h3 className="text-base font-bold text-[#111A2E]">Have a proprietary patent or sensitive industrial design?</h3>
               <p className="text-xs text-[#5A6E85] mt-1">We readily execute mutual NDAs prior to receiving engineering CAD blueprints or product specifications.</p>
             </div>
             <a

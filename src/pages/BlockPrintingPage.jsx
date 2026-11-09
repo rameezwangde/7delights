@@ -233,7 +233,7 @@ export default function BlockPrintingPage() {
                     <span className="inline-block px-3 py-1 rounded-full bg-[#059669] text-white text-xs font-semibold w-max mb-2">
                       Live Hands-On Workshop
                     </span>
-                    <h3 className="text-xl font-bold">Heritage Woodblock Textile Art</h3>
+                    <p className="text-xl font-bold">Heritage Woodblock Textile Art</p>
                     <p className="text-xs text-white/90 mt-1">Guests press intricate Sanganeri &amp; floral stamps to design personalized tote bags.</p>
                   </div>
                 </div>
@@ -284,7 +284,7 @@ export default function BlockPrintingPage() {
                       {st.icon}
                     </div>
                   </div>
-                  <h3 className="text-lg font-bold text-[#111A2E] mb-2">{st.title}</h3>
+                  <p className="text-lg font-bold text-[#111A2E] mb-2">{st.title}</p>
                   <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{st.desc}</p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-[#F2ECE4] flex items-center gap-1.5 text-[11px] text-[#059669] font-semibold">
@@ -416,7 +416,7 @@ export default function BlockPrintingPage() {
                   <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#E3F8F2] text-[#059669] mb-1">
                     {img.tag}
                   </span>
-                  <h4 className="text-sm font-bold text-[#111A2E]">{img.title}</h4>
+                  <h3 className="text-sm font-bold text-[#111A2E]">{img.title}</h3>
                 </div>
               </div>
             ))}

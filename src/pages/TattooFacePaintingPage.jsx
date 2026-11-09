@@ -179,9 +179,9 @@ export default function TattooFacePaintingPage() {
                   <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#EE3775] text-[11px] font-bold uppercase tracking-wider mb-2">
                     Live Body & Face Art
                   </span>
-                  <h3 className="text-xl sm:text-2xl font-bold font-serif mb-1">
+                  <p className="text-xl sm:text-2xl font-bold font-serif mb-1">
                     Safe, Washable & Stunning Designs
-                  </h3>
+                  </p>
                   <p className="text-[13px] text-white/90">
                     Glitter, bio-degradable skin safe colors, butterflies, dragons, floral accents, and kids favorite cartoon motifs.
                   </p>
@@ -277,9 +277,9 @@ export default function TattooFacePaintingPage() {
                     <span className="text-[11px] font-semibold uppercase tracking-wider text-[#F5A623] block mb-1">
                       7Delights Live Showcase
                     </span>
-                    <h4 className="text-[16px] font-bold leading-tight font-serif">
+                    <h3 className="text-[16px] font-bold leading-tight font-serif">
                       {img.title}
-                    </h4>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -346,9 +346,9 @@ export default function TattooFacePaintingPage() {
           {/* Quick Support Banner */}
           <div className="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-[#FFE4B8] flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
             <div>
-              <h3 className="text-lg font-black text-[#111A2E] font-serif mb-1">
+              <p className="text-lg font-black text-[#111A2E] font-serif mb-1">
                 Have queries about our services and performances?
-              </h3>
+              </p>
               <p className="text-[13.5px] text-[#5A6E85]">
                 Feel Free to Talk To Us Right Away! Call our friendly party coordinators in Bangalore.
               </p>

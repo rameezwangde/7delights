@@ -324,7 +324,7 @@ export default function PopcornPage() {
                     <span className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full border mb-3 ${item.color}`}>
                       {item.tag}
                     </span>
-                    <h3 className="text-lg font-bold text-[#111A2E] mb-2">{item.title}</h3>
+                    <p className="text-lg font-bold text-[#111A2E] mb-2">{item.title}</p>
                     <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
@@ -363,7 +363,7 @@ export default function PopcornPage() {
                       {h.icon}
                     </div>
                     <div>
-                      <h4 className="text-sm font-bold text-[#111A2E]">{h.title}</h4>
+                      <h3 className="text-sm font-bold text-[#111A2E]">{h.title}</h3>
                       <p className="text-xs text-[#5A6E85]">{h.desc}</p>
                     </div>
                   </div>

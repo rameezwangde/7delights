@@ -297,9 +297,9 @@ export default function DanceTroupeDetailPage() {
                 </div>
                 <div className="p-5 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-base sm:text-lg font-bold text-[#111A2E] mb-2 group-hover:text-[#EE3775] transition-colors">
+                    <p className="text-base sm:text-lg font-bold text-[#111A2E] mb-2 group-hover:text-[#EE3775] transition-colors">
                       {srv.title}
-                    </h3>
+                    </p>
                     <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">
                       {srv.desc}
                     </p>

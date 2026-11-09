@@ -243,7 +243,7 @@ export default function PartyCakesPage() {
                       <span className="bg-[#EE3775] text-white text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">
                         Delightful Masterpieces
                       </span>
-                      <h3 className="text-xl font-bold">Centerpiece Flavor & Artistry</h3>
+                      <p className="text-xl font-bold">Centerpiece Flavor & Artistry</p>
                       <p className="text-xs text-white/90">
                         Crafted with love, fine chocolate, fresh fruit glazes, and bespoke party decorations.
                       </p>
@@ -352,7 +352,7 @@ export default function PartyCakesPage() {
                 
                 <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
                   <div>
-                    <h3 className="text-lg font-bold text-[#111A2E] leading-snug group-hover:text-[#EE3775] transition-colors">{card.title}</h3>
+                    <p className="text-lg font-bold text-[#111A2E] leading-snug group-hover:text-[#EE3775] transition-colors">{card.title}</p>
                     <p className="text-xs text-[#5A6E85] mt-2 leading-relaxed">{card.desc}</p>
                     
                     {/* Key features bullets */}
@@ -430,40 +430,40 @@ export default function PartyCakesPage() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-[#FFFDF9] p-4 rounded-2xl border border-gray-100 shadow-xs">
-                  <h4 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-[#EE3775]" />
                     Customizable Decoration
-                  </h4>
+                  </h3>
                   <p className="text-xs text-[#5A6E85] mt-1">
                     Meeting your dream and fascination is our priority. From fondants to intricate cream art, we bring any design to life.
                   </p>
                 </div>
 
                 <div className="bg-[#FFFDF9] p-4 rounded-2xl border border-gray-100 shadow-xs">
-                  <h4 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
                     Finest Ingredients
-                  </h4>
+                  </h3>
                   <p className="text-xs text-[#5A6E85] mt-1">
                     Seasoned bakers using pure Belgian cocoa, authentic vanilla pods, and fresh farm butter for unmatched melt-in-mouth texture.
                   </p>
                 </div>
 
                 <div className="bg-[#FFFDF9] p-4 rounded-2xl border border-gray-100 shadow-xs">
-                  <h4 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
                     <Truck className="w-4 h-4 text-blue-600" />
                     Safe Doorstep Delivery
-                  </h4>
+                  </h3>
                   <p className="text-xs text-[#5A6E85] mt-1">
                     Specialized shock-damped cake transit across Bangalore ensures flawless presentation right up to cake cutting.
                   </p>
                 </div>
 
                 <div className="bg-[#FFFDF9] p-4 rounded-2xl border border-gray-100 shadow-xs">
-                  <h4 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] flex items-center gap-2">
                     <Clock className="w-4 h-4 text-amber-500" />
                     24/7 Dedicated Support
-                  </h4>
+                  </h3>
                   <p className="text-xs text-[#5A6E85] mt-1">
                     Our team of caring coordinators is on hand round-the-clock to assist with custom sizes, flavors, and urgent party requests.
                   </p>
@@ -495,9 +495,9 @@ export default function PartyCakesPage() {
                 <span className="bg-[#EE3775] text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md">
                   Party Host Assurance
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-black">
+                <p className="text-2xl sm:text-3xl font-black">
                   Stress-Free Celebrations With 7Delights Cakes
-                </h3>
+                </p>
                 <p className="text-sm text-gray-300 leading-relaxed">
                   Focus on welcoming your guests while we handle the baking, careful boxing, and punctual venue delivery. Custom sparkler candles, cutting knife, and paper plates can be paired seamlessly with every cake order!
                 </p>
@@ -584,7 +584,7 @@ export default function PartyCakesPage() {
           {/* Additional Support Callout */}
           <div className="mt-10 p-6 rounded-2xl bg-[#FFE8ED]/40 border border-[#FFD0DB] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             <div>
-              <h4 className="text-base font-bold text-[#111A2E]">Need a massive corporate slab or a 5-tier wedding cake?</h4>
+              <h3 className="text-base font-bold text-[#111A2E]">Need a massive corporate slab or a 5-tier wedding cake?</h3>
               <p className="text-xs text-[#5A6E85] mt-1">Our executive cake artists manage large scale baking, structural internal doweling, and venue stacking.</p>
             </div>
             <a
@@ -600,9 +600,9 @@ export default function PartyCakesPage() {
       {/* Bottom Floating/Fixed CTA Banner */}
       <section className="py-10 bg-gradient-to-r from-[#FFF5F7] to-[#FFE8ED] border-t border-[#FFD0DB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <h3 className="text-xl sm:text-2xl font-black text-[#111A2E]">
+          <p className="text-xl sm:text-2xl font-black text-[#111A2E]">
             Make Your Celebration Sweeter With 7Delights Cakes!
-          </h3>
+          </p>
           <p className="text-xs sm:text-sm text-[#5A6E85] max-w-xl mx-auto">
             Order your custom birthday, wedding, anniversary, or corporate cake today with doorstep delivery across Bangalore.
           </p>

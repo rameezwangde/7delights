@@ -176,9 +176,9 @@ export default function TaroFaceReadingPage() {
                   <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#7B61FF] text-[11px] font-bold uppercase tracking-wider mb-2">
                     Divination Booth
                   </span>
-                  <h3 className="text-xl sm:text-2xl font-bold font-serif mb-1">
+                  <p className="text-xl sm:text-2xl font-bold font-serif mb-1">
                     Astrological & Tarot Insights
-                  </h3>
+                  </p>
                   <p className="text-[13px] text-white/90">
                     A magnet of curiosity at corporate family days, weddings, cocktail parties, and milestone anniversaries.
                   </p>
@@ -274,9 +274,9 @@ export default function TaroFaceReadingPage() {
                     <span className="text-[11px] font-semibold uppercase tracking-wider text-[#F5A623] block mb-1">
                       7Delights Live Showcase
                     </span>
-                    <h4 className="text-[16px] font-bold leading-tight font-serif">
+                    <h3 className="text-[16px] font-bold leading-tight font-serif">
                       {img.title}
-                    </h4>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -343,9 +343,9 @@ export default function TaroFaceReadingPage() {
           {/* Quick Support Banner */}
           <div className="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-[#E0D5FF] flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
             <div>
-              <h3 className="text-lg font-black text-[#111A2E] font-serif mb-1">
+              <p className="text-lg font-black text-[#111A2E] font-serif mb-1">
                 Have queries about our tarot and palmistry counters?
-              </h3>
+              </p>
               <p className="text-[13.5px] text-[#5A6E85]">
                 Feel Free to Talk To Us Right Away! Call our friendly party coordinators in Bangalore.
               </p>

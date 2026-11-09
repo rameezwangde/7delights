@@ -250,7 +250,7 @@ export default function MCTeamBuildingPage() {
             <div className="p-5 rounded-2xl bg-[#FFF8FA] border border-[#F5E6EC]">
               <div className="flex items-center gap-3 mb-2">
                 <Trophy className="w-5 h-5 text-[#EE3775]" />
-                <h4 className="text-sm font-bold text-[#111A2E]">Recognition & Reward Ceremonies</h4>
+                <h3 className="text-sm font-bold text-[#111A2E]">Recognition & Reward Ceremonies</h3>
               </div>
               <p className="text-xs text-[#5A6E85] leading-relaxed">
                 Award ceremonies are the most crucial part of our show, motivating attendees to step outside their comfort zones, bond with colleagues, and be celebrated for their achievements.

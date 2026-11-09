@@ -313,6 +313,10 @@ export default function ShowsEntertainmentPage() {
           </div>
 
           {/* Cards Grid: 13 Authentic Shows */}
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-3">Live Entertainment Services & Shows</h2>
+            <p className="text-sm sm:text-base text-[#5A6E85]">Browse our specialized entertainment acts for birthday parties, weddings, corporate events, and cultural celebrations.</p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {filteredCards.map((item) => (
               <div
@@ -419,7 +423,7 @@ export default function ShowsEntertainmentPage() {
                   <span className="px-3 py-1 rounded-full bg-[#EE3775] text-[11px] font-bold uppercase tracking-wider mb-2 inline-block">
                     Spectacular Performances
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold">Magic, Puppets &amp; Slapstick Clowns</h4>
+                  <p className="text-xl sm:text-2xl font-bold">Magic, Puppets &amp; Slapstick Clowns</p>
                   <p className="text-xs sm:text-sm text-gray-200">Captivating entertainment designed to delight both kids and adults</p>
                 </div>
               </div>
@@ -480,7 +484,7 @@ export default function ShowsEntertainmentPage() {
               <div className="w-14 h-14 rounded-2xl bg-[#FFE8ED] text-[#EE3775] flex items-center justify-center mx-auto mb-4">
                 <Sliders className="w-7 h-7" />
               </div>
-              <h3 className="text-base font-bold text-[#111A2E] mb-2">Customizable Show Flow</h3>
+              <p className="text-base font-bold text-[#111A2E] mb-2">Customizable Show Flow</p>
               <p className="text-xs text-[#5A6E85] leading-relaxed">
                 Meeting your dream and event schedule becomes a priority for us, and we tailor show lengths to your agenda!
               </p>
@@ -582,7 +586,7 @@ export default function ShowsEntertainmentPage() {
                   <span className="px-3 py-1 rounded-full bg-[#00A86B] text-[11px] font-bold uppercase tracking-wider mb-2 inline-block">
                     Circus &amp; Slapstick Fun
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold">Juggling Clowns &amp; Interactive Hosts</h4>
+                  <p className="text-xl sm:text-2xl font-bold">Juggling Clowns &amp; Interactive Hosts</p>
                   <p className="text-xs sm:text-sm text-gray-200">Bringing pure laughter and high-spirited amusement to every guest</p>
                 </div>
               </div>

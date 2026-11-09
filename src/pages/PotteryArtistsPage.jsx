@@ -176,9 +176,9 @@ export default function PotteryArtistsPage() {
                   <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#059669] text-[11px] font-bold uppercase tracking-wider mb-2">
                     Hands-On Experience
                   </span>
-                  <h3 className="text-xl sm:text-2xl font-bold font-serif mb-1">
+                  <p className="text-xl sm:text-2xl font-bold font-serif mb-1">
                     Spin Clay & Take Souvenirs Home
-                  </h3>
+                  </p>
                   <p className="text-[13px] text-white/90">
                     Guests of all ages get to mould their own diyas, mini bowls, vases, and pots guided by our master craftsmen.
                   </p>
@@ -274,9 +274,9 @@ export default function PotteryArtistsPage() {
                     <span className="text-[11px] font-semibold uppercase tracking-wider text-[#F5A623] block mb-1">
                       7Delights Live Showcase
                     </span>
-                    <h4 className="text-[16px] font-bold leading-tight font-serif">
+                    <h3 className="text-[16px] font-bold leading-tight font-serif">
                       {img.title}
-                    </h4>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -343,9 +343,9 @@ export default function PotteryArtistsPage() {
           {/* Quick Support Banner */}
           <div className="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-[#C1F1E1] flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
             <div>
-              <h3 className="text-lg font-black text-[#111A2E] font-serif mb-1">
+              <p className="text-lg font-black text-[#111A2E] font-serif mb-1">
                 Have queries about our pottery services and live wheel setup?
-              </h3>
+              </p>
               <p className="text-[13.5px] text-[#5A6E85]">
                 Feel Free to Talk To Us Right Away! Call our friendly party coordinators in Bangalore.
               </p>

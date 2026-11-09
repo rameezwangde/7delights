@@ -296,6 +296,10 @@ export default function CorporateEventsPage() {
       {/* 3. CORPORATE CARDS GRID */}
       <section className="py-12 md:py-16 bg-[#FFFDF9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-3">Corporate Event Management Services</h2>
+            <p className="text-sm sm:text-base text-[#5A6E85]">End-to-end planning and production for annual days, conferences, award nights, product launches, and team outbound events.</p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredCards.map((card) => (
               <div
@@ -457,7 +461,7 @@ export default function CorporateEventsPage() {
                 <div className="w-12 h-12 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC] flex items-center justify-center mb-4">
                   {item.icon}
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-[#111A2E] mb-2">{item.title}</h3>
+                <p className="text-base sm:text-lg font-bold text-[#111A2E] mb-2">{item.title}</p>
                 <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{item.desc}</p>
               </div>
             ))}

@@ -208,7 +208,7 @@ export default function ClownAndJugglingPage() {
                       <span className="bg-[#EE3775] text-white text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">
                         High-Octane Party Art
                       </span>
-                      <h3 className="text-xl font-bold">Unrivalled Circus Entertainment</h3>
+                      <p className="text-xl font-bold">Unrivalled Circus Entertainment</p>
                       <p className="text-xs text-white/90">
                         Balls, clubs, rings, LED glow, and slapstick humor all in one unforgettable performance!
                       </p>
@@ -306,7 +306,7 @@ export default function ClownAndJugglingPage() {
                     <CheckCircle className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#111A2E]">Decades of Live Circus & Stage Experience</h4>
+                    <p className="text-sm font-bold text-[#111A2E]">Decades of Live Circus & Stage Experience</p>
                     <p className="text-xs text-[#5A6E85] mt-0.5">Our performers are seasoned professionals with mastery over multi-ball, clubs, rings, and comic audience improvisation.</p>
                   </div>
                 </div>
@@ -316,7 +316,7 @@ export default function ClownAndJugglingPage() {
                     <CheckCircle className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#111A2E]">High-Energy Music & Beat Synchrony</h4>
+                    <p className="text-sm font-bold text-[#111A2E]">High-Energy Music & Beat Synchrony</p>
                     <p className="text-xs text-[#5A6E85] mt-0.5">Every toss, catch, drop tease, and spinning stunt is performed in rhythm with energetic circus-themed beats through the venue music system.</p>
                   </div>
                 </div>
@@ -326,7 +326,7 @@ export default function ClownAndJugglingPage() {
                     <CheckCircle className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#111A2E]">Zero Setup Hassle for the Host</h4>
+                    <p className="text-sm font-bold text-[#111A2E]">Zero Setup Hassle for the Host</p>
                     <p className="text-xs text-[#5A6E85] mt-0.5">From costume dressing and stage prep to prop cleanup, our artist handles everything punctually so you can relax with your guests.</p>
                   </div>
                 </div>
@@ -380,7 +380,7 @@ export default function ClownAndJugglingPage() {
                 </div>
                 <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
                   <div>
-                    <h3 className="text-base font-bold text-[#111A2E] leading-snug">{item.title}</h3>
+                    <p className="text-base font-bold text-[#111A2E] leading-snug">{item.title}</p>
                     <p className="text-xs text-[#5A6E85] mt-2 leading-relaxed">{item.desc}</p>
                   </div>
                   <div className="pt-2 border-t border-gray-100 flex items-center justify-between">
@@ -406,9 +406,9 @@ export default function ClownAndJugglingPage() {
                 <span className="bg-[#EE3775] text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md">
                   Host Convenience Guide
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-black">
+                <h2 className="text-2xl sm:text-3xl font-black">
                   What We Need From You: Just A Music System!
-                </h3>
+                </h2>
                 <p className="text-sm text-gray-300 leading-relaxed">
                   We bring our complete clown costume, juggling balls, clubs, rings, trick boxes, and comedic props. All we require at the venue is a clear floor/stage space and an audio connection (Bluetooth/AUX/mic) so our artist can sync their tricks with catchy party beats!
                 </p>
@@ -472,9 +472,9 @@ export default function ClownAndJugglingPage() {
                   <span className="text-[11px] font-bold text-[#EE3775] bg-white/95 px-2 py-0.5 rounded w-max mb-1.5">
                     {img.tag}
                   </span>
-                  <h4 className="text-sm font-bold text-white leading-tight">
+                  <p className="text-sm font-bold text-white leading-tight">
                     {img.caption}
-                  </h4>
+                  </p>
                 </div>
               </div>
             ))}
@@ -535,7 +535,7 @@ export default function ClownAndJugglingPage() {
           {/* Additional Support Callout */}
           <div className="mt-10 p-6 rounded-2xl bg-[#FFE8ED]/40 border border-[#FFD0DB] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             <div>
-              <h4 className="text-base font-bold text-[#111A2E]">Have a custom venue requirement or large carnival?</h4>
+              <h3 className="text-base font-bold text-[#111A2E]">Have a custom venue requirement or large carnival?</h3>
               <p className="text-xs text-[#5A6E85] mt-1">Our party entertainment specialists are ready to tailor a multi-artist circus package.</p>
             </div>
             <a

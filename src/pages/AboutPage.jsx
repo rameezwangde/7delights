@@ -181,12 +181,12 @@ function AboutPage() {
                     key={i}
                     className={`p-4 rounded-2xl ${v.bg} border border-black/5 flex flex-col justify-start`}
                   >
-                    <h4
+                    <h3
                       className="text-[14.5px] font-bold mb-1 font-sans"
                       style={{ color: v.color }}
                     >
                       {v.title}
-                    </h4>
+                    </h3>
                     <p className="text-[12.5px] text-[#5A6E85] leading-snug">
                       {v.desc}
                     </p>
@@ -225,9 +225,9 @@ function AboutPage() {
                     <Sparkles className="w-3 h-3 text-[#F5A623]" />
                     <span>Real 7Delights Luxury Setup</span>
                   </div>
-                  <h3 className="text-[20px] sm:text-[22px] font-bold font-serif leading-tight">
+                  <p className="text-[20px] sm:text-[22px] font-bold font-serif leading-tight">
                     Custom Milestone Birthday & Theme Decor
-                  </h3>
+                  </p>
                   <p className="text-[13px] text-white/80 mt-1">
                     Illuminated marquee styling, organic floral-balloon arches, and turnkey party production in Bangalore.
                   </p>

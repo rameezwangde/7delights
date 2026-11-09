@@ -224,7 +224,7 @@ export default function MagicShowStagePage() {
                     <span className="inline-block px-2.5 py-1 rounded bg-[#EE3775] text-[11px] font-bold tracking-wide uppercase mb-1">
                       Grand Stage Spectacular
                     </span>
-                    <h3 className="text-lg font-bold">Bangalore’s Premier Magicians</h3>
+                    <p className="text-lg font-bold">Bangalore’s Premier Magicians</p>
                     <p className="text-xs text-white/90">Stage illusions, sleight of hand, mentalism, and kids comedy.</p>
                   </div>
                 </div>
@@ -267,7 +267,7 @@ export default function MagicShowStagePage() {
                 <div className="w-10 h-10 rounded-lg bg-white shadow-sm border border-gray-100 flex items-center justify-center mb-3">
                   {item.icon}
                 </div>
-                <h3 className="font-bold text-[#111A2E] text-base mb-1.5">{item.title}</h3>
+                <p className="font-bold text-[#111A2E] text-base mb-1.5">{item.title}</p>
                 <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -461,7 +461,7 @@ export default function MagicShowStagePage() {
           {/* Direct Support Card */}
           <div className="mt-8 p-5 rounded-xl bg-white border border-[#EE3775]/20 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              <h4 className="font-bold text-[#111A2E] text-sm sm:text-base">Need a customized stage illusion or corporate mentalism act?</h4>
+              <h3 className="font-bold text-[#111A2E] text-sm sm:text-base">Need a customized stage illusion or corporate mentalism act?</h3>
               <p className="text-xs text-[#5A6E85] mt-0.5">Speak directly with our Bangalore entertainment specialists.</p>
             </div>
             <a 

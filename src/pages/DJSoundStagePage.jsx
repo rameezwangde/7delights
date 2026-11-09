@@ -278,6 +278,10 @@ export default function DJSoundStagePage() {
           </div>
 
           {/* Cards Grid */}
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-3">DJ, Sound, Lighting & Stage Setups</h2>
+            <p className="text-sm sm:text-base text-[#5A6E85]">Professional audio systems, intelligent concert lighting, custom truss stages, and backdrops across Bangalore.</p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {filteredCards.map((item) => (
               <div
@@ -377,7 +381,7 @@ export default function DJSoundStagePage() {
                   <span className="px-3 py-1 rounded-full bg-[#EE3775] text-[11px] font-bold uppercase tracking-wider mb-2 inline-block">
                     Concert Rigging
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold">Intelligent Moving Lights & LED Visuals</h4>
+                  <p className="text-xl sm:text-2xl font-bold">Intelligent Moving Lights & LED Visuals</p>
                   <p className="text-xs sm:text-sm text-gray-200">Engineered for high-impact visual choreography</p>
                 </div>
               </div>
@@ -448,7 +452,7 @@ export default function DJSoundStagePage() {
               <div className="w-14 h-14 rounded-2xl bg-[#FFE8ED] text-[#EE3775] flex items-center justify-center mx-auto mb-4">
                 <Sliders className="w-7 h-7" />
               </div>
-              <h3 className="text-base font-bold text-[#111A2E] mb-2">Customizable Decoration</h3>
+              <p className="text-base font-bold text-[#111A2E] mb-2">Customizable Decoration</p>
               <p className="text-xs text-[#5A6E85] leading-relaxed">
                 Meeting your dream and fascination becomes a priority for us, and we do it with all our strength!
               </p>
@@ -540,7 +544,7 @@ export default function DJSoundStagePage() {
                   <span className="px-3 py-1 rounded-full bg-[#00A86B] text-[11px] font-bold uppercase tracking-wider mb-2 inline-block">
                     Turnkey Stage Architecture
                   </span>
-                  <h4 className="text-xl sm:text-2xl font-bold">Full Stage, Audio & Flex Installation</h4>
+                  <p className="text-xl sm:text-2xl font-bold">Full Stage, Audio & Flex Installation</p>
                   <p className="text-xs sm:text-sm text-gray-200">Customized to any venue geometry across Karnataka</p>
                 </div>
               </div>

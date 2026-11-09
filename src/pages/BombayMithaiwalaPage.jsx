@@ -243,9 +243,9 @@ export default function BombayMithaiwalaPage() {
                     <Sparkles className="w-3.5 h-3.5" />
                     Authentic Confectionery
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold mb-1">
+                  <p className="text-xl sm:text-2xl font-bold mb-1">
                     Vintage Bombay Mithai Counter
-                  </h3>
+                  </p>
                   <p className="text-white/80 text-xs sm:text-sm">
                     Complete setup with decorative platters, cultural mascot props &amp; courteous attendant.
                   </p>
@@ -436,11 +436,11 @@ export default function BombayMithaiwalaPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-white">
                     <span className="text-xs font-semibold text-[#EE3775]">{img.subtitle}</span>
-                    <h4 className="text-sm font-bold">{img.title}</h4>
+                    <h3 className="text-sm font-bold">{img.title}</h3>
                   </div>
                 </div>
                 <div className="p-4">
-                  <h4 className="text-sm font-bold text-[#111A2E]">{img.title}</h4>
+                  <h3 className="text-sm font-bold text-[#111A2E]">{img.title}</h3>
                   <p className="text-xs text-[#5A6E85] mt-0.5">{img.subtitle}</p>
                 </div>
               </div>
@@ -501,7 +501,7 @@ export default function BombayMithaiwalaPage() {
           {/* Direct Assistance Card */}
           <div className="mt-12 p-6 rounded-2xl bg-[#FFE8ED]/40 border border-[#FFD0DB] flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              <h4 className="text-base font-bold text-[#111A2E]">Have queries about our Bombay Mithaiwala counter?</h4>
+              <h3 className="text-base font-bold text-[#111A2E]">Have queries about our Bombay Mithaiwala counter?</h3>
               <p className="text-xs sm:text-sm text-[#5A6E85] mt-0.5">Feel free to talk to our party organizers right away!</p>
             </div>
             <a

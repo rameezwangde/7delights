@@ -331,30 +331,30 @@ export default function StageFlexBackgroundPage() {
 
               <div className="space-y-3 pt-2">
                 <div className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
-                  <h4 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
                     <Palette className="w-4 h-4 text-[#EE3775]" />
                     <span>Custom Concept &amp; Design</span>
-                  </h4>
+                  </h3>
                   <p className="text-xs sm:text-sm text-[#5A6E85]">
                     Our experienced designers work closely with you to understand your vision and create a unique stage and backdrop design that perfectly complements your event theme and corporate objectives.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
-                  <h4 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
                     <Layers className="w-4 h-4 text-[#D97706]" />
                     <span>Sturdy Stage Construction</span>
-                  </h4>
+                  </h3>
                   <p className="text-xs sm:text-sm text-[#5A6E85]">
                     We build sturdy and visually appealing stages of various sizes and configurations, ensuring safety, structural stability, non-slip carpeting, and comfortable steps.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
-                  <h4 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
+                  <h3 className="text-sm font-bold text-[#111A2E] mb-1 flex items-center gap-2">
                     <Maximize2 className="w-4 h-4 text-[#059669]" />
                     <span>Backdrop Creation &amp; Tension Framing</span>
-                  </h4>
+                  </h3>
                   <p className="text-xs sm:text-sm text-[#5A6E85]">
                     From elegant drapes and custom-printed anti-glare banners to intricate 3D set designs and scenic backdrops, we engineer backdrops that look flawless in photography and video streams.
                   </p>
@@ -399,7 +399,7 @@ export default function StageFlexBackgroundPage() {
                     <span className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full border mb-3 ${item.color}`}>
                       {item.tag}
                     </span>
-                    <h3 className="text-lg font-bold text-[#111A2E] mb-2">{item.title}</h3>
+                    <p className="text-lg font-bold text-[#111A2E] mb-2">{item.title}</p>
                     <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
@@ -434,7 +434,7 @@ export default function StageFlexBackgroundPage() {
                   <div key={i} className="p-4 rounded-xl bg-[#FFFDF9] border border-[#F5E6EC]">
                     <div className="flex items-center gap-2 mb-1.5">
                       {feat.icon}
-                      <h4 className="text-sm font-bold text-[#111A2E]">{feat.title}</h4>
+                      <h3 className="text-sm font-bold text-[#111A2E]">{feat.title}</h3>
                     </div>
                     <p className="text-xs text-[#5A6E85] leading-relaxed">{feat.desc}</p>
                   </div>
@@ -497,7 +497,7 @@ export default function StageFlexBackgroundPage() {
                     <span className="text-[10px] font-bold uppercase tracking-wider text-[#EE3775] bg-[#FFE8ED] px-2 py-0.5 rounded-full inline-block mb-1.5">
                       {occ.badge}
                     </span>
-                    <h4 className="text-sm font-bold text-[#111A2E] mb-1">{occ.name}</h4>
+                    <h3 className="text-sm font-bold text-[#111A2E] mb-1">{occ.name}</h3>
                     <p className="text-xs text-[#5A6E85] leading-relaxed">{occ.desc}</p>
                   </div>
                 ))}
@@ -543,7 +543,7 @@ export default function StageFlexBackgroundPage() {
                   />
                 </div>
                 <div className="p-3.5 bg-white">
-                  <h4 className="text-xs sm:text-sm font-bold text-[#111A2E] mb-1">{img.title}</h4>
+                  <h3 className="text-xs sm:text-sm font-bold text-[#111A2E] mb-1">{img.title}</h3>
                   <p className="text-[11px] text-[#5A6E85] line-clamp-2">{img.desc}</p>
                 </div>
               </div>
