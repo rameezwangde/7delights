@@ -34,6 +34,13 @@ export default function PartyCakesPage() {
     setOpenFaq(openFaq === index ? null : index);
   };
 
+  const scrollToFeaturesAndContact = () => {
+    const el = document.getElementById('cake-features-contact');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const categories = [
     { id: 'all', label: 'All Party Cakes' },
     { id: 'birthday', label: 'Birthday Cakes' },
@@ -329,13 +336,14 @@ export default function PartyCakesPage() {
             {filteredCards.map((card) => (
               <div 
                 key={card.id} 
-                className="bg-white rounded-3xl overflow-hidden border border-[#E8EFF7] shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
+                onClick={scrollToFeaturesAndContact}
+                className="bg-white rounded-3xl overflow-hidden border border-[#E8EFF7] shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col cursor-pointer group"
               >
                 <div className="h-52 overflow-hidden relative">
                   <img 
                     src={card.image} 
                     alt={card.title} 
-                    className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                   />
                   <span className={`absolute top-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-lg border shadow-sm ${card.badgeBg}`}>
                     {card.tag}
@@ -344,7 +352,7 @@ export default function PartyCakesPage() {
                 
                 <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
                   <div>
-                    <h3 className="text-lg font-bold text-[#111A2E] leading-snug">{card.title}</h3>
+                    <h3 className="text-lg font-bold text-[#111A2E] leading-snug group-hover:text-[#EE3775] transition-colors">{card.title}</h3>
                     <p className="text-xs text-[#5A6E85] mt-2 leading-relaxed">{card.desc}</p>
                     
                     {/* Key features bullets */}
@@ -359,15 +367,20 @@ export default function PartyCakesPage() {
                   </div>
 
                   <div className="pt-2 border-t border-gray-100 flex items-center justify-between gap-2">
-                    <a
-                      href="#contact"
-                      className="flex-1 text-center py-2.5 px-3 bg-[#EE3775] hover:bg-[#D82563] text-white text-xs font-bold rounded-xl shadow-xs transition-colors"
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        scrollToFeaturesAndContact();
+                      }}
+                      className="flex-1 text-center py-2.5 px-3 bg-[#EE3775] hover:bg-[#D82563] text-white text-xs font-bold rounded-xl shadow-xs transition-colors cursor-pointer"
                     >
                       {card.btnText}
-                    </a>
+                    </button>
                     <a
                       href="tel:+919980029977"
-                      className="py-2.5 px-3 bg-white border border-gray-200 hover:border-gray-300 text-[#111A2E] rounded-xl text-xs font-bold transition-colors flex items-center justify-center shrink-0"
+                      onClick={(e) => e.stopPropagation()}
+                      className="py-2.5 px-3 bg-white border border-gray-200 hover:border-gray-300 text-[#111A2E] rounded-xl text-xs font-bold transition-colors flex items-center justify-center shrink-0 cursor-pointer"
                       title="Call Now"
                     >
                       <Phone className="w-3.5 h-3.5 text-[#EE3775]" />
@@ -387,7 +400,7 @@ export default function PartyCakesPage() {
       </section>
 
       {/* Why Choose 7Delights For Cakes Section */}
-      <section className="py-14 sm:py-16 bg-white border-b border-[#F0E6EA]">
+      <section id="cake-features-contact" className="py-14 sm:py-16 bg-white border-b border-[#F0E6EA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             

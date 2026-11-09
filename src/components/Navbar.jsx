@@ -119,6 +119,8 @@ export default function Navbar({ currentPage = 'home' }) {
                             ? '#shows-entertainment'
                             : item === 'PARTY CAKES'
                             ? '#cakes'
+                            : item === 'GIFTING'
+                            ? '#gifting'
                             : '#services';
                         return (
                           <a
@@ -237,6 +239,8 @@ export default function Navbar({ currentPage = 'home' }) {
                               ? '#shows-entertainment'
                               : item === 'PARTY CAKES'
                               ? '#cakes'
+                              : item === 'GIFTING'
+                              ? '#gifting'
                               : '#services';
                           return (
                             <a

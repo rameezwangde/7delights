@@ -91,6 +91,9 @@ import StorytellingPage from './pages/StorytellingPage';
 import ClownAndJugglingPage from './pages/ClownAndJugglingPage';
 import CartoonMascotsPage from './pages/CartoonMascotsPage';
 import PartyCakesPage from './pages/PartyCakesPage';
+import GiftingPage from './pages/GiftingPage';
+import ThreeDCorporateGiftingPage from './pages/ThreeDCorporateGiftingPage';
+import FloatingContactButtons from './components/FloatingContactButtons';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -101,6 +104,35 @@ export default function App() {
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
         window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#gifting/3d-printing-corporate-gifting' ||
+        hash === '#/gifting/3d-printing-corporate-gifting' ||
+        hash === '#gifting/3d-printing' ||
+        hash === '#/gifting/3d-printing' ||
+        hash === '#3d-printing-corporate-gifting' ||
+        hash === '#/3d-printing-corporate-gifting' ||
+        hash === '#3d-corporate-gifting' ||
+        hash === '#/3d-corporate-gifting' ||
+        hash === '#3d-printing-gifts' ||
+        hash === '#/3d-printing-gifts' ||
+        hash === '#3d-printing' ||
+        hash === '#/3d-printing'
+      ) {
+        setCurrentPage('3d-printing-corporate-gifting');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#gifting' ||
+        hash === '#/gifting' ||
+        hash === '#gifts' ||
+        hash === '#/gifts' ||
+        hash === '#return-gifts' ||
+        hash === '#/return-gifts' ||
+        hash.startsWith('#gifting-overview')
+      ) {
+        setCurrentPage('gifting');
+        if (!hash.startsWith('#gifting-overview')) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
       } else if (
         hash === '#cakes' ||
         hash === '#/cakes' ||
@@ -1002,6 +1034,16 @@ export default function App() {
             <AboutPage />
             <CtaSection />
           </>
+        ) : currentPage === '3d-printing-corporate-gifting' ? (
+          <>
+            <ThreeDCorporateGiftingPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'gifting' ? (
+          <>
+            <GiftingPage />
+            <CtaSection />
+          </>
         ) : currentPage === 'party-cakes' ? (
           <>
             <PartyCakesPage />
@@ -1424,6 +1466,7 @@ export default function App() {
         )}
       </main>
       <Footer />
+      <FloatingContactButtons />
     </div>
   );
 }

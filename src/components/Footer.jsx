@@ -57,6 +57,19 @@ export default function Footer() {
                 </svg>
               </a>
               <a
+                href="https://api.whatsapp.com/send/?phone=919980029977&text=Hi%207Delights,%20I%20am%20interested%20in%20your%20event%20planning%20services.%20Please%20share%20details."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="w-10 h-10 rounded-full bg-[#25D366]/20 hover:bg-[#25D366] text-white border border-[#25D366]/40 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md hover:scale-105"
+              >
+                <img
+                  src="/assets/fixed_whatsapp.svg"
+                  alt="WhatsApp"
+                  className="w-5 h-5 object-contain"
+                />
+              </a>
+              <a
                 href="#placeholder"
                 aria-label="YouTube"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#EE3775] text-white border border-white/15 flex items-center justify-center transition-all duration-200 shadow-sm hover:shadow-md"
@@ -130,7 +143,20 @@ export default function Footer() {
                 <div className="w-7 h-7 rounded-full bg-white/10 border border-white/15 flex items-center justify-center shrink-0 text-[#EE3775] shadow-xs">
                   <Phone className="w-3.5 h-3.5" />
                 </div>
-                <a href="#placeholder" className="hover:text-[#EE3775] transition-colors font-medium text-white">+91 99800 29977</a>
+                <a href="tel:+919980029977" className="hover:text-[#EE3775] transition-colors font-medium text-white">+91 99800 29977</a>
+              </div>
+              <div className="flex items-center space-x-2.5">
+                <div className="w-7 h-7 rounded-full bg-[#25D366]/20 border border-[#25D366]/40 flex items-center justify-center shrink-0 shadow-xs">
+                  <img src="/assets/fixed_whatsapp.svg" alt="WhatsApp" className="w-4 h-4 object-contain" />
+                </div>
+                <a 
+                  href="https://api.whatsapp.com/send/?phone=919980029977&text=Hi%207Delights,%20I%20am%20interested%20in%20your%20event%20planning%20services.%20Please%20share%20details."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#25D366] transition-colors font-medium text-white"
+                >
+                  WhatsApp Chat
+                </a>
               </div>
               <div className="flex items-center space-x-2.5">
                 <div className="w-7 h-7 rounded-full bg-white/10 border border-white/15 flex items-center justify-center shrink-0 text-[#EE3775] shadow-xs">
