@@ -63,7 +63,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="relative w-full bg-[#FFFDF9] overflow-hidden py-16 sm:py-20 lg:py-24 select-none">
+    <section className="relative w-full bg-[#FFFDF9] overflow-hidden pt-6 sm:pt-8 lg:pt-10 pb-16 sm:py-20 lg:py-24 select-none">
       
       {/* Decorative side doodles */}
       <div className="absolute top-12 left-4 pointer-events-none opacity-80 hidden lg:block">

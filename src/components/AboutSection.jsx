@@ -60,7 +60,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="relative w-full bg-[#FEFAF7] overflow-hidden pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 lg:pb-20 select-none">
+    <section className="relative w-full bg-[#FEFAF7] overflow-hidden pt-6 sm:pt-8 lg:pt-10 pb-8 sm:pb-10 lg:pb-12 select-none">
       
       {/* Background Soft Blob on the left */}
       <div className="absolute top-12 left-8 w-[580px] h-[640px] bg-[#FDECEF]/65 rounded-[80px] -rotate-6 blur-2xl pointer-events-none -z-0 hidden md:block" />
