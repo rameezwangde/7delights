@@ -1,7 +1,29 @@
-import React from 'react';
-import { Phone, Mail, MapPin, Heart, ArrowUpRight, Sparkles, CreditCard, ShieldCheck } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Phone, Mail, MapPin, Heart, ArrowUpRight, Sparkles, CreditCard, ShieldCheck, Clock } from 'lucide-react';
 
 export default function Footer() {
+  const [currentDateTime, setCurrentDateTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentDateTime(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const formattedDate = currentDateTime.toLocaleDateString('en-IN', {
+    weekday: 'short',
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+  });
+
+  const formattedTime = currentDateTime.toLocaleTimeString('en-IN', {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true,
+  });
   return (
     <footer className="relative w-full bg-[#162137] text-white pt-16 sm:pt-20 pb-12 overflow-hidden select-none border-t-2 border-[#EE3775]/30">
       
@@ -224,9 +246,22 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Bar: Copyright & Handcrafted Note */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[13.5px] text-gray-400 gap-4">
+        {/* Bottom Bar: Copyright, Live Date/Time Badge & Handcrafted Note */}
+        <div className="pt-8 flex flex-col lg:flex-row items-center justify-between text-[13.5px] text-gray-400 gap-4">
           <p>© {new Date().getFullYear()} <span className="font-semibold text-white">7Delights.in</span> — All rights reserved.</p>
+          
+          {/* Live Date & Time Stamp */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs sm:text-[13px] text-gray-200 shadow-inner">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <Clock className="w-3.5 h-3.5 text-[#EE3775]" />
+            <span className="font-medium text-gray-300">{formattedDate}</span>
+            <span className="text-gray-500">•</span>
+            <span className="font-mono font-semibold text-white tracking-wider">{formattedTime}</span>
+          </div>
+
           <div className="flex items-center space-x-1.5 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-full text-gray-300">
             <span>Crafted with</span>
             <Heart className="w-4 h-4 text-[#EE3775] fill-[#EE3775]" />
