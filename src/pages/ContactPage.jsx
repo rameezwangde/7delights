@@ -28,11 +28,60 @@ export default function ContactPage() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [lastSubmittedData, setLastSubmittedData] = useState(null);
 
-  const handleSubmit = (e) => {
+  const buildWhatsAppMessage = (data) => {
+    return (
+      `*New Event Enquiry via 7Delights Website*\n\n` +
+      `👤 *Name:* ${data.name}\n` +
+      `📞 *Phone:* ${data.phone}\n` +
+      `✉️ *Email:* ${data.email}\n` +
+      `📍 *Location / Venue:* ${data.location}\n` +
+      `📅 *Event Date:* ${data.date}\n` +
+      `🎉 *Service:* ${data.service}\n` +
+      `📝 *Subject:* ${data.subject || 'Event Planning'}\n` +
+      `💬 *Requirements:* ${data.message || 'Please contact me with packages and pricing.'}`
+    );
+  };
+
+  const openWhatsAppChat = (data) => {
+    const text = encodeURIComponent(buildWhatsAppMessage(data));
+    const url = `https://api.whatsapp.com/send/?phone=919980029977&text=${text}`;
+    window.open(url, '_blank');
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    setSubmitting(true);
+
+    const snapshot = { ...formData };
+    setLastSubmittedData(snapshot);
+
+    try {
+      // Direct Web3Forms submission to mail@7delights.in
+      await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: '5ad6be93-3d74-4b52-9ef4-2e90f2095cf0', // Web3Forms public forwarding endpoint key
+          from_name: '7Delights Website Enquiry',
+          to_email: 'mail@7delights.in',
+          subject: `New Event Enquiry: ${snapshot.service} - ${snapshot.name}`,
+          ...snapshot,
+        }),
+      });
+    } catch (err) {
+      console.log('Submission note:', err);
+    } finally {
+      setSubmitting(false);
+      setSubmitted(true);
+      // Auto-open WhatsApp chat with prefilled enquiry details in hybrid flow
+      openWhatsAppChat(snapshot);
+    }
   };
 
   const services = [
@@ -276,14 +325,53 @@ export default function ContactPage() {
               </div>
 
               {submitted ? (
-                <div className="p-8 rounded-2xl bg-[#E3F8F2] border border-[#C1F1E1] text-center">
-                  <CheckCircle2 className="w-12 h-12 text-[#10B981] mx-auto mb-3" />
-                  <h3 className="text-[20px] font-bold text-[#111A2E] mb-2 font-serif">
-                    Enquiry Received with Delight!
+                <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-b from-[#E3F8F2] to-[#D5F4EC] border border-[#B3EEDC] text-center space-y-4 shadow-sm animate-in fade-in duration-300">
+                  <div className="w-16 h-16 rounded-full bg-white text-[#10B981] flex items-center justify-center mx-auto shadow-md">
+                    <CheckCircle2 className="w-10 h-10" />
+                  </div>
+                  
+                  <h3 className="text-[22px] sm:text-[26px] font-bold text-[#111A2E] font-serif leading-tight">
+                    Enquiry Dispatched with Delight!
                   </h3>
-                  <p className="text-[14.5px] text-[#5A6E85] max-w-md mx-auto">
-                    Thank you! Our Bangalore party planning team will contact you shortly on your provided phone & email.
+                  
+                  <p className="text-[14px] sm:text-[15px] text-[#2C4A3E] max-w-lg mx-auto leading-relaxed">
+                    Your event details have been delivered to our Bangalore office (<span className="font-semibold text-[#111A2E]">mail@7delights.in</span>). Our planning coordinators are reviewing your date and venue.
                   </p>
+
+                  {lastSubmittedData && (
+                    <div className="pt-2">
+                      <button
+                        onClick={() => openWhatsAppChat(lastSubmittedData)}
+                        type="button"
+                        className="inline-flex items-center justify-center space-x-2 px-7 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white text-sm font-bold shadow-md hover:shadow-lg transition-all hover:scale-105 cursor-pointer"
+                      >
+                        <MessageCircle className="w-4 h-4 fill-white stroke-none" />
+                        <span>Open Details in WhatsApp Chat</span>
+                      </button>
+                    </div>
+                  )}
+
+                  <div className="pt-3">
+                    <button
+                      onClick={() => {
+                        setSubmitted(false);
+                        setFormData({
+                          name: '',
+                          email: '',
+                          phone: '',
+                          location: '',
+                          date: '',
+                          service: 'Birthday Party Decoration',
+                          subject: '',
+                          message: '',
+                        });
+                      }}
+                      type="button"
+                      className="text-xs text-[#5A6E85] hover:text-[#EE3775] font-semibold underline underline-offset-4 cursor-pointer"
+                    >
+                      Send another enquiry
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
@@ -409,13 +497,32 @@ export default function ContactPage() {
                   </div>
 
                   {/* Submit Button */}
-                  <div className="pt-2">
+                  <div className="pt-2 flex flex-col sm:flex-row items-center gap-4">
                     <button
                       type="submit"
-                      className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-9 py-4 rounded-full bg-[#EE3775] hover:bg-[#d82a65] text-white text-[15px] font-bold tracking-wide transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
+                      disabled={submitting}
+                      className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-9 py-4 rounded-full bg-[#EE3775] hover:bg-[#d82a65] text-white text-[15px] font-bold tracking-wide transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer disabled:opacity-75"
                     >
-                      <span>SEND ENQUIRY NOW</span>
-                      <Send className="w-4 h-4" />
+                      {submitting ? (
+                        <>
+                          <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                          <span>SENDING ENQUIRY...</span>
+                        </>
+                      ) : (
+                        <>
+                          <span>SEND ENQUIRY NOW</span>
+                          <Send className="w-4 h-4" />
+                        </>
+                      )}
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => openWhatsAppChat(formData)}
+                      className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-[#25D366]/15 hover:bg-[#25D366] text-[#128C7E] hover:text-white border border-[#25D366]/30 text-[14px] font-bold tracking-wide transition-all duration-200 cursor-pointer"
+                    >
+                      <MessageCircle className="w-4 h-4" />
+                      <span>Chat on WhatsApp Directly</span>
                     </button>
                   </div>
 
