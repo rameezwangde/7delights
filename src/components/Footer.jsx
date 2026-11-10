@@ -166,12 +166,12 @@ export default function Footer() {
               Our Services
             </h4>
             <ul className="space-y-2.5 text-[14px] text-gray-300">
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Birthday Decoration</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Wedding Planning</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Corporate Events</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Kids Activities</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Party Catering</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">DJ & Stage Setup</a></li>
+              <li><a href="#birthday-balloon-decorations" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Birthday Decoration</a></li>
+              <li><a href="#flower-decorations" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Wedding Planning</a></li>
+              <li><a href="#corporate-events" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Corporate Events</a></li>
+              <li><a href="#amusements-games" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Kids Activities</a></li>
+              <li><a href="#party-fun-eatables" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Party Catering</a></li>
+              <li><a href="#dj-sound-stage-lighting" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">DJ & Stage Setup</a></li>
             </ul>
           </div>
 
@@ -181,12 +181,12 @@ export default function Footer() {
               Support & Legal
             </h4>
             <ul className="space-y-2.5 text-[14px] text-gray-300">
-              <li><a href="#about" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">FAQ</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Customer Support</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Cancel & Refund</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Privacy Policy</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Terms & Conditions</a></li>
-              <li><a href="#placeholder" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Site Map</a></li>
+              <li><a href="#faq" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">FAQ</a></li>
+              <li><a href="#customer-support" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Customer Support</a></li>
+              <li><a href="#cancel-refund" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Cancel & Refund</a></li>
+              <li><a href="#privacy-policy" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Privacy Policy</a></li>
+              <li><a href="#terms-conditions" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Terms & Conditions</a></li>
+              <li><a href="#sitemap" className="hover:text-[#EE3775] hover:translate-x-1 inline-block transition-all duration-150">Site Map</a></li>
             </ul>
           </div>
 

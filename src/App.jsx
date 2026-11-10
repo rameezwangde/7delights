@@ -93,6 +93,12 @@ import CartoonMascotsPage from './pages/CartoonMascotsPage';
 import PartyCakesPage from './pages/PartyCakesPage';
 import GiftingPage from './pages/GiftingPage';
 import ThreeDCorporateGiftingPage from './pages/ThreeDCorporateGiftingPage';
+import FAQPage from './pages/FAQPage';
+import CustomerSupportPage from './pages/CustomerSupportPage';
+import CancelRefundPage from './pages/CancelRefundPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsConditionsPage from './pages/TermsConditionsPage';
+import SiteMapPage from './pages/SiteMapPage';
 import FloatingContactButtons from './components/FloatingContactButtons';
 
 export default function App() {
@@ -103,6 +109,66 @@ export default function App() {
       const hash = window.location.hash.toLowerCase();
       if (hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#faq' ||
+        hash === '#/faq' ||
+        hash === '#faqs' ||
+        hash === '#/faqs' ||
+        hash === '#frequently-asked-questions' ||
+        hash === '#/frequently-asked-questions'
+      ) {
+        setCurrentPage('faq');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#customer-support' ||
+        hash === '#/customer-support' ||
+        hash === '#support' ||
+        hash === '#/support' ||
+        hash === '#help' ||
+        hash === '#/help'
+      ) {
+        setCurrentPage('customer-support');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#cancel-refund' ||
+        hash === '#/cancel-refund' ||
+        hash === '#cancellation-refund' ||
+        hash === '#/cancellation-refund' ||
+        hash === '#cancellation-policy' ||
+        hash === '#/cancellation-policy' ||
+        hash === '#refund-policy' ||
+        hash === '#/refund-policy' ||
+        hash === '#refund' ||
+        hash === '#/refund'
+      ) {
+        setCurrentPage('cancel-refund');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#privacy-policy' ||
+        hash === '#/privacy-policy' ||
+        hash === '#privacy' ||
+        hash === '#/privacy'
+      ) {
+        setCurrentPage('privacy-policy');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#terms-conditions' ||
+        hash === '#/terms-conditions' ||
+        hash === '#terms-and-conditions' ||
+        hash === '#/terms-and-conditions' ||
+        hash === '#terms' ||
+        hash === '#/terms'
+      ) {
+        setCurrentPage('terms-conditions');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
+        hash === '#sitemap' ||
+        hash === '#/sitemap' ||
+        hash === '#site-map' ||
+        hash === '#/site-map'
+      ) {
+        setCurrentPage('sitemap');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
         hash === '#gifting/3d-printing-corporate-gifting' ||
@@ -1446,6 +1512,36 @@ export default function App() {
         ) : currentPage === 'gallery' ? (
           <>
             <GalleryPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'faq' ? (
+          <>
+            <FAQPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'customer-support' ? (
+          <>
+            <CustomerSupportPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'cancel-refund' ? (
+          <>
+            <CancelRefundPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'privacy-policy' ? (
+          <>
+            <PrivacyPolicyPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'terms-conditions' ? (
+          <>
+            <TermsConditionsPage />
+            <CtaSection />
+          </>
+        ) : currentPage === 'sitemap' ? (
+          <>
+            <SiteMapPage />
             <CtaSection />
           </>
         ) : currentPage === 'blog' ? (

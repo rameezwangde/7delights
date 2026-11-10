@@ -290,7 +290,7 @@ function AboutPage() {
       {/* ======================================================== */}
       {/* 4. EVENT FAQ SECTION (CREATIVE ACCORDION)                */}
       {/* ======================================================== */}
-      <section className="relative w-full py-18 sm:py-22 lg:py-26 overflow-hidden">
+      <section id="faq" className="relative w-full py-18 sm:py-22 lg:py-26 overflow-hidden">
         
         {/* Subtle Ambient Glow */}
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#FFE8ED]/40 rounded-full blur-3xl pointer-events-none" />
