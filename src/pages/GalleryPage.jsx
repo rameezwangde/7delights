@@ -22,7 +22,7 @@ export default function GalleryPage() {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [openFaq, setOpenFaq] = useState(0);
 
-  // Exact gallery items scraped directly from 7delights.in/gallery/
+  // Exact gallery items scraped directly from 7delights/gallery/
   const galleryItems = [
     {
       id: 1,
@@ -106,7 +106,7 @@ export default function GalleryPage() {
     },
   ];
 
-  // Featured Videos Showcase Section from 7delights.in/gallery/
+  // Featured Videos Showcase Section from 7delights/gallery/
   const featuredVideos = [
     {
       id: 1,
@@ -279,7 +279,7 @@ export default function GalleryPage() {
 
                   {/* Bottom Strip */}
                   <div className="absolute bottom-3 left-3.5 right-3.5 flex items-center justify-between text-[11.5px] text-white/90 font-medium">
-                    <span>7Delights.in Bangalore</span>
+                    <span>7Delights Bangalore</span>
                     <span className="flex items-center space-x-1">
                       <Camera className="w-3 h-3 text-[#F5A623]" />
                       <span>Live Setup</span>

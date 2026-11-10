@@ -110,7 +110,7 @@ export default function ClayModelingPage() {
               </div>
 
               <p className="text-[15px] sm:text-[16px] text-[#4F6174] leading-relaxed mb-4">
-                Get Creative with Our Interactive Clay Modeling Workshop! Looking for a hands-on, therapeutic, and creatively engaging activity for your next event? 7Delights.in brings the art of Clay Modeling right to your venue! This interactive workshop is a fantastic way to engage guests of all ages, foster creativity, and provide a unique, tangible keepsake they can take home.
+                Get Creative with Our Interactive Clay Modeling Workshop! Looking for a hands-on, therapeutic, and creatively engaging activity for your next event? 7Delights brings the art of Clay Modeling right to your venue! This interactive workshop is a fantastic way to engage guests of all ages, foster creativity, and provide a unique, tangible keepsake they can take home.
               </p>
 
               <p className="text-[14.5px] sm:text-[15.5px] text-[#4F6174] leading-relaxed mb-6">
@@ -225,13 +225,13 @@ export default function ClayModelingPage() {
               </ul>
             </div>
 
-            {/* Box 2: 7Delights.in - The Best Place for Clay Modeling */}
+            {/* Box 2: 7Delights - The Best Place for Clay Modeling */}
             <div className="bg-gradient-to-br from-[#FFF5F6] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FCD5DE] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#EE3775] text-white flex items-center justify-center mb-6 shadow-md shadow-[#EE3775]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                7Delights.in - Best Place for Clay Modeling
+                7Delights - Best Place for Clay Modeling
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
                 Our team manages the entire station from setup to clean-up, ensuring a seamless and enjoyable experience. Whether it is Corporate Team Building, Birthday Parties, Community Carnivals, or Cultural Fairs, we bring the best supplies and expert instructors!

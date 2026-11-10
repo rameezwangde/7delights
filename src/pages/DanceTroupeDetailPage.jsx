@@ -223,7 +223,7 @@ export default function DanceTroupeDetailPage() {
               Captivating Choreography, Storytelling & Visual Spectacle
             </h2>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-              At <strong>7Delights.in</strong>, we understand that dance is far more than just movement; it is emotion, celebration, and pure visual spectacle. Whether you are hosting an annual corporate awards night, an opulent wedding sangeet, an alumni reunion, or a brand activation, our dance troupes ignite the room and set the ultimate party mood.
+              At <strong>7Delights</strong>, we understand that dance is far more than just movement; it is emotion, celebration, and pure visual spectacle. Whether you are hosting an annual corporate awards night, an opulent wedding sangeet, an alumni reunion, or a brand activation, our dance troupes ignite the room and set the ultimate party mood.
             </p>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
               We collaborate with highly skilled, charismatic artists and seasoned choreographers who adapt routines to match your audience, stage dimensions, and music preferences.

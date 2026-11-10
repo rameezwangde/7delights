@@ -228,7 +228,7 @@ export default function AmusementsPage() {
           </h1>
 
           <p className="text-[14.5px] sm:text-[16px] text-[#5A6E85] max-w-2xl mx-auto leading-relaxed">
-            7DELIGHTS.in understands the significance of healthy entertainment in one’s life. Explore our superb collection of 10+ live amusement activities, bouncy castles, carnival stalls, and VR zones!
+            7DELIGHTS understands the significance of healthy entertainment in one’s life. Explore our superb collection of 10+ live amusement activities, bouncy castles, carnival stalls, and VR zones!
           </p>
 
           {/* Search Bar */}
@@ -362,10 +362,10 @@ export default function AmusementsPage() {
               ENTERTAIN WITH TOP AMUSEMENTS
             </span>
             <h2 className="text-[30px] sm:text-[38px] font-bold text-[#111A2E] font-serif mt-2 mb-3">
-              7DELIGHTS.in Puts Top Shows, Amusements And Games
+              7DELIGHTS Puts Top Shows, Amusements And Games
             </h2>
             <p className="text-[14px] sm:text-[15.5px] text-[#5A6E85] leading-relaxed">
-              At 7DELIGHTS.in, we understand how vital amusement and games activities are to energize you! We leave no opportunity at all to put up the finest shows to make you feel relaxed with our healthy practices. All our amusement and games activities are safe, fun, and perfect for everyone belonging to any age group.
+              At 7DELIGHTS, we understand how vital amusement and games activities are to energize you! We leave no opportunity at all to put up the finest shows to make you feel relaxed with our healthy practices. All our amusement and games activities are safe, fun, and perfect for everyone belonging to any age group.
             </p>
           </div>
 

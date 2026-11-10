@@ -18,7 +18,7 @@ export default function ServicesPage() {
   const [activeTab, setActiveTab] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // 21 Scraped Activity Counters directly from 7delights.in/activities-artists/
+  // 21 Scraped Activity Counters directly from 7delights/activities-artists/
   const activities = [
     {
       id: 1,
@@ -450,7 +450,7 @@ export default function ServicesPage() {
               HOME OF EXEMPLARY ACTIVITIES
             </span>
             <h2 className="text-[32px] sm:text-[40px] font-bold text-[#111A2E] font-serif mt-2 mb-3">
-              7DELIGHTS.in — A Name You Can Trust
+              7DELIGHTS — A Name You Can Trust
             </h2>
             <p className="text-[14.5px] sm:text-[15.5px] text-[#5A6E85]">
               If you are planning to hold a fest, birthday, or corporate gathering, think of us to entertain your guests with engaging activities.

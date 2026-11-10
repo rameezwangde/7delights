@@ -467,7 +467,7 @@ export default function PartyFunEatablesPage() {
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-6">
-                Right from the inception of our business, <strong>7DELIGHTS.in</strong> has been the favorite destination to serve clients with the finest food. We undertake responsibilities keeping an eye on the requirements and quality parameters clients look for.
+                Right from the inception of our business, <strong>7DELIGHTS</strong> has been the favorite destination to serve clients with the finest food. We undertake responsibilities keeping an eye on the requirements and quality parameters clients look for.
               </p>
 
               <h3 className="text-lg font-bold text-[#111A2E] mb-3">

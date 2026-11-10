@@ -212,13 +212,13 @@ export default function MCTeamBuildingPage() {
           <div className="lg:col-span-7 space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFE8ED] text-[#EE3775] text-xs font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Forge Stronger Teams with 7delights.in</span>
+              <span>Forge Stronger Teams with 7delights</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E]">
               Boost Morale, Strengthen Communication & Enhance Productivity
             </h2>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-              Looking to boost team morale, improve cross-team communication, and foster authentic workplace friendships? <strong>7delights.in</strong> offers a wide range of engaging team building activities and corporate MC hosting across Bengaluru.
+              Looking to boost team morale, improve cross-team communication, and foster authentic workplace friendships? <strong>7delights</strong> offers a wide range of engaging team building activities and corporate MC hosting across Bengaluru.
             </p>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
               Our superb professionals showcase their creativity, showmanship, and humor to delight your colleagues. We set up your event, and our MC game professionals act as the catalyst that unites every department — from engineering and operations to sales and senior leadership!

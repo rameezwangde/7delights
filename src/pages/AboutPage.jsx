@@ -73,7 +73,7 @@ function AboutPage() {
 
   const faqs = [
     {
-      question: 'How far in advance should I book 7Delights.in for my event?',
+      question: 'How far in advance should I book 7Delights for my event?',
       answer:
         'To ensure maximum availability of premium artists, specific themes, and equipment, we recommend booking at least 1 to 6 weeks in advance for social parties & corporate events, and 3 to 6 months in advance for major weddings or large-scale corporate launches. However, if you have a last-minute request in Bangalore, contact us & we will do our best to make it happen!',
       icon: <Clock className="w-5 h-5 text-[#EE3775]" />,
@@ -150,7 +150,7 @@ function AboutPage() {
               
               <div className="flex items-center space-x-3 mb-4">
                 <span className="text-[12px] font-bold tracking-[0.2em] text-[#EE3775] uppercase font-sans">
-                  ABOUT 7DELIGHTS.IN
+                  ABOUT 7DELIGHTS
                 </span>
                 <div className="h-[1px] w-14 bg-[#FCD5DE]" />
               </div>
@@ -162,7 +162,7 @@ function AboutPage() {
 
               <div className="space-y-4 text-[15px] sm:text-[16px] text-[#4A5D74] leading-relaxed font-normal">
                 <p>
-                  <strong className="font-semibold text-[#111A2E]">7Delights.in®</strong> has established itself as one of the finest and most respected party and event organizing companies in Bangalore since 2008, delivering bespoke event management services across Karnataka and neighboring states.
+                  <strong className="font-semibold text-[#111A2E]">7Delights®</strong> has established itself as one of the finest and most respected party and event organizing companies in Bangalore since 2008, delivering bespoke event management services across Karnataka and neighboring states.
                 </p>
 
                 <p>
@@ -204,7 +204,7 @@ function AboutPage() {
               <div className="relative z-10 w-full max-w-[620px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
                 <img
                   src="/assets/about-us-hero.jpg"
-                  alt="7Delights.in Luxury Milestone 1st Birthday Setup Bangalore"
+                  alt="7Delights Luxury Milestone 1st Birthday Setup Bangalore"
                   className="w-full h-[460px] sm:h-[540px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 

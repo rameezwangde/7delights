@@ -46,7 +46,7 @@ export default function Footer() {
               <a href="#home" className="inline-block bg-white px-3.5 py-1.5 rounded-xl shadow-sm transition-transform hover:scale-[1.02]">
                 <img
                   src="/assets/logo.png"
-                  alt="7Delights.in Logo"
+                  alt="7Delights Logo"
                   className="h-10 sm:h-11 w-auto object-contain"
                 />
               </a>
@@ -248,7 +248,7 @@ export default function Footer() {
 
         {/* Bottom Bar: Copyright, Live Date/Time Badge & Handcrafted Note */}
         <div className="pt-8 flex flex-col lg:flex-row items-center justify-between text-[13.5px] text-gray-400 gap-4">
-          <p>© {new Date().getFullYear()} <span className="font-semibold text-white">7Delights.in</span> — All rights reserved.</p>
+          <p>© {new Date().getFullYear()} <span className="font-semibold text-white">7Delights</span> — All rights reserved.</p>
           
           {/* Live Date & Time Stamp */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs sm:text-[13px] text-gray-200 shadow-inner">

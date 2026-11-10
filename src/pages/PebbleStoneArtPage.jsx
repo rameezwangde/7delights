@@ -113,7 +113,7 @@ export default function PebbleStoneArtPage() {
               </p>
 
               <p className="text-[14.5px] sm:text-[15.5px] text-[#4F6174] leading-relaxed mb-6">
-                Pebble Stone Art involves craftsmanship, patience, and simplicity, handcrafted to be 100% exclusive. 7Delights.in has a proven track record in this domain. Our top artists create mesmerizing paintings on river pebbles carefully curated for smoothness and quality!
+                Pebble Stone Art involves craftsmanship, patience, and simplicity, handcrafted to be 100% exclusive. 7Delights has a proven track record in this domain. Our top artists create mesmerizing paintings on river pebbles carefully curated for smoothness and quality!
               </p>
 
               {/* Service Specs Card */}
@@ -216,19 +216,19 @@ export default function PebbleStoneArtPage() {
               </p>
             </div>
 
-            {/* Box 2: 7Delights.in – Your Go-To For Pebble Stone Art! */}
+            {/* Box 2: 7Delights – Your Go-To For Pebble Stone Art! */}
             <div className="bg-gradient-to-br from-[#FFF5F6] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FCD5DE] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#EE3775] text-white flex items-center justify-center mb-6 shadow-md shadow-[#EE3775]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                7Delights.in – Go-To For Pebble Stone Art!
+                7Delights – Go-To For Pebble Stone Art!
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                Engaging 7Delights.in for Pebble Stone Arts guarantees exemplary creativity and excellence. Their highly talented artists fashion natural pebbles into beautiful art pieces for any setting.
+                Engaging 7Delights for Pebble Stone Arts guarantees exemplary creativity and excellence. Their highly talented artists fashion natural pebbles into beautiful art pieces for any setting.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
-                With quality and detailing already assured in their work, 7Delights.in designs unique styles that capture your taste and enhance your home or garden decor with permanent sealant coats.
+                With quality and detailing already assured in their work, 7Delights designs unique styles that capture your taste and enhance your home or garden decor with permanent sealant coats.
               </p>
             </div>
 

@@ -347,13 +347,13 @@ export default function DanceTroupePage() {
             {/* Description Details */}
             <div className="lg:col-span-7 space-y-5">
               <span className="text-xs uppercase tracking-wider font-bold text-[#EE3775] bg-[#FFE8ED] px-3 py-1 rounded-md">
-                Dance Troupe &amp; Music — A 7DELIGHTS.in Specialty!
+                Dance Troupe &amp; Music — A 7DELIGHTS Specialty!
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E] leading-snug">
                 Set The Party Mood with Captivating Dances &amp; Resonating Beats
               </h2>
               <p className="text-base text-[#5A6E85] leading-relaxed">
-                Right from our inception, <strong>7DELIGHTS.in</strong> has established itself as a premier provider of live performance entertainment across Bengaluru. We have a roster of trained, enthusiastic, and versatile artists who come together to turn events into unforgettable visual festivals.
+                Right from our inception, <strong>7DELIGHTS</strong> has established itself as a premier provider of live performance entertainment across Bengaluru. We have a roster of trained, enthusiastic, and versatile artists who come together to turn events into unforgettable visual festivals.
               </p>
               <p className="text-base text-[#5A6E85] leading-relaxed">
                 Whether you need high-octane Bollywood hits to get corporate executives grooving, a surprise flash mob at your product launch, or thunderous traditional percussion like Punjabi Dhol, Dollu Kunitha, and Kerala Chenda Melam — our team handles choreography, costumes, and music synchronization seamlessly!

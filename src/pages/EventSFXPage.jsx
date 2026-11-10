@@ -408,11 +408,11 @@ export default function EventSFXPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-4 leading-snug">
-                7Delights.in: Ignite the Senses with Spectacular Special Effects (SFX)!
+                7Delights: Ignite the Senses with Spectacular Special Effects (SFX)!
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-4">
-                Want to turn a great event into a breathtaking cinematic experience? <strong>7Delights.in</strong> specializes in professional Special Effects (SFX) that add that "wow" factor, drama, and excitement to your most important moments. Whether it's a high-profile product launch, a grand wedding entry, or a high-energy concert in Bengaluru, our SFX services are designed to leave your audience absolutely spellbound.
+                Want to turn a great event into a breathtaking cinematic experience? <strong>7Delights</strong> specializes in professional Special Effects (SFX) that add that "wow" factor, drama, and excitement to your most important moments. Whether it's a high-profile product launch, a grand wedding entry, or a high-energy concert in Bengaluru, our SFX services are designed to leave your audience absolutely spellbound.
               </p>
 
               <h3 className="text-base font-bold text-[#111A2E] mb-3">
@@ -514,7 +514,7 @@ export default function EventSFXPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-4 leading-snug">
-                Why Choose 7Delights.in for Your SFX?
+                Why Choose 7Delights for Your SFX?
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-6">

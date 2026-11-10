@@ -50,7 +50,7 @@ export default function PotteryArtistsPage() {
 
   const faqs = [
     {
-      q: 'How far in advance should I book 7Delights.in pottery artist for my event?',
+      q: 'How far in advance should I book 7Delights pottery artist for my event?',
       a: 'To ensure maximum availability of pottery artist & equipment, we recommend booking at least 1 to 6 weeks in advance for social parties & corporate events, and 3 to 6 months in advance for major weddings or large-scale corporate launches. However, if you have a last-minute request, contact us & we will do our best to make it happen!',
     },
     {
@@ -209,7 +209,7 @@ export default function PotteryArtistsPage() {
                 Our Pottery Artists Breathe Life To Clay!
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                Indeed, 7Delights.in has an amazing team of pottery artists who understand their responsibilities well. They have years of knowledge, practice, and expertise in creating amazing pieces using the potter’s wheel. These artists are the real masters! They can attract a major portion of the guests!
+                Indeed, 7Delights has an amazing team of pottery artists who understand their responsibilities well. They have years of knowledge, practice, and expertise in creating amazing pieces using the potter’s wheel. These artists are the real masters! They can attract a major portion of the guests!
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
                 They have an amazing capacity to make people engage themselves in the task. Our potters encourage them to try their skills to make clay objects using the wheel and clay they usually provide. The task is not easy! Still, they leave a deep impression on the guests there! Want to engage yourself?
@@ -228,7 +228,7 @@ export default function PotteryArtistsPage() {
                 Pottery goods are decent, and everyone must admit and accept this. Here, everyone must also accept that the task of a potter is not easy! It requires amazing skills, superb control, adept movement of the fingers, and magnificent mind control.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
-                The potters at 7Delights have them all! We pick up the most extraordinary talents who can steal the show right before you. They communicate with the guests and also encourage them to participate! Their presence in the show can add a few more moons and stars to the party’s delight! Want to experience it? Reach 7Delights.in!
+                The potters at 7Delights have them all! We pick up the most extraordinary talents who can steal the show right before you. They communicate with the guests and also encourage them to participate! Their presence in the show can add a few more moons and stars to the party’s delight! Want to experience it? Reach 7Delights!
               </p>
             </div>
 

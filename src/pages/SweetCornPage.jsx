@@ -271,7 +271,7 @@ export default function SweetCornPage() {
               <GoldUnderline />
             </div>
             <p className="text-[#5A6E85] text-sm sm:text-base mt-4 leading-relaxed">
-              In 7Delights.in, Sweet Corn is one of our most popular offerings because it is wholesome, fresh, and exceptionally tasty! 
+              In 7Delights, Sweet Corn is one of our most popular offerings because it is wholesome, fresh, and exceptionally tasty! 
               We take great care in sourcing select corn that is tender, juicy, and packed with natural goodness. 
               Each serving is freshly seasoned to provide the perfect balance of spices, melted butter, and citrus tang that leaves tastebuds tingling.
             </p>

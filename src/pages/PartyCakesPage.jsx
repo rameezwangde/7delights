@@ -425,7 +425,7 @@ export default function PartyCakesPage() {
               </h2>
 
               <p className="text-base text-[#5A6E85] leading-relaxed">
-                7DELIGHTS.in is exceptional when it comes to creating cakes to match the spirit of your birthday celebration, wedding, or corporate event. We value your emotions and sentiments when you plan to celebrate the milestone moments of those closest to your heart.
+                7DELIGHTS is exceptional when it comes to creating cakes to match the spirit of your birthday celebration, wedding, or corporate event. We value your emotions and sentiments when you plan to celebrate the milestone moments of those closest to your heart.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

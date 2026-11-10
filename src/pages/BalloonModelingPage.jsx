@@ -223,10 +223,10 @@ export default function BalloonModelingPage() {
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                7Delights.in - Your Destination For Decent Balloon Modelling!
+                7Delights - Your Destination For Decent Balloon Modelling!
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
-                7Delights.in has been the home of true artists in varying domains of performing arts. As a leading event organizer in Bangalore, we offer decent services, including Balloon Modelling. Our expert balloon Swingers have years of experience they have earned with hard work and precision. We can involve every guest in the whole performance. Our experts can make you feel proud of your decision to engage us to grace the occasion. Speak to us to schedule an appointment, and get ready to experience the difference!
+                7Delights has been the home of true artists in varying domains of performing arts. As a leading event organizer in Bangalore, we offer decent services, including Balloon Modelling. Our expert balloon Swingers have years of experience they have earned with hard work and precision. We can involve every guest in the whole performance. Our experts can make you feel proud of your decision to engage us to grace the occasion. Speak to us to schedule an appointment, and get ready to experience the difference!
               </p>
             </div>
 

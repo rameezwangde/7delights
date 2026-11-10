@@ -142,7 +142,7 @@ export default function FlowerDecorationsPage() {
 
   const faqs = [
     {
-      q: 'How far in advance should I book 7Delights.in flower decorations for my event?',
+      q: 'How far in advance should I book 7Delights flower decorations for my event?',
       a: 'To ensure maximum availability of flower decorations, specific themes, & equipment, we recommend booking at least 1 to 6 weeks in advance for social parties & corporate events, and 3 to 6 months in advance for major weddings or large-scale corporate launches. However, if you have a last-minute request, contact us & we will do our best to make it happen!'
     },
     {
@@ -360,11 +360,11 @@ export default function FlowerDecorationsPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-4 leading-snug">
-                Flower Decoration — A Grand Specialty of 7DELIGHTS.in!
+                Flower Decoration — A Grand Specialty of 7DELIGHTS!
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-4">
-                At <strong>7DELIGHTS.in</strong>, we consider flowers the best and most potent décor items, as they can impress people more than anything else! Our long experience in all types of décor items indicates that flowers can impact the human mind immediately and profoundly. Though original fresh flowers are the first choice among the majority of clients, premium artificial flowers are also on their way to acclaim decent popularity.
+                At <strong>7DELIGHTS</strong>, we consider flowers the best and most potent décor items, as they can impress people more than anything else! Our long experience in all types of décor items indicates that flowers can impact the human mind immediately and profoundly. Though original fresh flowers are the first choice among the majority of clients, premium artificial flowers are also on their way to acclaim decent popularity.
               </p>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-4">
@@ -458,7 +458,7 @@ export default function FlowerDecorationsPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-4 leading-snug">
-                Flower Decoration At Its Best With 7DELIGHTS.in!
+                Flower Decoration At Its Best With 7DELIGHTS!
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-6">
@@ -479,7 +479,7 @@ export default function FlowerDecorationsPage() {
               </div>
 
               <p className="text-xs sm:text-sm text-[#5A6E85] leading-relaxed mb-8">
-                Get in touch with the experts at <strong>7DELIGHTS.in</strong>. We can bring you the best flower decoration facilities to feel proud of engaging us! Talk to our top team of professionals right now!
+                Get in touch with the experts at <strong>7DELIGHTS</strong>. We can bring you the best flower decoration facilities to feel proud of engaging us! Talk to our top team of professionals right now!
               </p>
 
               <a

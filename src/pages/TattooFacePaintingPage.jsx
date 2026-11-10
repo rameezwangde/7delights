@@ -215,7 +215,7 @@ export default function TattooFacePaintingPage() {
                 In recent years, tattoos and face painting services have gained phenomenal popularity. Our experts believe in the uniqueness of these services. They add a touch of attraction and elegance. Nowadays, you may find tattoos in various body parts of young men and women.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
-                7Delights.in offers the most exciting tattoo and face painting services. We commit ourselves to meeting the highest standards. This commitment makes us get and use the best and safest materials to keep you 100% safe against all hazards. Have queries? Reach us for consultation!
+                7Delights offers the most exciting tattoo and face painting services. We commit ourselves to meeting the highest standards. This commitment makes us get and use the best and safest materials to keep you 100% safe against all hazards. Have queries? Reach us for consultation!
               </p>
             </div>
 
@@ -225,10 +225,10 @@ export default function TattooFacePaintingPage() {
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                Tattoo Artists & Face Painting – A 7Delights.in Specialty!
+                Tattoo Artists & Face Painting – A 7Delights Specialty!
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                With a team of highly-professional tattoo artists and face painters, 7Delights.in promises to be your premium destination! We have great success stories that our experts have written with pride!
+                With a team of highly-professional tattoo artists and face painters, 7Delights promises to be your premium destination! We have great success stories that our experts have written with pride!
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
                 We use the best materials and follow the safest methods to make tattoos and face painting enjoyable. The demand for these services has increased manifold in the last few years. We encourage you to reach out to us as soon as you fix the schedule for the occasion. It can help you avoid disappointments later on!

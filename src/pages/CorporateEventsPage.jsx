@@ -403,13 +403,13 @@ export default function CorporateEventsPage() {
             {/* Description Details */}
             <div className="lg:col-span-7 space-y-5">
               <span className="text-xs uppercase tracking-wider font-bold text-[#EE3775] bg-[#FFE8ED] px-3 py-1 rounded-md">
-                Corporate Event Organizers — A 7DELIGHTS.in Specialty!
+                Corporate Event Organizers — A 7DELIGHTS Specialty!
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E] leading-snug">
                 Crafting Extraordinary Corporate Experiences That Leave a Lasting Impression
               </h2>
               <p className="text-base text-[#5A6E85] leading-relaxed">
-                At 7delights.in, we specialize in organizing seamless, high-impact corporate events. Our team of experienced event planners is dedicated to transforming your company vision into reality, from executive retreats and conferences to grand annual galas and awards nights.
+                At 7delights, we specialize in organizing seamless, high-impact corporate events. Our team of experienced event planners is dedicated to transforming your company vision into reality, from executive retreats and conferences to grand annual galas and awards nights.
               </p>
               <p className="text-base text-[#5A6E85] leading-relaxed">
                 With the richest production and AV infrastructure in Bangalore, our concert-grade sound equipment, intelligent beam lighting, and high-definition P2.9 LED displays create an electrifying ambiance that resonates with all attendees and stakeholders!

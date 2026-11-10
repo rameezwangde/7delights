@@ -274,7 +274,7 @@ export default function ThreeSixtySelfieBoothPage() {
               <GoldUnderline />
             </div>
             <p className="text-[#5A6E85] text-sm sm:text-base mt-4 leading-relaxed">
-              Our 360 Selfie Video Booth at 7Delights.in is designed to be both exhilarating and memorable! 
+              Our 360 Selfie Video Booth at 7Delights is designed to be both exhilarating and memorable! 
               Guests step onto the circular stage, strike their favorite celebrity poses, and our rotating camera captures a dynamic 
               panoramic video rendered with slow-motion effects, trending audio, and customized event branding.
             </p>

@@ -264,7 +264,7 @@ export default function PopcornPage() {
               </p>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-                At <strong>7Delights.in</strong>, we fulfil your taste fantasies regarding the superb taste of popcorn. We arrange counters that supply the attendees with the best popcorn taste. Feel free to reach out to us whenever you plan to get the best and most enjoyable taste and aroma of popcorn.
+                At <strong>7Delights</strong>, we fulfil your taste fantasies regarding the superb taste of popcorn. We arrange counters that supply the attendees with the best popcorn taste. Feel free to reach out to us whenever you plan to get the best and most enjoyable taste and aroma of popcorn.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
@@ -302,7 +302,7 @@ export default function PopcornPage() {
             </h2>
             <GoldUnderline className="w-32 h-auto text-[#EE3775] mx-auto mt-2" />
             <p className="text-xs sm:text-sm text-[#5A6E85] mt-2">
-              At 7Delights.in, our popcorn is made only from the best kernels to produce popcorn that is as fluffy as it is tasty.
+              At 7Delights, our popcorn is made only from the best kernels to produce popcorn that is as fluffy as it is tasty.
             </p>
           </div>
 
@@ -347,13 +347,13 @@ export default function PopcornPage() {
                 Trusted Event Partners
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E]">
-                7Delights.in — Your Trusted Place For Popcorn Counter
+                7Delights — Your Trusted Place For Popcorn Counter
               </h2>
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-                7Delights.in is your favorite go-to for the most exciting popcorn counter for any party you are planning to arrange. Our pride is our popcorn: fresh, delicious, and in different varieties to meet all consumers’ tastes and preferences.
+                7Delights is your favorite go-to for the most exciting popcorn counter for any party you are planning to arrange. Our pride is our popcorn: fresh, delicious, and in different varieties to meet all consumers’ tastes and preferences.
               </p>
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-                This assures the customer of quality, making 7Delights.in the best choice for popcorn lovers. Our popcorn is versatile for every occasion; it could be as a snack at a corporate family day, a wedding cocktail, or a birthday party craving.
+                This assures the customer of quality, making 7Delights the best choice for popcorn lovers. Our popcorn is versatile for every occasion; it could be as a snack at a corporate family day, a wedding cocktail, or a birthday party craving.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

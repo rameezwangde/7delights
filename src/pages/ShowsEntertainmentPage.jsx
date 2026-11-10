@@ -437,11 +437,11 @@ export default function ShowsEntertainmentPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-4 leading-snug">
-                7DELIGHTS.in — Your Partner For Engaging Shows &amp; Entertainment
+                7DELIGHTS — Your Partner For Engaging Shows &amp; Entertainment
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-4">
-                Entertainment has been an important aspect of modern lifestyle! People are involved in hectic schedules, which is why they crave healthy, heart-warming shows and engaging live entertainment. At <strong>7DELIGHTS.in</strong>, we undertake end-to-end responsibilities to help organizers stage decent entertainment shows in and around Bangalore.
+                Entertainment has been an important aspect of modern lifestyle! People are involved in hectic schedules, which is why they crave healthy, heart-warming shows and engaging live entertainment. At <strong>7DELIGHTS</strong>, we undertake end-to-end responsibilities to help organizers stage decent entertainment shows in and around Bangalore.
               </p>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-4">
@@ -535,11 +535,11 @@ export default function ShowsEntertainmentPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-4 leading-snug">
-                7DELIGHTS.in — Trusted Name For Entertainment Shows
+                7DELIGHTS — Trusted Name For Entertainment Shows
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-6">
-                From intimate living-room birthday celebrations to sprawling 1000+ guest corporate gatherings, <strong>7Delights.in</strong> brings authentic stage craft that captures imaginations and creates lifelong memories.
+                From intimate living-room birthday celebrations to sprawling 1000+ guest corporate gatherings, <strong>7Delights</strong> brings authentic stage craft that captures imaginations and creates lifelong memories.
               </p>
 
               <h3 className="text-lg font-bold text-[#111A2E] mb-3">

@@ -216,16 +216,16 @@ export default function RiceArtKeyChainPage() {
               </p>
             </div>
 
-            {/* Box 2: 7Delights.in - Your Choice Rice Art Key Chain */}
+            {/* Box 2: 7Delights - Your Choice Rice Art Key Chain */}
             <div className="bg-gradient-to-br from-[#FFF8F4] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FFE4B8] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#D97706] text-white flex items-center justify-center mb-6 shadow-md shadow-[#D97706]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                7Delights.in - Your Choice For Rice Art
+                7Delights - Your Choice For Rice Art
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                We at 7Delights.in combine traditional gifting with custom craft in our Rice Art Key Chains. Engrave names, lucky dates, or personalized blessings on real rice grains right in front of your attendees!
+                We at 7Delights combine traditional gifting with custom craft in our Rice Art Key Chains. Engrave names, lucky dates, or personalized blessings on real rice grains right in front of your attendees!
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
                 Our team carries all equipment, miniature microscopes, magnifying glass holders, vial caps, and colored keyrings to deliver an impeccable, crowd-pleasing setup.

@@ -216,16 +216,16 @@ export default function TaroFaceReadingPage() {
               </p>
             </div>
 
-            {/* Box 2: 7Delights.in – Your Choice For Taro Services */}
+            {/* Box 2: 7Delights – Your Choice For Taro Services */}
             <div className="bg-gradient-to-br from-[#FAF7FF] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#E0D5FF] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#7B61FF] text-white flex items-center justify-center mb-6 shadow-md shadow-[#7B61FF]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                7Delights.in – Choice For Divination Services!
+                7Delights – Choice For Divination Services!
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                7Delights.in is happy to claim phenomenal success in Taro/Face Reading/Palmistry services across Bangalore venues.
+                7Delights is happy to claim phenomenal success in Taro/Face Reading/Palmistry services across Bangalore venues.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
                 We have a team of highly skilled and qualified professionals who create an atmosphere of warmth, trust, and reliability with accurate predictions and captivating readings, reaching and engaging the maximum number of participants.

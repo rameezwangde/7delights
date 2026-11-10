@@ -274,7 +274,7 @@ export default function PhotoBoothPrintPage() {
               <GoldUnderline />
             </div>
             <p className="text-[#5A6E85] text-sm sm:text-base mt-4 leading-relaxed">
-              Our Photo Booth Print service at 7Delights.in is designed to be both fun and rewarding! 
+              Our Photo Booth Print service at 7Delights is designed to be both fun and rewarding! 
               Using high-end dye-sublimation technology and studio lighting, we ensure crystal-clear, vivid photos printed instantly. 
               Guests have a blast posing with themed props and taking home personalized souvenirs of your celebration.
             </p>

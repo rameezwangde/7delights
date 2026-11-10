@@ -51,7 +51,7 @@ export default function VideosPage() {
     { id: 'decor', label: 'Theme Decoration' },
   ];
 
-  // All 20 real video entries extracted directly from 7delights.in/videos
+  // All 20 real video entries extracted directly from 7delights/videos
   const allVideos = [
     {
       id: 1,

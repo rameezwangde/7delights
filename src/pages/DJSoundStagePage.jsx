@@ -403,7 +403,7 @@ export default function DJSoundStagePage() {
               </p>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-6">
-                <strong>7Delights.in</strong> understands all your needs and fascinations for high-quality DJ SOUND and lighting arrangements! Our excellent sound equipment and infrastructure can create an electrifying impact on all attendees! You can enjoy our facilities well when you arrange any of these parties:
+                <strong>7Delights</strong> understands all your needs and fascinations for high-quality DJ SOUND and lighting arrangements! Our excellent sound equipment and infrastructure can create an electrifying impact on all attendees! You can enjoy our facilities well when you arrange any of these parties:
               </p>
 
               {/* Specialty Points Grid */}
@@ -507,7 +507,7 @@ export default function DJSoundStagePage() {
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-6">
-                <strong>7Delights.in</strong> is proud to claim its superiority when it comes to offering facilities for DJ Sound and Lighting everywhere in and around Bangalore. Our core strength lies in:
+                <strong>7Delights</strong> is proud to claim its superiority when it comes to offering facilities for DJ Sound and Lighting everywhere in and around Bangalore. Our core strength lies in:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">

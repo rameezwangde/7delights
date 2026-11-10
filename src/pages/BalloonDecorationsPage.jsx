@@ -332,7 +332,7 @@ export default function BalloonDecorationsPage() {
             {/* Description Details */}
             <div className="lg:col-span-7 space-y-5">
               <span className="text-xs uppercase tracking-wider font-bold text-[#EE3775] bg-[#FFE8ED] px-3 py-1 rounded-md">
-                7DELIGHTS.in — Home For Exquisite Balloon Decoration
+                7DELIGHTS — Home For Exquisite Balloon Decoration
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E] leading-snug">
                 Infusing Warmth, Color, and Childhood Wonder into Every Celebration

@@ -227,7 +227,7 @@ export default function FlashMobPage() {
               A <strong>flash mob</strong> is a choreographed surprise performance where dancers, appearing as regular bystanders or office staff, suddenly assemble in a public or private venue to execute a stunning synchronized routine before dispersing just as fast as they appeared.
             </p>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-              At <strong>7Delights.in</strong>, we choreograph, coordinate, and stage-manage every detail — from covert audio delivery and undercover attire to dynamic group reveals that leave audiences cheering, filming, and talking for years!
+              At <strong>7Delights</strong>, we choreograph, coordinate, and stage-manage every detail — from covert audio delivery and undercover attire to dynamic group reveals that leave audiences cheering, filming, and talking for years!
             </p>
             <ul className="space-y-2.5 pt-2">
               {[

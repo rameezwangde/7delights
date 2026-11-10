@@ -322,11 +322,11 @@ export default function StageFlexBackgroundPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E] leading-snug">
-                7Delights.in: Set the Stage for Success with Stunning Stage &amp; Background Setups
+                7Delights: Set the Stage for Success with Stunning Stage &amp; Background Setups
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-                Creating a captivating and memorable event starts with a visually stunning stage and backdrop. <strong>7Delights.in</strong> specializes in designing and constructing custom stage and background setups that will elevate your event and leave a lasting impression on your audience. Whether it's a conference, concert, wedding, corporate event, or private party, we'll transform your venue into a breathtaking spectacle.
+                Creating a captivating and memorable event starts with a visually stunning stage and backdrop. <strong>7Delights</strong> specializes in designing and constructing custom stage and background setups that will elevate your event and leave a lasting impression on your audience. Whether it's a conference, concert, wedding, corporate event, or private party, we'll transform your venue into a breathtaking spectacle.
               </p>
 
               <div className="space-y-3 pt-2">
@@ -426,7 +426,7 @@ export default function StageFlexBackgroundPage() {
                 Specialties of Stage Background
               </h2>
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-                Our stage setup at 7Delights.in is designed to be visually impactful and 100% dependable. Here is why event managers choose us:
+                Our stage setup at 7Delights is designed to be visually impactful and 100% dependable. Here is why event managers choose us:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
@@ -485,10 +485,10 @@ export default function StageFlexBackgroundPage() {
                 Perfect for Any Occasion
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E]">
-                7Delights.in — The Best Event for Stage Background
+                7Delights — The Best Event for Stage Background
               </h2>
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-                7Delights.in is your authorized source for the ultimate Stage and Flex Background. We fabricate customized staging for:
+                7Delights is your authorized source for the ultimate Stage and Flex Background. We fabricate customized staging for:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -504,7 +504,7 @@ export default function StageFlexBackgroundPage() {
               </div>
 
               <p className="text-xs sm:text-sm text-[#5A6E85] italic pt-1">
-                <strong>Let Us Set the Stage for Your Success:</strong> Contact 7Delights.in today for a free consultation and let us help you create a stage and background setup that will make your event truly unforgettable.
+                <strong>Let Us Set the Stage for Your Success:</strong> Contact 7Delights today for a free consultation and let us help you create a stage and background setup that will make your event truly unforgettable.
               </p>
             </div>
           </div>

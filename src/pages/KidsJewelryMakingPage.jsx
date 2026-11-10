@@ -109,11 +109,11 @@ export default function KidsJewelryMakingPage() {
               </div>
 
               <p className="text-[15px] sm:text-[16px] text-[#4F6174] leading-relaxed mb-4">
-                In recent years, party organizers have enhanced their demands for extraordinary shows with exemplary creativity and expertise! At 7Delights.in, we believe that the art of making jewelry items for kids has no comparison in terms of creativity! We have a team of professionals who have proven expertise in this domain. They make decent jewelry items for the kids and make them feel thrilled! Ultimately, it always focuses on attracting the parents and guardians.
+                In recent years, party organizers have enhanced their demands for extraordinary shows with exemplary creativity and expertise! At 7Delights, we believe that the art of making jewelry items for kids has no comparison in terms of creativity! We have a team of professionals who have proven expertise in this domain. They make decent jewelry items for the kids and make them feel thrilled! Ultimately, it always focuses on attracting the parents and guardians.
               </p>
 
               <p className="text-[14.5px] sm:text-[15.5px] text-[#4F6174] leading-relaxed mb-6">
-                7Delights.in is fortunate enough to have the most outstanding and creative kids jewelry makers. They have proven experience of more than a few years. They are extremely good communicators who can influence the visitors to the occasion. Their presence in the party area adds a sparkling impact to it!
+                7Delights is fortunate enough to have the most outstanding and creative kids jewelry makers. They have proven experience of more than a few years. They are extremely good communicators who can influence the visitors to the occasion. Their presence in the party area adds a sparkling impact to it!
               </p>
 
               {/* Service Specs Card */}
@@ -212,20 +212,20 @@ export default function KidsJewelryMakingPage() {
                 Kids are precious! Parents are amazing at making them happy and satisfied. Kids Jewelry Making is a fascinating art that we offer anywhere we get an opportunity. Our experts carry all the necessary ingredients to make the jewelry.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
-                The ethos of 7Delights.in is to encourage children to explore and create from as early an age as possible. Kids Jewelry-Making fun activity sessions provide entertainment and education to children and enable them to discover their creative side. Self-identity can be expressed through charms that can be created by kids themselves with the help of beads, charms, and other intriguing materials.
+                The ethos of 7Delights is to encourage children to explore and create from as early an age as possible. Kids Jewelry-Making fun activity sessions provide entertainment and education to children and enable them to discover their creative side. Self-identity can be expressed through charms that can be created by kids themselves with the help of beads, charms, and other intriguing materials.
               </p>
             </div>
 
-            {/* Box 2: Why Should You Hire 7Delights.in For Kids Jewelry Making? */}
+            {/* Box 2: Why Should You Hire 7Delights For Kids Jewelry Making? */}
             <div className="bg-gradient-to-br from-[#FFF5F6] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FCD5DE] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#EE3775] text-white flex items-center justify-center mb-6 shadow-md shadow-[#EE3775]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                Why Hire 7Delights.in For Kids Jewelry Making?
+                Why Hire 7Delights For Kids Jewelry Making?
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                Selecting 7Delights.in for your children’s jewelry-making show guarantees fun learning and a memorable show. Expert teachers get actively involved by offering instructions besides directing the students on how to be creative.
+                Selecting 7Delights for your children’s jewelry-making show guarantees fun learning and a memorable show. Expert teachers get actively involved by offering instructions besides directing the students on how to be creative.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
                 We provide quality materials and goods and do not compromise with safety issues. These entertaining and motivating sessions are ideal for children’s parties or any other event to turn the event into a memorable one. Our committed jewelry artists have decent skills that can make the program a great success.

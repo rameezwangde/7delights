@@ -445,7 +445,7 @@ export default function GiftingPage() {
               </h2>
 
               <p className="text-base text-[#5A6E85] leading-relaxed">
-                7DELIGHTS.in is proud to serve clients on special occasions when they need expert assistance deciding the right gifts for someone they love and care for! Our gifting coordinators create customized, tasteful solutions suited for any budget or scale.
+                7DELIGHTS is proud to serve clients on special occasions when they need expert assistance deciding the right gifts for someone they love and care for! Our gifting coordinators create customized, tasteful solutions suited for any budget or scale.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -217,19 +217,19 @@ export default function MehandiArtistryPage() {
               </p>
             </div>
 
-            {/* Box 2: Why Engage Mehandi Artists From 7Delights.in! */}
+            {/* Box 2: Why Engage Mehandi Artists From 7Delights! */}
             <div className="bg-gradient-to-br from-[#FFF5F6] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FCD5DE] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#EE3775] text-white flex items-center justify-center mb-6 shadow-md shadow-[#EE3775]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                Why Engage Mehandi Artists From 7Delights.in!
+                Why Engage Mehandi Artists From 7Delights!
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                You can get the best Mehandi designs for special occasions when you hire 7Delights.in Mehandi Artists. Our artists incorporate both traditional Indian and contemporary Arabic patterns to meet your exact aesthetic preferences.
+                You can get the best Mehandi designs for special occasions when you hire 7Delights Mehandi Artists. Our artists incorporate both traditional Indian and contemporary Arabic patterns to meet your exact aesthetic preferences.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
-                Prepared with top natural, chemical-free henna, 7Delights.in ensures that the color stain is rich, deep, and long-enduring. Our artists work swiftly so that everyone in line gets adorned without long waits.
+                Prepared with top natural, chemical-free henna, 7Delights ensures that the color stain is rich, deep, and long-enduring. Our artists work swiftly so that everyone in line gets adorned without long waits.
               </p>
             </div>
 

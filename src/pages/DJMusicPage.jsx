@@ -321,11 +321,11 @@ export default function DJMusicPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E] leading-snug">
-                7Delights.in: Unleash the Beat with Professional DJ Setups
+                7Delights: Unleash the Beat with Professional DJ Setups
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-                Get ready to ignite your event with electrifying music and an unforgettable party atmosphere! <strong>7Delights.in</strong> provides top-of-the-line DJ setups and professional DJs to elevate your event to the next level. Whether it's a wedding, corporate event, private party, or any celebration, we'll create the perfect soundtrack to keep your guests dancing all night long.
+                Get ready to ignite your event with electrifying music and an unforgettable party atmosphere! <strong>7Delights</strong> provides top-of-the-line DJ setups and professional DJs to elevate your event to the next level. Whether it's a wedding, corporate event, private party, or any celebration, we'll create the perfect soundtrack to keep your guests dancing all night long.
               </p>
 
               <div className="space-y-3 pt-2">
@@ -425,7 +425,7 @@ export default function DJMusicPage() {
                 Specialties of Dj Music
               </h2>
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-                Our DJ at 7Delights.in is designed to be pure fun, energetic, and completely stress-free for the host. Here is what sets our musical curation apart:
+                Our DJ at 7Delights is designed to be pure fun, energetic, and completely stress-free for the host. Here is what sets our musical curation apart:
               </p>
 
               <div className="space-y-3">
@@ -484,10 +484,10 @@ export default function DJMusicPage() {
                 Perfect for Any Occasion
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E]">
-                7Delights.in — The Best Event for Dj Music
+                7Delights — The Best Event for Dj Music
               </h2>
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-                7Delights.in is your authorized source for the ultimate DJ Music. We specialize in tailor-making musical atmospheres for every type of event in Bangalore:
+                7Delights is your authorized source for the ultimate DJ Music. We specialize in tailor-making musical atmospheres for every type of event in Bangalore:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -500,7 +500,7 @@ export default function DJMusicPage() {
               </div>
 
               <p className="text-xs sm:text-sm text-[#5A6E85] italic">
-                Ready to Get the Party Started? Contact 7Delights.in today for a free consultation and let us help you create an unforgettable musical experience for your next event!
+                Ready to Get the Party Started? Contact 7Delights today for a free consultation and let us help you create an unforgettable musical experience for your next event!
               </p>
             </div>
           </div>

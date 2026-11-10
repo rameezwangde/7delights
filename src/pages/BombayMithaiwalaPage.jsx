@@ -272,7 +272,7 @@ export default function BombayMithaiwalaPage() {
             </div>
             <p className="text-[#5A6E85] text-sm sm:text-base mt-4 leading-relaxed">
               These days, clients across Bangalore ask for the unique experience of Bombay Mithaiwala to delight their party guests. 
-              Our company, 7Delights.in, guarantees that all sweets are delivered fresh to retain supreme flavor and texture. 
+              Our company, 7Delights, guarantees that all sweets are delivered fresh to retain supreme flavor and texture. 
               Whether celebrating a wedding, naming ceremony, housewarming, or milestone birthday, we deliver perfection in every bite!
             </p>
           </div>

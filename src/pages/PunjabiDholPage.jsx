@@ -224,7 +224,7 @@ export default function PunjabiDholPage() {
               The <strong>Dhol</strong> is a double-sided barrel drum played with curved wooden sticks (dagga and tihli) that produces deep bass vibrations and piercing high-frequency rhythms. It is the very soul of North Indian celebrations, weddings, and harvest festivals.
             </p>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-              At <strong>7Delights.in</strong>, our troupe of authentic master percussionists brings authentic Punjabi flair directly to your celebration in Bangalore — turning ordinary entrances into grand processions and dance floors into festival grounds!
+              At <strong>7Delights</strong>, our troupe of authentic master percussionists brings authentic Punjabi flair directly to your celebration in Bangalore — turning ordinary entrances into grand processions and dance floors into festival grounds!
             </p>
             <ul className="space-y-2.5 pt-2">
               {[

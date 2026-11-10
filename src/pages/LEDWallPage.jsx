@@ -226,7 +226,7 @@ export default function LEDWallPage() {
               Illuminate Your Event with Immersive LED Displays
             </h2>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-              At <strong>7Delights.in</strong>, our mission is to deliver show-stopping visual experiences. Whether you are hosting a high-stakes tech keynote, international symposium, leadership summit, dealer meet, or grand gala dinner, our seamless LED screens ensure every attendee in the hall enjoys front-row visual clarity.
+              At <strong>7Delights</strong>, our mission is to deliver show-stopping visual experiences. Whether you are hosting a high-stakes tech keynote, international symposium, leadership summit, dealer meet, or grand gala dinner, our seamless LED screens ensure every attendee in the hall enjoys front-row visual clarity.
             </p>
             <ul className="space-y-2.5 pt-2">
               {[

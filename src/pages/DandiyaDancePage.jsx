@@ -224,7 +224,7 @@ export default function DandiyaDancePage() {
               Dandiya Raas is a celebration of joyous rhythm, unity, and festive energy. Pairs of dancers use colorfully decorated sticks to create synchronized clashing sounds and intricate rotating circular patterns, accompanied by lively folk beats and Dhol percussion.
             </p>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-              At <strong>7Delights.in</strong>, we bring this timeless Gujarati celebration directly to your corporate town halls, residential community Navratri utsavs, wedding sangeet nights, and cultural festivals across Bangalore.
+              At <strong>7Delights</strong>, we bring this timeless Gujarati celebration directly to your corporate town halls, residential community Navratri utsavs, wedding sangeet nights, and cultural festivals across Bangalore.
             </p>
             <ul className="space-y-2.5 pt-2">
               {[

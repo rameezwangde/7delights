@@ -74,7 +74,7 @@ export default function ContactPage() {
               <h1 className="text-[38px] sm:text-[52px] lg:text-[60px] font-bold text-[#111A2E] font-serif leading-[1.12] mb-4">
                 Plan Your Next Event with{' '}
                 <span className="text-[#EE3775] relative inline-block font-dancing font-normal text-[46px] sm:text-[62px] lg:text-[72px]">
-                  7Delights.in
+                  7Delights
                   <div className="absolute -bottom-2 left-0 w-full overflow-visible">
                     <GoldUnderline className="w-full h-3.5 text-[#F5A623]" />
                   </div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
               <div className="relative w-full max-w-[500px] h-[280px] sm:h-[320px] rounded-3xl overflow-hidden shadow-xl border-4 border-white group">
                 <img
                   src="/assets/contact-stage-setup.png"
-                  alt="7Delights.in Royal Milestone Celebration Setup"
+                  alt="7Delights Royal Milestone Celebration Setup"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/10" />
@@ -173,7 +173,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-[16px] font-bold text-[#111A2E] mb-1 font-sans">
-                      7Delights.in ® Events — Head Office
+                      7Delights ® Events — Head Office
                     </p>
                     <p className="text-[14px] text-[#5A6E85] leading-relaxed">
                       No 45, 2nd Main 1st Cross, Vivekananda Colony, Kanakapura Main Road, J.P. Nagar PO, Bangalore 560078.
@@ -190,7 +190,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-[16px] font-bold text-[#111A2E] mb-1 font-sans">
-                      7Delights.in ® Events — Branch Office
+                      7Delights ® Events — Branch Office
                     </p>
                     <p className="text-[14px] text-[#5A6E85] leading-relaxed">
                       No 1709, 17th 'A' Main, 8th Cross, J.P. Nagar 2nd Phase, Bangalore 560078 (Near 9th Cross HDFC Bank Ltd).
@@ -433,7 +433,7 @@ export default function ContactPage() {
             <div className="p-4 sm:p-5 text-left border-b border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
                 <h3 className="text-[18px] sm:text-[20px] font-bold text-[#111A2E] font-serif">
-                  7Delights.in Event Services across Bangalore
+                  7Delights Event Services across Bangalore
                 </h3>
                 <p className="text-[13.5px] text-[#5A6E85]">
                   Serving J.P. Nagar, Kanakapura Road, Whitefield, Koramangala, Indiranagar, Electronic City & across Karnataka.
@@ -447,7 +447,7 @@ export default function ContactPage() {
 
             <div className="w-full h-[360px] sm:h-[420px] rounded-2xl overflow-hidden relative">
               <iframe
-                title="7Delights.in Location Map"
+                title="7Delights Location Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124442.34848270505!2d77.51860086961448!3d12.919011718910018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1508dae76743%3A0xc3e13ffdfc56dd4b!2sJ.%20P.%20Nagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 className="w-full h-full border-0"
                 allowFullScreen=""

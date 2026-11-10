@@ -273,7 +273,7 @@ export default function ChocolateFountainPage() {
               <GoldUnderline />
             </div>
             <p className="text-[#5A6E85] text-sm sm:text-base mt-4 leading-relaxed">
-              Only the best chocolate is used for our chocolate fountain at 7Delights.in, ensuring the perfect viscosity, texture, and rich appearance 
+              Only the best chocolate is used for our chocolate fountain at 7Delights, ensuring the perfect viscosity, texture, and rich appearance 
               so that the chocolate effortlessly drips down each tier. Kept at optimal temperature throughout the event, every skewer dip offers 
               the same velvety, mouth-watering indulgence!
             </p>

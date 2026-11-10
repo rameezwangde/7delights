@@ -224,7 +224,7 @@ export default function ChendaMelamPage() {
               <strong>Chenda Melam</strong> is a classical percussion orchestra native to Kerala, held sacred during temple festivals like Thrissur Pooram and all major auspicious celebrations. The ensemble is led by the Chenda — a powerful cylindrical wooden drum played with sticks — and accompanied by bronze Ilathalam cymbals and wind horns.
             </p>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-              At <strong>7Delights.in</strong>, we arrange authentic master percussionists who execute intricate rhythm cycles (Kooru) that build gradually in tempo, climaxing in an electrifying crescendo that commands the total awe of all attendees.
+              At <strong>7Delights</strong>, we arrange authentic master percussionists who execute intricate rhythm cycles (Kooru) that build gradually in tempo, climaxing in an electrifying crescendo that commands the total awe of all attendees.
             </p>
             <ul className="space-y-2.5 pt-2">
               {[

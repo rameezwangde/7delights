@@ -273,7 +273,7 @@ export default function GolaIceCrushPage() {
             <p className="text-[#5A6E85] text-sm sm:text-base mt-4 leading-relaxed">
               Every Gola is handcrafted live right before the guest! Made using finely shaved snow ice accompanied by customer-choice syrups, 
               it delivers an icy flavor sensation with every bite. From traditional tangy Kala Khatta to fragrant Rose and sweet Mango, 
-              7Delights.in ensures every single frosted chuski is pure, hygienic, and nostalgic.
+              7Delights ensures every single frosted chuski is pure, hygienic, and nostalgic.
             </p>
           </div>
 

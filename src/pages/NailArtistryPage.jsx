@@ -96,7 +96,7 @@ export default function NailArtistryPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111A2E] tracking-tight leading-[1.15] font-serif mb-5">
-                Think Nail Artist, Think 7Delights.in!
+                Think Nail Artist, Think 7Delights!
               </h1>
 
               <div className="relative inline-block mb-6">
@@ -222,10 +222,10 @@ export default function NailArtistryPage() {
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                Things That Make 7Delights.in Your Home For Nail Artistry!
+                Things That Make 7Delights Your Home For Nail Artistry!
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                7Delights.in claims to be your preferred destination for nail artistry. Our core strength rests on the shoulders of our expert nail artists, who are full of innovative and creative ideas that they implement to create decent nail art.
+                7Delights claims to be your preferred destination for nail artistry. Our core strength rests on the shoulders of our expert nail artists, who are full of innovative and creative ideas that they implement to create decent nail art.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
                 The team never compromises on the quality of the product. We work with top-class materials procured from top sources. Our studio is 100% hygienic and ensures everyone has the safest nail art. So, what keeps you waiting? Visit us right away!

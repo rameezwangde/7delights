@@ -216,19 +216,19 @@ export default function MugCaricaturePage() {
               </p>
             </div>
 
-            {/* Box 2: 7Delights.in - Destination For Mug Caricature */}
+            {/* Box 2: 7Delights - Destination For Mug Caricature */}
             <div className="bg-gradient-to-br from-[#FFF5F6] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FCD5DE] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#EE3775] text-white flex items-center justify-center mb-6 shadow-md shadow-[#EE3775]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                7Delights.in - Your Destination For Mug Caricature
+                7Delights - Your Destination For Mug Caricature
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                Quality and attention to customer satisfaction are among 7Delights.in main values. Buy our Mug Caricature with 30 Nos. Mugs service to get a set of mugs made with accuracy and uniqueness to match your requirements.
+                Quality and attention to customer satisfaction are among 7Delights main values. Buy our Mug Caricature with 30 Nos. Mugs service to get a set of mugs made with accuracy and uniqueness to match your requirements.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
-                For the best caricature mug matching your ideas and satisfaction with guaranteed timely delivery, 7Delights.in is the shop to visit in Bangalore!
+                For the best caricature mug matching your ideas and satisfaction with guaranteed timely delivery, 7Delights is the shop to visit in Bangalore!
               </p>
             </div>
 

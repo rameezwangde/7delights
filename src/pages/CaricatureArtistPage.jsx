@@ -114,7 +114,7 @@ export default function CaricatureArtistPage() {
               </p>
 
               <p className="text-[14.5px] sm:text-[15.5px] text-[#4F6174] leading-relaxed mb-6">
-                Nowadays, private parties feature some unique shows that enhance the quality quite a few times. Caricature Pencil Face Art 30 Nos is one such special show that has gained phenomenal popularity. 7Delights.in takes special measures to bring the most unforgettable moments to the parties!
+                Nowadays, private parties feature some unique shows that enhance the quality quite a few times. Caricature Pencil Face Art 30 Nos is one such special show that has gained phenomenal popularity. 7Delights takes special measures to bring the most unforgettable moments to the parties!
               </p>
 
               {/* Service Specs Card */}
@@ -217,16 +217,16 @@ export default function CaricatureArtistPage() {
               </p>
             </div>
 
-            {/* Box 2: 7Delights.in – Your Destination for Caricature Pencil Face Art */}
+            {/* Box 2: 7Delights – Your Destination for Caricature Pencil Face Art */}
             <div className="bg-gradient-to-br from-[#FFF5F6] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FCD5DE] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#EE3775] text-white flex items-center justify-center mb-6 shadow-md shadow-[#EE3775]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                7Delights.in – Destination For Caricature Pencil Face Art
+                7Delights – Destination For Caricature Pencil Face Art
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                Indeed, 7Delights.in has successfully established itself as the most preferred destination for Caricature Pencil Face Art 30 Nos! We have an extraordinary team of caricature professionals who can maintain the complete sanctity of the program.
+                Indeed, 7Delights has successfully established itself as the most preferred destination for Caricature Pencil Face Art 30 Nos! We have an extraordinary team of caricature professionals who can maintain the complete sanctity of the program.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
                 We create decent caricatures that our clients love and appreciate. In recent years, the demand for our professionals has increased many times. This shows our expertise and ability to deliver the best work to the partygoers!

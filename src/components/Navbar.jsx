@@ -50,12 +50,12 @@ export default function Navbar({ currentPage = 'home' }) {
     >
       <div className="w-full max-w-[1832px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 h-[80px] sm:h-[88px] lg:h-[92px] flex items-center justify-between transition-all duration-300">
         
-        {/* Left: 7Delights.in Logo */}
+        {/* Left: 7Delights Logo */}
         <div className="flex items-center shrink-0">
           <a href="#home" className="flex items-center focus:outline-none">
             <img
               src="/assets/logo.png"
-              alt="7Delights.in - Delighting Every Moment"
+              alt="7Delights - Delighting Every Moment"
               className="h-11 sm:h-13 lg:h-[54px] w-auto object-contain cursor-pointer transition-transform hover:scale-[1.01]"
             />
           </a>

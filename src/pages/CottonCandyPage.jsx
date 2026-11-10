@@ -311,7 +311,7 @@ export default function CottonCandyPage() {
               <GoldUnderline />
             </div>
             <p className="text-[#5A6E85] text-sm sm:text-base mt-4">
-              At 7Delights.in, we boast unique, quaint and equally tasty cotton candy with appropriate hygienic presentation.
+              At 7Delights, we boast unique, quaint and equally tasty cotton candy with appropriate hygienic presentation.
             </p>
           </div>
 

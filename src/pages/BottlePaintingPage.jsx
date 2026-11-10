@@ -210,26 +210,26 @@ export default function BottlePaintingPage() {
                 Specialties of Bottle Painting
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                The artwork associated with Bottle Painting at 7Delights.in is characterized by neat lines, vibrant tones, and durable finishes.
+                The artwork associated with Bottle Painting at 7Delights is characterized by neat lines, vibrant tones, and durable finishes.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
                 The highest-quality acrylic enamels guarantee that the colors will not peel or fade away. With a wide variety of themes from folk art, silhouettes, and botanicals to modern geometrics, these bottles function as stunning ambient home aesthetics or personalized gifts.
               </p>
             </div>
 
-            {/* Box 2: 7Delights.in - Your Go-To For Bottle Painting */}
+            {/* Box 2: 7Delights - Your Go-To For Bottle Painting */}
             <div className="bg-gradient-to-br from-[#FFF5F6] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FCD5DE] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#EE3775] text-white flex items-center justify-center mb-6 shadow-md shadow-[#EE3775]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                7Delights.in - Go-To For Bottle Painting
+                7Delights - Go-To For Bottle Painting
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                In Bottle Paintings, 7Delights.in ensures you get the best and most appropriate artwork customized to your occasion. Our artists adapt designs to match your party colors or corporate branding.
+                In Bottle Paintings, 7Delights ensures you get the best and most appropriate artwork customized to your occasion. Our artists adapt designs to match your party colors or corporate branding.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
-                Trust 7Delights.in for stunning glass vessels that add emotional resonance and creative flair to your celebrations.
+                Trust 7Delights for stunning glass vessels that add emotional resonance and creative flair to your celebrations.
               </p>
             </div>
 

@@ -19,7 +19,7 @@ export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Exactly scraped from 7delights.in/blog/
+  // Exactly scraped from 7delights/blog/
   const blogPosts = [
     {
       id: 1,
@@ -175,22 +175,22 @@ Website: https://www.7delights.in/`,
       badgeBg: 'bg-[#FFF3DF] text-[#D97706] border-[#FFE4B8]',
       image: '/assets/blog-birthday-decoration.webp',
       excerpt:
-        'Elevate Your Birthday Celebrations with 7Delights.in Events. Transforming Dreams into Reality. From classic balloon arches to intricate floral and fantasy themes, curate a personalized experience.',
-      fullContent: `Elevate Your Birthday Celebrations with 7Delights.in Events
+        'Elevate Your Birthday Celebrations with 7Delights Events. Transforming Dreams into Reality. From classic balloon arches to intricate floral and fantasy themes, curate a personalized experience.',
+      fullContent: `Elevate Your Birthday Celebrations with 7Delights Events
 
 Transforming Dreams into Reality
 When it comes to birthday celebrations, 7Delights Events is your go-to partner to create unforgettable memories. With their expertise in event planning and decoration, they bring your vision to life, adding a touch of magic to every occasion.
 
-Unleash Your Imagination with 7Delights.in
-7Delights.in offers a wide range of birthday decoration services to suit every taste and budget. Whether you’re planning a grand celebration or an intimate gathering, their team of creative professionals will curate a personalized experience.
+Unleash Your Imagination with 7Delights
+7Delights offers a wide range of birthday decoration services to suit every taste and budget. Whether you’re planning a grand celebration or an intimate gathering, their team of creative professionals will curate a personalized experience.
 
 Key Services:
-• Balloon Decorations: From classic balloon arches to intricate balloon sculptures, 7Delights.in creates stunning visual displays that wow your guests.
+• Balloon Decorations: From classic balloon arches to intricate balloon sculptures, 7Delights creates stunning visual displays that wow your guests.
 • Flower Decorations: Add a touch of elegance and fragrance to your event with their exquisite floral arrangements.
 • Theme Decorations: Immerse yourself in a world of fantasy with their themed decorations, ranging from fairytale themes to superhero adventures.
-• Personalized Touches: 7Delights.in goes the extra mile to incorporate personalized elements into your decorations, making your celebration truly unique.
+• Personalized Touches: 7Delights goes the extra mile to incorporate personalized elements into your decorations, making your celebration truly unique.
 
-Why Choose 7Delights.in?
+Why Choose 7Delights?
 • Expertise: Their team of experienced professionals understands the nuances of event planning and decoration.
 • Creativity: They bring fresh ideas and innovative concepts to every event.
 • Reliability: They are committed to delivering exceptional service and ensuring a smooth event.
@@ -198,7 +198,7 @@ Why Choose 7Delights.in?
 • Affordability: They offer competitive pricing without compromising on quality.
 
 Make Your Birthday a Day to Remember
-Contact 7Delights.in Events today to discuss your birthday celebration needs. Let them transform your vision into a reality that will leave a lasting impression on you and your guests.
+Contact 7Delights Events today to discuss your birthday celebration needs. Let them transform your vision into a reality that will leave a lasting impression on you and your guests.
 
 Contact: +91 99800 29977
 Visit the website to explore more: https://www.7delights.in/`,
@@ -254,7 +254,7 @@ Visit the website to explore more: https://www.7delights.in/`,
           </h1>
 
           <p className="text-[15.5px] sm:text-[17px] text-[#5A6E85] max-w-2xl mx-auto leading-relaxed">
-            Welcome to the official blog of 7delights.in — Party Organizers in Bangalore organizing all types of celebrations, theme decorations, games, and entertainment.
+            Welcome to the official blog of 7delights — Party Organizers in Bangalore organizing all types of celebrations, theme decorations, games, and entertainment.
           </p>
 
           {/* Search Bar */}

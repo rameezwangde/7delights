@@ -109,11 +109,11 @@ export default function HairBraidingPage() {
               </div>
 
               <p className="text-[15px] sm:text-[16px] text-[#4F6174] leading-relaxed mb-4">
-                Hair braiding offered by 7Delights.in is traditional and stylish, and people can discover the uniqueness of each stylish and stunning braid. Our skilled professional braiders bring out the best of creativity for casual and formal occasions by making each braid as elegant as possible. Due to our professionalism we have the ability to work with all types of hair as we create a comfortable atmosphere for you. Feel the professional services of hair braiding with 7Delights.in elegance and beauty.
+                Hair braiding offered by 7Delights is traditional and stylish, and people can discover the uniqueness of each stylish and stunning braid. Our skilled professional braiders bring out the best of creativity for casual and formal occasions by making each braid as elegant as possible. Due to our professionalism we have the ability to work with all types of hair as we create a comfortable atmosphere for you. Feel the professional services of hair braiding with 7Delights elegance and beauty.
               </p>
 
               <p className="text-[14.5px] sm:text-[15.5px] text-[#4F6174] leading-relaxed mb-6">
-                At 7Delights.in, we have a complete grasp of the hair braiding art. Our experts can train participants eager to learn new ways of braiding their hair. We can make the entire party area bubble with life! Engage us now for the most exciting hair braiding services!
+                At 7Delights, we have a complete grasp of the hair braiding art. Our experts can train participants eager to learn new ways of braiding their hair. We can make the entire party area bubble with life! Engage us now for the most exciting hair braiding services!
               </p>
 
               {/* Service Specs Card */}
@@ -209,23 +209,23 @@ export default function HairBraidingPage() {
                 Hair Braiding – Specialties!
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                Our hair braiding professionals at 7Delights.in ensure that you get the perfect matching and elegant styles of braids. Whether the client wants a traditional braid or the latest fashionable braid in vogue, the skills employed guarantee that the braid is perfect and long-lasting.
+                Our hair braiding professionals at 7Delights ensure that you get the perfect matching and elegant styles of braids. Whether the client wants a traditional braid or the latest fashionable braid in vogue, the skills employed guarantee that the braid is perfect and long-lasting.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
-                7Delights.in is the place to go for excellent workmanship and a perfect finish for any box braid styling, cornrows, or braided designs. Reach out anytime if you have any queries about our hair braiding show!
+                7Delights is the place to go for excellent workmanship and a perfect finish for any box braid styling, cornrows, or braided designs. Reach out anytime if you have any queries about our hair braiding show!
               </p>
             </div>
 
-            {/* Box 2: 7Delights.in – Place for The Best Hair Braiding! */}
+            {/* Box 2: 7Delights – Place for The Best Hair Braiding! */}
             <div className="bg-gradient-to-br from-[#FFF5F6] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FCD5DE] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#EE3775] text-white flex items-center justify-center mb-6 shadow-md shadow-[#EE3775]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                7Delights.in – Place for The Best Hair Braiding!
+                7Delights – Place for The Best Hair Braiding!
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                For your hair braiding show, opt for 7Delights.in to enjoy the work and artistry, selection of personalized styles, and excellent workmanship. Our specialists provide fascinating braids for every hair type and make the event exciting.
+                For your hair braiding show, opt for 7Delights to enjoy the work and artistry, selection of personalized styles, and excellent workmanship. Our specialists provide fascinating braids for every hair type and make the event exciting.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
                 Reliable for elegant and specialized hair braiding, let us make your event special. Our specialist hair braiders can inspire all the delegates, particularly women, and make them participate in the show. Reach us now if you have any queries!

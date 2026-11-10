@@ -110,7 +110,7 @@ export default function PotPaintingPage() {
               </div>
 
               <p className="text-[15px] sm:text-[16px] text-[#4F6174] leading-relaxed mb-4">
-                Pot Painting is an ancient art that transforms ordinary earthenware and clay vessels into stunning, vibrant showpieces. 7Delights.in offers unique hand-painted designs with Warli, Madhubani, floral, and contemporary geometric motifs suitable for indoor decor, tabletops, and garden planters.
+                Pot Painting is an ancient art that transforms ordinary earthenware and clay vessels into stunning, vibrant showpieces. 7Delights offers unique hand-painted designs with Warli, Madhubani, floral, and contemporary geometric motifs suitable for indoor decor, tabletops, and garden planters.
               </p>
 
               <p className="text-[14.5px] sm:text-[15.5px] text-[#4F6174] leading-relaxed mb-6">
@@ -217,16 +217,16 @@ export default function PotPaintingPage() {
               </p>
             </div>
 
-            {/* Box 2: 7delights.in – Your Favorite Destination For Pot Painting */}
+            {/* Box 2: 7delights – Your Favorite Destination For Pot Painting */}
             <div className="bg-gradient-to-br from-[#FFF5F6] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FCD5DE] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#EE3775] text-white flex items-center justify-center mb-6 shadow-md shadow-[#EE3775]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                7delights.in – Destination For Pot Painting
+                7delights – Destination For Pot Painting
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                7Delights.in features exquisitely created Pot Paintings tailored to your event preferences. Our artists easily accommodate specific festive or cultural themes.
+                7Delights features exquisitely created Pot Paintings tailored to your event preferences. Our artists easily accommodate specific festive or cultural themes.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
                 Add the warmth of authentic terracotta art to your celebrations by engaging our premier pot painting team in Bangalore!

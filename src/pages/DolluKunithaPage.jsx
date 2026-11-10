@@ -224,7 +224,7 @@ export default function DolluKunithaPage() {
               <strong>Dollu Kunitha</strong> is one of Karnataka's most prominent and electrifying folk dance rituals. Performed with large, leather-skinned cylindrical drums strapped across the chest, it combines vigorous footwork, high-flying acrobatic jumps, and thunderous, synchronized drumming patterns.
             </p>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-              At <strong>7Delights.in</strong>, we bring traditional master performers from cultural centers across Karnataka to your corporate conventions, wedding processions, temple festivals, and private milestones.
+              At <strong>7Delights</strong>, we bring traditional master performers from cultural centers across Karnataka to your corporate conventions, wedding processions, temple festivals, and private milestones.
             </p>
             <ul className="space-y-2.5 pt-2">
               {[

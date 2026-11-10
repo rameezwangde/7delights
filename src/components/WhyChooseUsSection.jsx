@@ -85,7 +85,7 @@ export default function WhyChooseUsSection() {
           {/* Main Title */}
           <h2 className="text-[34px] sm:text-[44px] lg:text-[48px] font-bold text-[#111A2E] font-serif leading-[1.18] mb-4">
             Why Choose <span className="text-[#EE3775] relative inline-block">
-              7Delights.in?
+              7Delights?
               <div className="absolute -bottom-2.5 left-0 w-full overflow-visible">
                 <GoldUnderline className="w-full h-3 text-[#F5A623]" />
               </div>

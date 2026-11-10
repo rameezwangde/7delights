@@ -113,7 +113,7 @@ export default function OrigamiCraftsPage() {
               </p>
 
               <p className="text-[14.5px] sm:text-[15.5px] text-[#4F6174] leading-relaxed mb-6">
-                Origami Crafts are sheer excellence of every individual we have with 7Delights.in. We are capable of meeting the highest standards. Our experts have proven expertise in this craft. They can show their skills to influence the participants in the party!
+                Origami Crafts are sheer excellence of every individual we have with 7Delights. We are capable of meeting the highest standards. Our experts have proven expertise in this craft. They can show their skills to influence the participants in the party!
               </p>
 
               {/* Service Specs Card */}
@@ -216,19 +216,19 @@ export default function OrigamiCraftsPage() {
               </p>
             </div>
 
-            {/* Box 2: Why Choose 7Delights.in For the Origami Craft Show? */}
+            {/* Box 2: Why Choose 7Delights For the Origami Craft Show? */}
             <div className="bg-gradient-to-br from-[#FFF5F6] to-[#FFFBF9] rounded-3xl p-8 sm:p-10 border border-[#FCD5DE] shadow-sm hover:shadow-lg transition-all text-left">
               <div className="w-12 h-12 rounded-2xl bg-[#EE3775] text-white flex items-center justify-center mb-6 shadow-md shadow-[#EE3775]/25">
                 <Award className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#111A2E] font-serif mb-4 leading-snug">
-                Why Choose 7Delights.in For the Origami Craft Show?
+                Why Choose 7Delights For the Origami Craft Show?
               </h2>
               <p className="text-[15px] text-[#4F6174] leading-relaxed mb-4">
-                For Origami Craft Shows, one can try the 7Delights.in that spell magic through the perfection and dexterity of the craft. With beautiful presentations and impressive techniques of folding paper, our experts perform the centuries-old Japanese craft.
+                For Origami Craft Shows, one can try the 7Delights that spell magic through the perfection and dexterity of the craft. With beautiful presentations and impressive techniques of folding paper, our experts perform the centuries-old Japanese craft.
               </p>
               <p className="text-[15px] text-[#4F6174] leading-relaxed">
-                Our shows, ever suitable for any age, educate while entertaining, leaving the audience with positive emotions. Familiarize yourself with the wonders of origami, the staple of our fair city, with a fresh, new perspective craft by 7Delights.in.
+                Our shows, ever suitable for any age, educate while entertaining, leaving the audience with positive emotions. Familiarize yourself with the wonders of origami, the staple of our fair city, with a fresh, new perspective craft by 7Delights.
               </p>
             </div>
 

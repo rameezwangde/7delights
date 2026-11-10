@@ -214,7 +214,7 @@ export default function PrintingServicesPage() {
               Comprehensive Event Signage, Stationery & Branded Merch
             </h2>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
-              We understand that every single print touchpoint contributes to your event's overall guest impression. That's why <strong>7delights.in</strong> provides turnkey printing solutions tailored specifically for conferences, award galas, exhibitions, product launches, and company milestones.
+              We understand that every single print touchpoint contributes to your event's overall guest impression. That's why <strong>7delights</strong> provides turnkey printing solutions tailored specifically for conferences, award galas, exhibitions, product launches, and company milestones.
             </p>
             <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed">
               From the initial save-the-date invites and registration ID lanyards to illuminated reception backdrops, podium branding, and delegate gift bags — we ensure consistent corporate color matching and premium tactile finishes.
@@ -320,7 +320,7 @@ export default function PrintingServicesPage() {
       <section className="py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#111A2E]">
-            Why Choose 7delights.in for Event Printing?
+            Why Choose 7delights for Event Printing?
           </h2>
           <p className="text-xs sm:text-sm text-[#5A6E85] mt-2">
             Seamless integration with your event staging, lighting, and venue logistics.

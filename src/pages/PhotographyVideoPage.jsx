@@ -421,11 +421,11 @@ export default function PhotographyVideoPage() {
               </p>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-4">
-                Photography, both still and videography, is an art; photographers are artists! At <strong>7Delights.in</strong>, we have a committed team of highly skilled and professional photographers and videographers who capture the most exciting pictures and videos to help you relive those priceless moments in the future.
+                Photography, both still and videography, is an art; photographers are artists! At <strong>7Delights</strong>, we have a committed team of highly skilled and professional photographers and videographers who capture the most exciting pictures and videos to help you relive those priceless moments in the future.
               </p>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-6">
-                Hiring the best and most skilled photographers is easy in Bangalore! Communicate with the experts at 7Delights.in—we preserve the memories to relish them for decades. Our deliveries are impeccable and among the best in the industry!
+                Hiring the best and most skilled photographers is easy in Bangalore! Communicate with the experts at 7Delights—we preserve the memories to relish them for decades. Our deliveries are impeccable and among the best in the industry!
               </p>
 
               <div className="flex flex-wrap items-center gap-4">
@@ -499,7 +499,7 @@ export default function PhotographyVideoPage() {
         </div>
       </section>
 
-      {/* 5. SECTION FOUR: 7DELIGHTS.IN - PLACE FOR BEST-IN-CLASS PHOTOGRAPHY */}
+      {/* 5. SECTION FOUR: 7DELIGHTS - PLACE FOR BEST-IN-CLASS PHOTOGRAPHY */}
       <section className="py-10 lg:py-12 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
@@ -511,11 +511,11 @@ export default function PhotographyVideoPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#111A2E] tracking-tight mb-4 leading-snug">
-                7Delights.in — Place For The Best-in-Class Photography
+                7Delights — Place For The Best-in-Class Photography
               </h2>
 
               <p className="text-sm sm:text-base text-[#5A6E85] leading-relaxed mb-6">
-                Capturing emotions in their purest form requires technical mastery and intuitive observation. At <strong>7Delights.in</strong>, our crews blend into the background during sacred ceremonies and step forward with high-energy direction during sangeets, baby showers, and grand corporate inaugurations.
+                Capturing emotions in their purest form requires technical mastery and intuitive observation. At <strong>7Delights</strong>, our crews blend into the background during sacred ceremonies and step forward with high-energy direction during sangeets, baby showers, and grand corporate inaugurations.
               </p>
 
               <div className="space-y-2.5 mb-6">
